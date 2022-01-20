@@ -1,4 +1,4 @@
-package com.filwsx.object;
+package com.filwsx.basic.object;
 
 public class Student extends Person{
 	private int number;

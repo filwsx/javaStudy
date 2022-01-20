@@ -1,4 +1,4 @@
-package com.filwsx.array;
+package com.filwsx.basic.array;
 import java.util.Arrays;
 /**
  * 

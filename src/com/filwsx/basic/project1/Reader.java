@@ -1,4 +1,4 @@
-package com.filwsx.project1;
+package com.filwsx.basic.project1;
 
 import java.util.Scanner;
 

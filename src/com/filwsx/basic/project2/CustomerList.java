@@ -1,4 +1,4 @@
-package com.filwsx.project2;
+package com.filwsx.basic.project2;
 
 public class CustomerList {
     private Customer[] customers;
