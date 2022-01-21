@@ -1,4 +1,4 @@
-package com.filwsx.basic.object;
+package com.filwsx.basic.fieldMethod;
 
 /**
  * 
