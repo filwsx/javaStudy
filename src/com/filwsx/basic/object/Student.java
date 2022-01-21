@@ -1,9 +1,10 @@
 package com.filwsx.basic.object;
 
 public class Student extends Person{
-	private int number;
-	private int state;
-	private int score;
+	protected int number;
+	protected int state;
+	protected int score;
+	protected String school="pku";
 	public int getScore() {
 		return score;
 	}
@@ -22,5 +23,10 @@ public class Student extends Person{
 	public void setNumber(int number) {
 		this.number = number;
 	}
+	
+	public String getInfo() {
+		return "Name: "+ name + "\nage: "+ age + "\nschool: "+ school;
+	}
+
 	
 }

@@ -2,19 +2,19 @@ package com.filwsx.basic.object;
 
 
 public class Person {
-	private String name;
-	private int age;
-	private int sex;
+	protected String name = "张三";
+	protected int age = 35; //中年危机，面临裁员，碰上疫情
+	protected int sex;
 	
-	public static void main(String args[]) {
-		Person p1 = new Person("李四",16,1);
-		Person p2 = new Person();
-		p2.setName("张三");
-		p2.setAge(19);
-		p2.setSex(1);
-		p1.addAge();
-		p2.study();
-	}
+//	public static void main(String args[]) {
+//		Person p1 = new Person("李四",16,1);
+//		Person p2 = new Person();
+//		p2.setName("张三");
+//		p2.setAge(19);
+//		p2.setSex(1);
+//		p1.addAge();
+//		p2.study();
+//	}
 	
 	Person(){
 		
@@ -61,4 +61,9 @@ public class Person {
 		this.name = name;
 		System.out.println("姓名设置成功");
 	}
+	
+	public String getInfo() {
+		return "Name: "+ name + "\n" +"age: "+ age;
+	}
+
 }
