@@ -6,7 +6,7 @@ package com.filwsx.basic.fieldMethod;
  * @describe 测试多态的方法和属性 2022-01-21 1637
  *
  */
-public class FieldMethod {
+public class FieldMethodTest {
 	public static void main(String args[]) {
 		//Base b = new Base();
 		//Sub s = new Sub();
