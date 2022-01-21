@@ -2,23 +2,25 @@ package com.filwsx.basic.fieldMethod;
 
 public class Geometric {
 	protected String color;
-	protected double weight;
+	
+	public Geometric() {
+		
+	}
+	
+	public Geometric(String color) {
+		super();
+		this.color = color;
+	}
+	
 	public String getColor() {
 		return color;
 	}
 	public void setColor(String color) {
 		this.color = color;
 	}
-	public double getWeight() {
-		return weight;
+
+	public double findArea() {
+		System.out.println("抽象父类不具有面积特性");
+		return 0.0;
 	}
-	public void setWeight(double weight) {
-		this.weight = weight;
-	}
-	public Geometric(String color, double weight) {
-		super();
-		this.color = color;
-		this.weight = weight;
-	}
-	
 }
