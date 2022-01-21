@@ -2,8 +2,12 @@ package com.filwsx.basic.object;
 
 public class Account {
 	private int id;
-	private double balance;
+	protected double balance;
 	private double annualInterestRate;
+	
+	public Account() {
+		
+	}
 	
 	public Account (int id, double balance, double annualInterestRate) {
 		this.id = id;
@@ -35,6 +39,11 @@ public class Account {
 		this.annualInterestRate = annualInterestRate;
 	}
 	
+	public double getMonthlyInterest() {
+		return annualInterestRate;
+		
+	}
+
 	//取钱
 	public void withdraw (double amount){
 		if(this.balance>= amount) {
