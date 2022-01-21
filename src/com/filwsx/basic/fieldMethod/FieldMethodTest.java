@@ -28,11 +28,18 @@ public class FieldMethodTest {
 		method(new Student());
 		method(new Graduate());
 		
-		Circle c1 = new Circle(5.0,"blue") ;
+		Circle c1 = new Circle(5.0,"blue");
 		Rectangle r1 = new Rectangle(10,20,"red");
 		displayGeometric(c1);
 		displayGeometric(r1);
 		
+		System.out.println("**************");
+		Circle c2 = new Circle(5.0,"blue");
+		Circle c3 = new Circle(5.0,"red");
+		Circle c4 = null;
+		System.out.println(c1.equals(c2));
+		System.out.println(c1.equals(c3));
+		System.out.println(c1.equals(c4));
 	}
 	
 	public static void method(Person e) {
