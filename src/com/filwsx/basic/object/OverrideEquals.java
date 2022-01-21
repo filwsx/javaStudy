@@ -17,17 +17,18 @@ public class OverrideEquals extends Customer{
 	@Override
 	public boolean equals(Object temp) {
 		System.out.println("重写的equals方法:");
-		Customer c = (Customer)temp;
-		if (this == c) {
+		
+		if (this == temp) {
 			return true;
 		}
 		
-		if (c==null){
+		if (temp == null){
 			return false;
 		}
 		
-		if(this.getFirstName() == c.getFirstName() && this.getLastName() == c.getLastName()) {
-			return true;
+		if(temp instanceof Customer) {
+			Customer c = (Customer)temp;
+			return this.getFirstName() == c.getFirstName() && this.getLastName() == c.getLastName();
 		}else {
 			return false;
 		}
