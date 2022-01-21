@@ -28,9 +28,12 @@ public class OverrideEquals extends Customer{
 		
 		if(temp instanceof Customer) {
 			Customer c = (Customer)temp;
+			//这里写的不严谨。字符串的比较应该使用equals，这里判断正确是因为没有使用new string来创建字符串，存储在常量池地址一样。
 			return this.getFirstName() == c.getFirstName() && this.getLastName() == c.getLastName();
 		}else {
 			return false;
 		}
 	}
+	
+	
 }
