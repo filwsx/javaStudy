@@ -7,8 +7,7 @@ public class Test {
 		//GraduateTest();
 		
 	}
-	
-	
+
 	public static void GraduateTest() {
 		Graduate g = new Graduate();
 		System.out.println(g.getInfo());
