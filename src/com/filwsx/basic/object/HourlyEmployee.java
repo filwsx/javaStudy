@@ -3,7 +3,7 @@ package com.filwsx.basic.object;
 public class HourlyEmployee extends Employee {
 	private int wage,hour;
 	@Override
-	public int earnings() {
+	public double earnings() {
 		return wage*hour;
 	}
 	public String toString() {
@@ -22,12 +22,8 @@ public class HourlyEmployee extends Employee {
 		this.hour = hour;
 	}
 	
-	public HourlyEmployee() {
-		super();
-	}
-	
-	public HourlyEmployee(int wage, int hour) {
-		this();
+	public HourlyEmployee(String name, int number, MyDate birthday,int wage, int hour) {
+		super(name, number, birthday);;
 		this.wage = wage;
 		this.hour = hour;
 	}

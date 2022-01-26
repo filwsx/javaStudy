@@ -4,9 +4,9 @@ abstract public class Employee {
 	private String name;
 	private int number;
 	private MyDate birthday;
-	public abstract int earnings();
+	public abstract double earnings();
 	public String toString() {
-		return name + number + birthday.toDateString();
+		return "，name=" + name + "，number=" + number + "，birthday=" + birthday.toDateString();
 	}
 	public String getName() {
 		return name;

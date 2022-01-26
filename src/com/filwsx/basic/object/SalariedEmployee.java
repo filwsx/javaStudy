@@ -1,9 +1,9 @@
 package com.filwsx.basic.object;
 
 public class SalariedEmployee extends Employee {
-	private int monthlySalary;
+	private double monthlySalary;
 	@Override
-	public int earnings() {
+	public double earnings() {
 		return monthlySalary;
 		// TODO Auto-generated method stub
 	}
@@ -12,19 +12,16 @@ public class SalariedEmployee extends Employee {
 		return "SalariedEmployee" + super.toString();
 	}
 
-	public int getMonthlySalary() {
+	public double getMonthlySalary() {
 		return monthlySalary;
 	}
 
-	public void setMonthlySalary(int monthlySalary) {
+	public void setMonthlySalary(double monthlySalary) {
 		this.monthlySalary = monthlySalary;
 	}
 
-	public SalariedEmployee() {
-		super();
-	}
-	public SalariedEmployee(int monthlySalary) {
-		this();
+	public SalariedEmployee(String name, int number, MyDate birthday,double monthlySalary) {
+		super(name, number, birthday);
 		this.monthlySalary = monthlySalary;
 	}
 	
