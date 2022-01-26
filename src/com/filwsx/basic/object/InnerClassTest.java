@@ -1,12 +1,12 @@
 package com.filwsx.basic.object;
 
-public class InterClassTest {
+public class InnerClassTest {
 	public static void main(String[] args) {
 		Person p = new Person();
 		Person.Hung  h = p.new Hung();
 		h.breath();
-		Person.eye eyeLeft = new Person.eye();
-		eyeLeft.open();
+		Person.ear earLeft = new Person.ear();
+		earLeft.nothing();
 	}
 }
 class Person{
@@ -23,7 +23,6 @@ class Person{
             System.out.println(new Person.ear().name);
 		}
 	}
-    //静态成员内部类
 	class eye{
 		String name = "eye";
 		public void open() {
@@ -33,8 +32,11 @@ class Person{
 			System.out.println("闭上眼");
 		}
 	}
-	
+	//静态成员内部类
 	static class ear{
 		String name = "ear";
+		public void nothing() {
+			
+		}
 	}
 }
