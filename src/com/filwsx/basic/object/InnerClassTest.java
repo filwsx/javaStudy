@@ -9,6 +9,10 @@ public class InnerClassTest {
 		earLeft.nothing();
 	}
 }
+interface Lanuage{
+	public void word();
+}
+
 class Person{
     //非静态成员内部类
     String name = "filwsx";
@@ -38,5 +42,22 @@ class Person{
 		public void nothing() {
 			
 		}
+	}
+	
+	public Lanuage getNativeSpeaker() {
+		return new Lanuage() {
+			public void word() {
+				System.out.println("汉语");
+			}
+		};
+	}
+	
+	public Comparable getComparable(){
+		return new Comparable(){
+			@Override
+			public int compareTo(Object o) {
+				return 0;
+			}
+		};
 	}
 }
