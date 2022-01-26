@@ -8,8 +8,8 @@ public class PayrollSystem {
 		Calendar calendar = Calendar.getInstance();
 		int month = calendar.get(Calendar.MONTH);//获取当前的月份
 		Employee e[] = new Employee[2];
-		e[0] = new SalariedEmployee("马森", 1002,new MyDate(1992, 2, 28),10000);
-		e[1] = new HourlyEmployee("潘雨生", 2001, new MyDate(1991, 1, 6),60,240);
+		e[0] = new SalariedEmployee("filw", 1002,new MyDate(2002, 1, 26),15000);
+		e[1] = new HourlyEmployee("sx", 2002, new MyDate(2001, 7, 6),60,260);
 		for(int i = 0;i < e.length;i++){
 			System.out.println(e[i]);
 			double salary = e[i].earnings();
