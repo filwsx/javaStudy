@@ -7,13 +7,28 @@ import org.junit.Test;
 
 public class ExceptionTest {
 	
-	@Test
-	public void Test() {
-		
-	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	}
+	
+	@Test
+	public void Test() {
+		try {
+			NumberFormatExceptionTest();
+			NullPointerExceptionTest();
+			System.out.print("未发生异常");
+		}catch(NullPointerException e) {
+			System.out.print("空指针异常");
+			System.out.println(e.getMessage());
+		}catch(NumberFormatException e) {
+			System.out.print("字符转化格式异常");
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void FileNotFoundExceptionTest() {
+		
 	}
 	
 	@Test
