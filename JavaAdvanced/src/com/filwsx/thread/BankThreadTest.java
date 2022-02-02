@@ -6,25 +6,38 @@ package com.filwsx.thread;
  */
 public class BankThreadTest {
     public static void main(String[] args) {
-        new Thread(new account()).start();
-        new Thread(new account()).start();
+        Account account = new Account(0);
+        new Thread(new Customer(account)).start();
+        new Thread(new Customer(account)).start();
     }
 }
 
-class account implements Runnable{
-    private static int balance = 0;
+//使用视频里的方法重构代码,这下打印的余额信息正常了，为什么？？18：30写
+class Customer implements Runnable{
+    private Account acct;
 
-    public synchronized void saveMoney(int amount){
-        if(amount>0){
-            balance += amount;
-        }
-        System.out.println("余额为："+balance);
+    public Customer(Account acct){
+        this.acct = acct;
     }
 
     @Override
     public void run() {
         for(int i = 0; i<3; i++){
-            saveMoney(1000);
+            acct.saveMoney(1000);
         }
+    }
+}
+
+class Account{
+    private double balance = 0;
+
+    public Account(double balance){
+        this.balance = balance;
+    }
+    public synchronized void saveMoney(int amount){
+        if(amount>0){
+            balance += amount;
+        }
+        System.out.println("余额为："+balance);
     }
 }
