@@ -36,7 +36,7 @@ class MyThread implements Runnable{
 }
 
 class Seller implements Runnable{
-    private int ticket = 100;
+    private int ticket = 100;   //因为只需要创建一个对象，传入到多个线程对象之中，所以并不需要static修饰
     @Override
     public void run() {
         while(true){
