@@ -71,10 +71,6 @@ public class ArrayReverse {
 		int middleIndex;
 		while(true) {
 			middleIndex = (maxIndex + minIndex) / 2;
-//			System.out.println("minIndex : "+minIndex);
-//			System.out.println("maxIndex : "+maxIndex);
-//			System.out.println("middleIndex : "+middleIndex);
-//			System.out.println();
 			if( middleIndex>maxIndex || middleIndex<minIndex) {
 				System.out.print("Cant find it.");
 				break;
