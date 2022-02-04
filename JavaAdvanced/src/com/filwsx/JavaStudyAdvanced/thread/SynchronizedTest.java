@@ -1,4 +1,4 @@
-package com.filwsx.thread;
+package com.filwsx.JavaStudyAdvanced.thread;
 
 import static java.lang.Thread.sleep;
 

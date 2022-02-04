@@ -1,4 +1,4 @@
-package com.filwsx.thread;
+package com.filwsx.JavaStudyAdvanced.thread;
 
 public class threadTest{
     public static void main(String[] args) {

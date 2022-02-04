@@ -1,4 +1,4 @@
-package com.filwsx.thread;
+package com.filwsx.JavaStudyAdvanced.thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
