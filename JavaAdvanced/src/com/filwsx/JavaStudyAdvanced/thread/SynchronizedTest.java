@@ -3,6 +3,7 @@ package com.filwsx.JavaStudyAdvanced.thread;
 import static java.lang.Thread.sleep;
 
 /**
+ * 同步代码块或同步方法
  * @author filwsx
  * @date 20220202 16:27
  */

@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
-/**
+/**使用Callable的实现来创建多线程
  * @author filwsx
  * @date 2022-02-02 21:49
  */

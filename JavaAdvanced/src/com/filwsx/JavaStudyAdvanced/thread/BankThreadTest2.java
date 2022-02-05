@@ -1,6 +1,6 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
-/**
+/**对我在BankThreadTest.java类中，自己的实现代码问题的分析
  * @author filwsx
  * @date 2022-02-02 18:32
  */

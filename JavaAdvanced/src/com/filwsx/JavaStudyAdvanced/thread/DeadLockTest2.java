@@ -1,6 +1,7 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
 /**
+ * 多线程死锁演示2
  * @author filwsx
  * @date 2022-02-02 17:26
  */

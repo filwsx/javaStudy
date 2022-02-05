@@ -1,6 +1,7 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
 /**
+ * 使用Runnable接口实现创建多线程
  * @author filwsx
  * @date 20220202 14:45
  */

@@ -1,6 +1,6 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
-/**
+/**一个账户，两个用户同时往里存钱，这是尚硅谷宋老师的实现
  * @author filwsx
  * @date 2022-02-02 17:55
  */

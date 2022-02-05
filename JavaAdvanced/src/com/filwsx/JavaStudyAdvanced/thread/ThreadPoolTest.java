@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
+ * 使用线程池创建多线程
  * @author filwsx
  * @date 2022-02-02 22:22
  */

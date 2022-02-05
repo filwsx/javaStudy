@@ -1,5 +1,8 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
+/**
+ * 创建多线程，初识
+ */
 public class threadTest{
     public static void main(String[] args) {
         printHello PH = new printHello();

@@ -1,6 +1,7 @@
 package com.filwsx.JavaStudyAdvanced.thread;
 
 /**
+ * 多线程之间的通信问题：实际就是几个方法和共享数据
  * @author filwsx
  * @date 2022-02-02 20:56
  */

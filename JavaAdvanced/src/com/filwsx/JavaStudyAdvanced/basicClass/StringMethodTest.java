@@ -3,6 +3,7 @@ package com.filwsx.JavaStudyAdvanced.basicClass;
 import org.junit.Test;
 
 /**
+ * String类常用方法
  * @author filwsx
  * @date 2022-02-05 12:41
  */
@@ -40,7 +41,7 @@ public class StringMethodTest {
             System.out.println(strs[i]);
         }
         System.out.println();
-        
+
         str2 = "hello.world.java";
         String[] strs2 = str2.split("\\.");
         for (int i = 0; i < strs2.length; i++) {

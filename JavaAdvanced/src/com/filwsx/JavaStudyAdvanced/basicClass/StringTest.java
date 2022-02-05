@@ -3,6 +3,7 @@ package com.filwsx.JavaStudyAdvanced.basicClass;
 import org.junit.Test;
 
 /**
+ * String类的一些性质，简单涉及JVM
  * @author filwsx
  * @date 2022-02-04 19:49
  */
