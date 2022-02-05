@@ -7,15 +7,23 @@ package com.filwsx.JavaStudyAdvanced.basicClass;
  */
 public class StringExercise {
     public static void main(String[] args) {
+        String s1 = "     ";
+        String s2 = "  Hel  LO World  12   ";
+        String s3 = "  Hel  LO World  12";
+        String s4 = "Hel  LO World  12   ";
+        System.out.println("---"+ExerciseTrim(s1)+"---");
+        System.out.println("---"+ExerciseTrim(s2)+"---");
+        System.out.println("---"+ExerciseTrim(s3)+"---");
+        System.out.println("---"+ExerciseTrim(s4)+"---");
     }
 
-    public String ExerciseTrim(String str){
+    public static String ExerciseTrim(String str){
         int len = str.length();
         int lowIndex = 0;
         int upIndex = len-1;
         //获取从左到右第一个不为空格的索引
         while(lowIndex<len-1){
-            if (str.charAt(lowIndex) == ' '){
+            if (str.charAt(lowIndex) != ' '){
                 break;
             }else{
                 lowIndex++;
@@ -23,12 +31,13 @@ public class StringExercise {
         }
         //获取从右到左第一个不为空格的索引
         while(upIndex>0){
-            if (str.charAt(upIndex) == ' '){
+            if (str.charAt(upIndex) != ' '){
                 break;
             }else{
                 upIndex--;
             }
         }
+        //防止空白字符串
         if(lowIndex<=upIndex){
             int resLen = upIndex-lowIndex+1;
             char res[] = new char[resLen];
@@ -40,4 +49,5 @@ public class StringExercise {
             return "";
         }
     }//20220205 1621初步完成，待测试
+    // 1628测试完成，傻了，把循环终止条件写反了
 }
