@@ -24,6 +24,16 @@ public class StringTest {
         ch[0] = 'b';
     }
     //以上是面试题的代码，结束
+    @Test
+    public void test3(){
+        String s1 = "javaEEhadoop";
+        String s2 = "javaEE";
+        String s3 = s2 + "hadoop";
+        System.out.println(s1==s3);
+        final String s4 = "javaEE";
+        String s5 = s4 + "hadoop";
+        System.out.println(s1==s5);
+    }
 
     @Test
     public void test2(){
