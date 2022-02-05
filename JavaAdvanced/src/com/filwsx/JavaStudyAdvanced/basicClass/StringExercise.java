@@ -1,5 +1,7 @@
 package com.filwsx.JavaStudyAdvanced.basicClass;
 
+import org.junit.Test;
+
 /**
  * 与String有关的面试题
  * @author filwsx
@@ -7,6 +9,11 @@ package com.filwsx.JavaStudyAdvanced.basicClass;
  */
 public class StringExercise {
     public static void main(String[] args) {
+        //testTrim();
+    }
+
+    @Test
+    public static void testTrim(){
         String s1 = "     ";
         String s2 = "  Hel  LO World  12   ";
         String s3 = "  Hel  LO World  12";
@@ -48,6 +55,8 @@ public class StringExercise {
         }else{
             return "";
         }
-    }//20220205 1621初步完成，待测试
-    // 1628测试完成，傻了，把循环终止条件写反了
+    }
+    //20220205 1621初步完成，待测试
+    //1628测试完成，傻了，把循环终止条件写反了
+    //1632 去看了源码，发现实现思路和我一样，但是源码写的更优雅更简单！！
 }
