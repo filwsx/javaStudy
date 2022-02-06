@@ -12,14 +12,13 @@ public class StringExercise {
         //testTrim();
         //reverseStringTest();
         //getRepeatTimesTest();
-        System.out.println("start");
         getlongestRepeatStringTest();
     }
 
     @Test
     public static void getlongestRepeatStringTest(){
-        String res = getlongestRepeatString("abcwerthelloyuiodef","cvhellobnm");
-        System.out.println(res);
+        String res = getlongestRepeatString("abcwerthelloyuiodhellobef","cvhellobnm");
+        System.out.print(res);
     }
 
     public static String getlongestRepeatString(String str,String subStr){
@@ -42,8 +41,16 @@ public class StringExercise {
         int resultCount = 0;
         int index = 0;  //当前搜索起始索引
         int count = 0;  //当前搜索匹配长度
-        int flag = 1;   //标记是否是重新匹配到
-        for (int i = 0; i < lenSub; i++){  //遍历长字符串
+        int flag = 1;   //标记是否重新匹配
+        /**
+         * 算法思路：
+         * ①短的字符串从头开始匹配长字符串。
+         * ②匹配到一个字符后继续匹配子字符串的下一个，直到无法连续匹配。记录该连续匹配的字符串信息（索引和长度）
+         * ③如果此次匹配长度大于上次，则值得记录。记录后继续匹配，直到此次长字符串被遍历完。
+         * 下一次匹配起始点则是从上次子字符串未能连续匹配点开始，这也是算法的精髓之处，没必要每次只缩短一个长度重新匹配。
+         * 为什么不调用现有的函数进行对比，因为看了现有函数源码，内部实现是双层循环，这样一来四层了，不如自己写的三层。
+         */
+        for (int i = 0; i < lenSub; i++){  //遍历子字符串，从0开始和长字符匹配
             for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
                 for (int k = 0; i+k < lenSub && i+k+j < len; k++) {
                     if(charArraySub[i+k] == charArray[i+k+j]){
@@ -54,17 +61,21 @@ public class StringExercise {
                         }
                         count++;
                     }else{
+                        //此次匹配长度超过上次
                         if(count>resultCount){
-                            resultIndex = index;
                             resultCount = count;
+                            resultIndex = index;
                         }
                         flag = 1;
                     }
                 }
             }
-            i = resultIndex+resultCount;
+            if(i<resultIndex+resultCount){
+                i = resultIndex+resultCount;
+            }
         }
-        return "";
+        return subStr.substring(resultIndex, resultIndex+resultCount);
+        //20220206 1325完成测试，成功！！！太难了，想的我头疼
     }
     public static void method(){
 
