@@ -197,18 +197,18 @@ public class StringExercise {
         //20220206 1042完成，for对称反转写的不熟练啊！！！
         //20220206 1558改进，我写的复杂了！
     }
+    
     public static String reverseString2(String str,int start,int end){
         if(start>=end || start<0 ||end>str.length()){
             return str;
         }
         String str1 = str.substring(0,start);
-        String str2 = null;
         for (int i = end-1; i >= start; i--) {
-            str2 += str.charAt(i);
+            str1 += str.charAt(i);
         }
-        String str3 = str.substring(end);
+        str1 += str.substring(end);
 
-        return str1+str2+str3;
+        return str1;
         //这么写会加入null字符串
     }
 
