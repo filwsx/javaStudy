@@ -56,7 +56,7 @@ public class StringExercise {
         // k控制某次匹配中，字符串对比到第几个了
         for (int i = 0; i < lenSub; i++){  //遍历子字符串，从0开始和长字符匹配
             for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
-                for (int k = 0; i+k < lenSub && i+k+j < len; k++) {
+                for (int k = 0; i+k < lenSub && k+j < len; k++) {
                     if(charArraySub[i+k] == charArray[k+j]){
                         if(flag==1){
                             index = i+k;
