@@ -11,27 +11,76 @@ public class StringExercise {
     public static void main(String[] args) {
         //testTrim();
         //reverseStringTest();
-        getRepeatTimesTest();
+        //getRepeatTimesTest();
+        System.out.println("start");
+        getlongestRepeatStringTest();
     }
 
+    @Test
+    public static void getlongestRepeatStringTest(){
+        String res = getlongestRepeatString("abcwerthelloyuiodef","cvhellobnm");
+        System.out.println(res);
+    }
+
+    public static String getlongestRepeatString(String str,String subStr){
+        //根据字符串长度确认谁是子串
+        if(subStr.length()>str.length()){
+            String temp = subStr;
+            subStr = str;
+            str = temp;
+        }
+        int len = str.length();
+        int lenSub = subStr.length();
+
+        //存在空字符串则返回0
+        if(lenSub==0){
+            return "";
+        }
+        char [] charArray = str.toCharArray();
+        char [] charArraySub = subStr.toCharArray();
+        int resultIndex = 0;
+        int resultCount = 0;
+        int index = 0;  //当前搜索起始索引
+        int count = 0;  //当前搜索匹配长度
+        int flag = 1;   //标记是否是重新匹配到
+        for (int i = 0; i < lenSub; i++){  //遍历长字符串
+            for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
+                for (int k = 0; i+k < lenSub && i+k+j < len; k++) {
+                    if(charArraySub[i+k] == charArray[i+k+j]){
+                        if(flag==1){
+                            index = i+k;
+                            count = 0;
+                            flag = 0;
+                        }
+                        count++;
+                    }else{
+                        if(count>resultCount){
+                            resultIndex = index;
+                            resultCount = count;
+                        }
+                        flag = 1;
+                    }
+                }
+            }
+            i = resultIndex+resultCount;
+        }
+        return "";
+    }
+    public static void method(){
+
+    }
     @Test
     public static void getRepeatTimesTest(){
         String s1 = "HelloHelLohelloHello12312312HellTest";
         String s2 = "123";
-        String s3 = "12";
-        String s4 = "Hello";
-        String s5 = "HelLo";
-        String s6 = "Hell";
-        String s7 = "W";
-        String s8 = "";
         System.out.println(getRepeatTimes(s2,s1));
         System.out.println(getRepeatTimes(s1,s2));
-        System.out.println(getRepeatTimes(s1,s3));
-        System.out.println(getRepeatTimes(s1,s4));
-        System.out.println(getRepeatTimes(s1,s5));
-        System.out.println(getRepeatTimes(s1,s6));
-        System.out.println(getRepeatTimes(s1,s7));
-        System.out.println(getRepeatTimes(s1,s8));
+        System.out.println(getRepeatTimes(s1,"12"));
+        System.out.println(getRepeatTimes(s1,"Hello"));
+        System.out.println(getRepeatTimes(s1,"HelLo"));
+        System.out.println(getRepeatTimes(s1,"Hell"));
+        System.out.println(getRepeatTimes(s1,"W"));
+        System.out.println(getRepeatTimes(s1,""));
     }
 
     public static int getRepeatTimes(String str,String subStr){
@@ -51,11 +100,11 @@ public class StringExercise {
         }
         char [] charArray = str.toCharArray();
         char [] charArraySub = subStr.toCharArray();
-        
+
         //开始匹配
-        for(int i=0;i+lenSub<len;i++){
+        for(int i=0;i+lenSub<len;i++){  //遍历长字符串
            int flag = 1;
-           for(int j=0;j<lenSub;j++){
+           for(int j=0;j<lenSub;j++){   //遍历子字符串和长字符串挨个对比
                 if(charArraySub[j] !=charArray[i+j]){
                     flag = 0;
                     break;
@@ -66,11 +115,6 @@ public class StringExercise {
         return result;
         //20220206 1104 初步完成
         //20220206 1112 完成
-    }
-
-    public static int findIndex(char a,String str){
-
-        return -1;
     }
 
     @Test
