@@ -10,34 +10,62 @@ import org.junit.Test;
 public class StringExercise {
     public static void main(String[] args) {
         //testTrim();
-        reverseStringTest();
+        //reverseStringTest();
+        getRepeatTimesTest();
+    }
+
+    @Test
+    public static void getRepeatTimesTest(){
+        String s1 = "HelloHelLohelloHello12312312HellTest";
+        String s2 = "123";
+        String s3 = "12";
+        String s4 = "Hello";
+        String s5 = "HelLo";
+        String s6 = "Hell";
+        String s7 = "W";
+        String s8 = "";
+        System.out.println(getRepeatTimes(s2,s1));
+        System.out.println(getRepeatTimes(s1,s2));
+        System.out.println(getRepeatTimes(s1,s3));
+        System.out.println(getRepeatTimes(s1,s4));
+        System.out.println(getRepeatTimes(s1,s5));
+        System.out.println(getRepeatTimes(s1,s6));
+        System.out.println(getRepeatTimes(s1,s7));
+        System.out.println(getRepeatTimes(s1,s8));
     }
 
     public static int getRepeatTimes(String str,String subStr){
+        //根据字符串长度确认谁是子串
         if(subStr.length()>str.length()){
             String temp = subStr;
             subStr = str;
             str = temp;
         }
-        char [] charArray = str.toCharArray();
-        char [] charArraySub = subStr.toCharArray();
         int len = str.length();
         int lenSub = subStr.length();
-        int result = 0;
+        int result = 0; //运算结果
+
+        //存在空字符串则返回0
+        if(lenSub==0){
+            return result;
+        }
+        char [] charArray = str.toCharArray();
+        char [] charArraySub = subStr.toCharArray();
+        
+        //开始匹配
         for(int i=0;i+lenSub<len;i++){
-           if(charArray[i]==charArraySub[0]){
-               int flag = 1;
-               for(int j=1;j<lenSub;j++){
-                    if(charArraySub[j] !=charArraySub[i+j]){
-                        flag = 0;
-                        break;
-                    }
-               }
-               result += flag;
+           int flag = 1;
+           for(int j=0;j<lenSub;j++){
+                if(charArraySub[j] !=charArray[i+j]){
+                    flag = 0;
+                    break;
+                }
            }
+           result += flag;
         }
         return result;
         //20220206 1104 初步完成
+        //20220206 1112 完成
     }
 
     public static int findIndex(char a,String str){
