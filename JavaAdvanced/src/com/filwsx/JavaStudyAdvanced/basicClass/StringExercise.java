@@ -21,6 +21,7 @@ public class StringExercise {
         System.out.print(res);
     }
 
+    //获取两个字符串中最大相同子串。
     public static String getlongestRepeatString(String str,String subStr){
         //根据字符串长度确认谁是子串
         if(subStr.length()>str.length()){
@@ -50,6 +51,9 @@ public class StringExercise {
          * 下一次匹配起始点则是从上次子字符串未能连续匹配点开始，这也是算法的精髓之处，没必要每次只缩短一个长度重新匹配。
          * 为什么不调用现有的函数进行对比，因为看了现有函数源码，内部实现是双层循环，这样一来四层了，不如自己写的三层。
          */
+        // i控制匹配子字符串的开始索引
+        // j控制遍历长字符串的位置
+        // k控制某次匹配中，字符串对比到第几个了
         for (int i = 0; i < lenSub; i++){  //遍历子字符串，从0开始和长字符匹配
             for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
                 for (int k = 0; i+k < lenSub && i+k+j < len; k++) {
@@ -59,10 +63,9 @@ public class StringExercise {
                             count = 0;
                             flag = 0;
                         }
-                        count++;
-                    }else{
-                        //此次匹配长度超过上次
-                        if(count>resultCount){
+                        count++;    //连续匹配一次，值加一
+                    }else{//此次连续匹配结束
+                        if(count>resultCount){//长度超过上次
                             resultCount = count;
                             resultIndex = index;
                         }
@@ -76,6 +79,7 @@ public class StringExercise {
         }
         return subStr.substring(resultIndex, resultIndex+resultCount);
         //20220206 1325完成测试，成功！！！太难了，想的我头疼
+        //20220206 1405完成，真正！
     }
     public static void method(){
 
@@ -94,6 +98,7 @@ public class StringExercise {
         System.out.println(getRepeatTimes(s1,""));
     }
 
+    //获取一个字符串在另一个字符串中出现的次数。
     public static int getRepeatTimes(String str,String subStr){
         //根据字符串长度确认谁是子串
         if(subStr.length()>str.length()){
@@ -139,6 +144,7 @@ public class StringExercise {
         //System.out.println(reverseString(s1,0,12));
     }
 
+    //将字符串中指定部分进行反转。
     public static String reverseString(String str,int start,int end) throws IndexOutOfBoundsException{
         int len = str.length();
         if(start>=end || start<0 ||end>len){ //不用写end<0 start>len
@@ -168,6 +174,7 @@ public class StringExercise {
         System.out.println("---"+ExerciseTrim(s4)+"---");
     }
 
+    //去除字符串两端的空格.
     public static String ExerciseTrim(String str){
         int len = str.length();
         int lowIndex = 0;
