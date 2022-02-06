@@ -10,7 +10,7 @@ import org.junit.Test;
 public class StringExercise {
     public static void main(String[] args) {
         //testTrim();
-        reverseStringTest();
+        //reverseStringTest();
         //getRepeatTimesTest();
         //getlongestRepeatStringTest();
     }
@@ -41,6 +41,32 @@ public class StringExercise {
     }
 
     //获取两个字符串中最大相同子串。
+    public static String getlongestRepeatString2(String str1,String str2){
+        //根据字符串长度确认谁是子串
+        if(str2.length()>str1.length()){
+            String temp = str2;
+            str2 = str1;
+            str1 = temp;
+        }
+        int len = str1.length();
+        int lenSub = str2.length();
+        if(lenSub==0){
+            return "";
+        }
+        char [] charArray = str1.toCharArray();
+        char [] charArraySub = str2.toCharArray();
+        int resultIndex = 0;
+        int resultCount = 0;
+        int index = 0;  //当前搜索起始索引
+        int count = 0;  //当前搜索匹配长度
+        while(true){
+            //待完成
+            break;
+        }
+        return str2.substring(resultIndex, resultIndex+resultCount);
+
+    }
+
     public static String getlongestRepeatString(String str,String subStr){
         //根据字符串长度确认谁是子串
         if(subStr.length()>str.length()){
@@ -100,6 +126,7 @@ public class StringExercise {
         //20220206 1542 尝试用两个for写出来，失败
     }
 
+    //尚硅谷的代码，贴在这里用来做对比
     public static String getMaxSameString(String str1,String str2){
         if(str1 != null && str2 != null){
             String maxStr = (str1.length() >= str2.length())? str1 : str2;
@@ -112,10 +139,8 @@ public class StringExercise {
                     if(maxStr.contains(subStr)){
                         return subStr;
                     }
-
                 }
             }
-
         }
         return null;
     }
@@ -197,7 +222,7 @@ public class StringExercise {
         //20220206 1042完成，for对称反转写的不熟练啊！！！
         //20220206 1558改进，我写的复杂了！
     }
-    
+
     public static String reverseString2(String str,int start,int end){
         if(start>=end || start<0 ||end>str.length()){
             return str;
