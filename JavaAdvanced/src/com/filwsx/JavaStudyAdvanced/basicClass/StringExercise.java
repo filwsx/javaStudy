@@ -17,24 +17,28 @@ public class StringExercise {
     public static void reverseStringTest(){
         String s1 = "";
         String s2 = "HelLOWorld12";
-        reverseString(s2,0,12);
-        System.out.println();
+        System.out.println(reverseString(s2,0,12));
+        System.out.println(reverseString(s2,11,12));
+        System.out.println(reverseString(s2,3,8));
+        //System.out.println(reverseString(s2,12,12));
+        //System.out.println(reverseString(s1,0,12));
     }
 
     public static String reverseString(String str,int start,int end) throws IndexOutOfBoundsException{
         int len = str.length();
-        if(start>end || start<0 ||end>len){ //不用写end<0 start>len
+        if(start>=end || start<0 ||end>len){ //不用写end<0 start>len
             throw new IndexOutOfBoundsException("字符串区间不合法");
         }//20220206 1012写
         char[] charArray = str.toCharArray();
         int middle = (end-1+start)/2;
-        for(int i=start;i<=middle;i++){
-            int index = middle<<1-i;
-            char temp = charArray[i];
-            charArray[i] = charArray[index];
-            charArray[index] = temp;
+        char temp = ' ';
+        for(int i = 0;start+i <= middle;i++){
+            temp = charArray[start + i];
+            charArray[start + i] = charArray[end-1-i];
+            charArray[end-1-i] = temp;
         }
-        return charArray.toString();
+        return new String(charArray);
+        //20220206 1042完成，for对称反转写的不熟练啊！！！
     }
 
     @Test
