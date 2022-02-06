@@ -10,6 +10,31 @@ import org.junit.Test;
 public class StringExercise {
     public static void main(String[] args) {
         //testTrim();
+        reverseStringTest();
+    }
+
+    @Test
+    public static void reverseStringTest(){
+        String s1 = "";
+        String s2 = "HelLOWorld12";
+        reverseString(s2,0,12);
+        System.out.println();
+    }
+
+    public static String reverseString(String str,int start,int end) throws IndexOutOfBoundsException{
+        int len = str.length();
+        if(start>end || start<0 ||end>len){ //不用写end<0 start>len
+            throw new IndexOutOfBoundsException("字符串区间不合法");
+        }//20220206 1012写
+        char[] charArray = str.toCharArray();
+        int middle = (end-1+start)/2;
+        for(int i=start;i<=middle;i++){
+            int index = middle<<1-i;
+            char temp = charArray[i];
+            charArray[i] = charArray[index];
+            charArray[index] = temp;
+        }
+        return charArray.toString();
     }
 
     @Test
