@@ -10,9 +10,9 @@ import org.junit.Test;
 public class StringExercise {
     public static void main(String[] args) {
         //testTrim();
-        //reverseStringTest();
+        reverseStringTest();
         //getRepeatTimesTest();
-        getlongestRepeatStringTest();
+        //getlongestRepeatStringTest();
     }
 
     @Test
@@ -173,29 +173,43 @@ public class StringExercise {
     public static void reverseStringTest(){
         String s1 = "";
         String s2 = "HelLOWorld12";
-        System.out.println(reverseString(s2,0,12));
-        System.out.println(reverseString(s2,11,12));
-        System.out.println(reverseString(s2,3,8));
-        //System.out.println(reverseString(s2,12,12));
-        //System.out.println(reverseString(s1,0,12));
+        System.out.println(s2);
+        System.out.println(reverseString2(s2,0,12));
+        System.out.println(reverseString2(s2,11,12));
+        System.out.println(reverseString2(s2,3,8));
+        System.out.println(reverseString2(s2,12,12));
+        System.out.println(reverseString2(s1,0,12));
     }
 
     //将字符串中指定部分进行反转。
-    public static String reverseString(String str,int start,int end) throws IndexOutOfBoundsException{
-        int len = str.length();
-        if(start>=end || start<0 ||end>len){ //不用写end<0 start>len
-            throw new IndexOutOfBoundsException("字符串区间不合法");
-        }//20220206 1012写
+    public static String reverseString(String str,int start,int end){
+        if(start>=end || start<0 ||end>str.length()){ //不用写end<0 start>len
+            return str;
+        }
         char[] charArray = str.toCharArray();
-        int middle = (end-1+start)/2;
         char temp = ' ';
-        for(int i = 0;start+i <= middle;i++){
-            temp = charArray[start + i];
-            charArray[start + i] = charArray[end-1-i];
-            charArray[end-1-i] = temp;
+        for(int i = start,j=end-1;i<j;i++,j--){
+            temp = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = temp;
         }
         return new String(charArray);
         //20220206 1042完成，for对称反转写的不熟练啊！！！
+        //20220206 1558改进，我写的复杂了！
+    }
+    public static String reverseString2(String str,int start,int end){
+        if(start>=end || start<0 ||end>str.length()){
+            return str;
+        }
+        String str1 = str.substring(0,start);
+        String str2 = null;
+        for (int i = end-1; i >= start; i--) {
+            str2 += str.charAt(i);
+        }
+        String str3 = str.substring(end);
+
+        return str1+str2+str3;
+        //这么写会加入null字符串
     }
 
     @Test
