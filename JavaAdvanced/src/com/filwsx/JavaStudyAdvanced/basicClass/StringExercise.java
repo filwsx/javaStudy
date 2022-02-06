@@ -17,8 +17,27 @@ public class StringExercise {
 
     @Test
     public static void getlongestRepeatStringTest(){
-        String res = getlongestRepeatString("abcwerthelloyuiodhellobefrgfdee","cvhellobnmabcwerthel");
-        System.out.print(res);
+        long startTime = 0L;
+        long endTime = 0L;
+        String s1 = "abcwerthelloyuiodhellobefrgfdee";
+        String s2 = "cvhellobnmabcwerthel";
+        String s3 = "cvhellobnm";
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            getlongestRepeatString(s1,s2);
+            getlongestRepeatString(s1,s3);
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("StringBuffer的执行时间：" + (endTime - startTime));
+
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            getMaxSameString(s1,s2);
+            getMaxSameString(s1,s3);
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("StringBuffer的执行时间：" + (endTime - startTime));
+        //20220206 1547 还是我的代码效率高！！！
     }
 
     //获取两个字符串中最大相同子串。
@@ -42,7 +61,6 @@ public class StringExercise {
         int resultCount = 0;
         int index = 0;  //当前搜索起始索引
         int count = 0;  //当前搜索匹配长度
-        int flag = 1;   //标记是否重新匹配
         /**
          * 算法思路：
          * ①短的字符串从头开始匹配长字符串。
@@ -58,10 +76,8 @@ public class StringExercise {
             for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
                 for (int k = 0; i+k < lenSub && k+j < len; k++) {
                     if(charArraySub[i+k] == charArray[k+j]){
-                        if(flag==1){
+                        if(count==0){
                             index = i+k;
-                            count = 0;
-                            flag = 0;
                         }
                         count++;    //连续匹配一次，值加一
                     }else{//此次连续匹配结束
@@ -69,7 +85,8 @@ public class StringExercise {
                             resultCount = count;
                             resultIndex = index;
                         }
-                        flag = 1;
+                        count = 0;
+                        break;
                     }
                 }
             }
@@ -80,10 +97,29 @@ public class StringExercise {
         return subStr.substring(resultIndex, resultIndex+resultCount);
         //20220206 1325完成测试，成功！！！太难了，想的我头疼
         //20220206 1405完成，真正！
+        //20220206 1542 尝试用两个for写出来，失败
     }
-    public static void method(){
 
+    public static String getMaxSameString(String str1,String str2){
+        if(str1 != null && str2 != null){
+            String maxStr = (str1.length() >= str2.length())? str1 : str2;
+            String minStr = (str1.length() < str2.length())? str1 : str2;
+            int length = minStr.length();
+
+            for(int i = 0;i < length;i++){
+                for(int x = 0,y = length - i;y <= length;x++,y++){
+                    String subStr = minStr.substring(x,y);
+                    if(maxStr.contains(subStr)){
+                        return subStr;
+                    }
+
+                }
+            }
+
+        }
+        return null;
     }
+
     @Test
     public static void getRepeatTimesTest(){
         String s1 = "HelloHelLohelloHello12312312HellTest";
