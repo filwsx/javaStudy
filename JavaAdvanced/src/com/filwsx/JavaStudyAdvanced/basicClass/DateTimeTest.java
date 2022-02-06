@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -20,7 +21,7 @@ public class DateTimeTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
         Date beganDate = sdf.parse(began);
         Date nowDate = sdf.parse(now);
-        long day = (nowDate.getTime() - beganDate.getTime())/(3600*1000*24);
+        long day = (nowDate.getTime() - beganDate.getTime())/(3600*1000*24) + 1;
         int is = (int)day%5;
         if(is<=3 && is>=1){
             System.out.println("打渔中");
@@ -86,4 +87,39 @@ public class DateTimeTest {
         long time = System.currentTimeMillis();
         System.out.println(time); //1644060173474
     }
+
+    @Test
+    public void testCalendar(){
+        //1.实例化
+        //方式一：创建其子类（GregorianCalendar）的对象
+        //方式二：调用其静态方法getInstance()
+        Calendar calendar = Calendar.getInstance();
+        System.out.println(calendar.getClass());
+        System.out.println(calendar.getTime());
+
+        //2.常用方法
+        //get()
+        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+        System.out.println(calendar.get(Calendar.DAY_OF_YEAR));
+
+        //set()
+        //calendar可变性
+        calendar.set(Calendar.MONTH,2); //设定日期
+        System.out.println(calendar.get(Calendar.DAY_OF_YEAR));
+        System.out.println(calendar.getTime());
+
+        //add()
+        calendar.add(Calendar.MONTH,+2);    //修改月份
+        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+
+        //getTime():日历类---> Date
+        Date date = calendar.getTime();
+        System.out.println(date);
+
+        //setTime():Date ---> 日历类
+        Date date1 = new Date();
+        calendar.setTime(date1);
+        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+    }
+
 }
