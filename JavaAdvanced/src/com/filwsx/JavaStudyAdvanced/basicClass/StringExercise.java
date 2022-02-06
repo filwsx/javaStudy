@@ -17,7 +17,7 @@ public class StringExercise {
 
     @Test
     public static void getlongestRepeatStringTest(){
-        String res = getlongestRepeatString("abcwerthelloyuiodhellobef","cvhellobnm");
+        String res = getlongestRepeatString("abcwerthelloyuiodhellobefrgfdee","cvhellobnmabcwerthel");
         System.out.print(res);
     }
 
@@ -53,7 +53,7 @@ public class StringExercise {
         for (int i = 0; i < lenSub; i++){  //遍历子字符串，从0开始和长字符匹配
             for (int j = 0; j < len; j++){   //遍历子字符串和长字符串挨个对比
                 for (int k = 0; i+k < lenSub && i+k+j < len; k++) {
-                    if(charArraySub[i+k] == charArray[i+k+j]){
+                    if(charArraySub[i+k] == charArray[k+j]){
                         if(flag==1){
                             index = i+k;
                             count = 0;
