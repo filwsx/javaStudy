@@ -13,6 +13,38 @@ public class StringExercise {
         reverseStringTest();
     }
 
+    public static int getRepeatTimes(String str,String subStr){
+        if(subStr.length()>str.length()){
+            String temp = subStr;
+            subStr = str;
+            str = temp;
+        }
+        char [] charArray = str.toCharArray();
+        char [] charArraySub = subStr.toCharArray();
+        int len = str.length();
+        int lenSub = subStr.length();
+        int result = 0;
+        for(int i=0;i+lenSub<len;i++){
+           if(charArray[i]==charArraySub[0]){
+               int flag = 1;
+               for(int j=1;j<lenSub;j++){
+                    if(charArraySub[j] !=charArraySub[i+j]){
+                        flag = 0;
+                        break;
+                    }
+               }
+               result += flag;
+           }
+        }
+        return result;
+        //20220206 1104 初步完成
+    }
+
+    public static int findIndex(char a,String str){
+
+        return -1;
+    }
+
     @Test
     public static void reverseStringTest(){
         String s1 = "";
