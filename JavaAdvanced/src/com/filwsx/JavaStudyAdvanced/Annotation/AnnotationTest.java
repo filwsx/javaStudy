@@ -37,22 +37,13 @@ interface Info{
 
 @MyAnnotation("可重复注解")
 @MyAnnotation("HelloWorld!")
-class Person{
-    private String name;
 
-    public Person() {
-    }
-    @MyAnnotation
-    public Person(String name) {
-        this.name = name;
-    }
-    @MyAnnotation
-    public void walk(){
-        System.out.println("人走路");
-    }
-}
+
 class Student extends Person implements Info{
 
+    public Student(String name,int age){
+        super(name,age);
+    }
     @Override
     public void walk() {
         System.out.println("学生走路");
