@@ -31,6 +31,8 @@ public class IteratorTest {
                 // iterator.remove();    // 此语句执行会报异常
             }
         }
+
+        //看了一眼源码，太复杂了来回调用，不知道ArrayList()怎么实现的iterator()、next()等方法 20220208 1250写
     }
 
     @Test
