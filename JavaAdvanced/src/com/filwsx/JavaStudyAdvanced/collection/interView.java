@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class interView {
 
+    //極爲經典的題目
     @Test
     public void test2(){
         HashSet set = new HashSet();
