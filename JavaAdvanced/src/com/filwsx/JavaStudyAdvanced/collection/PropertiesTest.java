@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
+ * TreeMap没必要练习了，
+ * 配置文件读取。key和value都是String类型
  * @author filwsx
  * @date 2022-02-15 17:54
  */
