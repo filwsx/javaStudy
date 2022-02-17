@@ -1,12 +1,16 @@
 package com.filwsx.JavaStudyAdvanced.Annotation;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * @author filwsx
  * @date 2022-02-08 11:24
  */
-public class Person implements Comparable{
+public class Person implements Comparable, Serializable {
+
+    public static final long serialVersionUID = 1989060419890604L;
+
     private String name;
     private int age ;
 
