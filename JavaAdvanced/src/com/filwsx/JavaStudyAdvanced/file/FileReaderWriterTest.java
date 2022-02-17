@@ -59,7 +59,7 @@ public class FileReaderWriterTest {
 
             //3.写出的操作
             fw.write("I have a dream!\n");
-            fw.write("I want a millinon dollars");
+            fw.write("And i just want a million dollars!");
             //若原来存在文件，会直接覆盖。
 
         } catch (IOException e) {
@@ -78,7 +78,7 @@ public class FileReaderWriterTest {
 
 
     @Test
-    public void testFileReaderFileWriter() {
+    public void copyCharFile() {
         FileReader fr = null;
         FileWriter fw = null;
         try {
