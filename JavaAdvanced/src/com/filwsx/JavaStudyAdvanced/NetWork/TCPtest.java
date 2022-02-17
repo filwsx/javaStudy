@@ -15,63 +15,6 @@ import java.nio.charset.StandardCharsets;
  */
 public class TCPtest {
 
-
-    @Test
-    public void client3() throws IOException {
-
-        Socket socket = new Socket(InetAddress.getByName("127.0.0.1"),8080);
-        OutputStream os = socket.getOutputStream();
-        FileInputStream fis = new FileInputStream(new File("filwsx.jpg"));
-
-        byte[] buffer = new byte[1024];
-        int len;
-        while((len = fis.read(buffer)) != -1){
-            os.write(buffer,0,len);
-        }
-        socket.shutdownOutput();
-
-        InputStream is = socket.getInputStream();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        byte[] bufferr = new byte[20];
-        int len1;
-        while((len1 = is.read(buffer)) != -1){
-            baos.write(buffer,0,len1);
-        }
-
-        System.out.println(baos.toString());
-
-        fis.close();
-        os.close();
-        socket.close();
-        baos.close();
-    }
-
-    @Test
-    public void server3() throws IOException {
-
-        ServerSocket ss = new ServerSocket(8080);
-        Socket socket = ss.accept();
-        InputStream is = socket.getInputStream();
-        FileOutputStream fos = new FileOutputStream(new File("filwsx-copy2.jpg"));
-
-        byte[] buffer = new byte[1024];
-        int len;
-        while((len = is.read(buffer)) != -1){
-            fos.write(buffer,0,len);
-        }
-
-        System.out.println("图片传输完成");
-
-        OutputStream os = socket.getOutputStream();
-        os.write("你好，美女，照片我已收到，非常漂亮！".getBytes());
-
-        fos.close();
-        is.close();
-        socket.close();
-        ss.close();
-        os.close();
-    }
-
     @Test
     public void client2(){
         Socket socket = null;
