@@ -24,45 +24,45 @@ public class BufferTest {
     }
 
     public static void copyByteFileWithBuffered(String srcPath,String destPath){
-        BufferedInputStream bis = null;
-        BufferedOutputStream bos = null;
+BufferedInputStream bis = null;
+BufferedOutputStream bos = null;
 
-        File srcFile = new File(srcPath);
-        File destFile = new File(destPath);
+File srcFile = new File(srcPath);
+File destFile = new File(destPath);
 
+try {
+    FileInputStream fis = new FileInputStream(srcFile);
+    FileOutputStream fos = new FileOutputStream(destFile);
+
+    bis = new BufferedInputStream(fis);
+    bos = new BufferedOutputStream(fos);
+
+    byte buffer[] = new byte[1024];
+    int len;
+    while((len = bis.read(buffer))!=-1){
+        bos.write(buffer,0,len);
+    }
+
+} catch (IOException e) {
+    e.printStackTrace();
+}finally {
+    //关闭资源
+    //要求：先关闭外层的流，再关闭内层的流
+    if(bos != null){
         try {
-            FileInputStream fis = new FileInputStream(srcFile);
-            FileOutputStream fos = new FileOutputStream(destFile);
-
-            bis = new BufferedInputStream(fis);
-            bos = new BufferedOutputStream(fos);
-
-            byte buffer[] = new byte[1024];
-            int len;
-            while((len = bis.read(buffer))!=-1){
-                bos.write(buffer,0,len);
-            }
-
+            bos.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            //关闭资源
-            //要求：先关闭外层的流，再关闭内层的流
-            if(bos != null){
-                try {
-                    bos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if(bis != null){
-                try {
-                    bis.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            //说明：关闭外层流的同时，内层流也会自动的进行关闭。关于内层流的关闭，我们可以省略.
         }
+    }
+    if(bis != null){
+        try {
+            bis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    //说明：关闭外层流的同时，内层流也会自动的进行关闭。关于内层流的关闭，我们可以省略.
+}
     }
 }
