@@ -7,7 +7,7 @@ import java.util.Objects;
  * @author filwsx
  * @date 2022-02-08 11:24
  */
-public class Person implements Comparable, Serializable {
+public class Person extends Creature<String> implements Comparable<Person>, Serializable,MyInterface{
 
     public static final long serialVersionUID = 1989060419890604L;
 
@@ -67,17 +67,12 @@ public class Person implements Comparable, Serializable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        if(o instanceof Person){
-            Person person = (Person) o;
-            int res = this.name.compareTo(person.name);
-            if(res == 0){
-                return Integer.compare(this.age,person.age);
-            }else{
-                return res;
-            }
+    public int compareTo(Person person) {
+        int res = this.name.compareTo(person.name);
+        if(res == 0){
+            return Integer.compare(this.age,person.age);
         }else{
-            throw new RuntimeException("类型不匹配");
+            return res;
         }
     }
 
@@ -98,5 +93,10 @@ public class Person implements Comparable, Serializable {
             return true;
         }else
             return false;
+    }
+
+    @Override
+    public void info() {
+        System.out.println("this is human");
     }
 }
