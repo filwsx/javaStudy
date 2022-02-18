@@ -85,7 +85,7 @@ public class Person extends Creature<String> implements Comparable<Person>, Seri
                 '}';
     }
 
-    private void shopping(){
+    private static void shopping(){
         System.out.println("去购物！");
     }
 

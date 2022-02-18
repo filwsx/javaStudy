@@ -80,5 +80,12 @@ public class ReflectionTest {
         walk.invoke(p);
 
         //本部分为理解后，自己手打，到第二遍会自己写了。 1303
+
+        //通过反射调用public static方法
+        Method shopping = cla.getDeclaredMethod("shopping");
+        shopping.setAccessible(true);
+        Object res = shopping.invoke(cla);
+        System.out.println(res);
+        //20220218 2118 这部分一开头就讲了！
     }
 }
