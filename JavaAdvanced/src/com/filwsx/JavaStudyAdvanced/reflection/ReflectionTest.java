@@ -13,6 +13,33 @@ import java.lang.reflect.Method;
  */
 public class ReflectionTest {
 
+    //获取Class实例
+    @Test
+    public void getClassInstance() throws Exception {
+        //方式一：调用运行时类的属性：.class
+        Class cla1 = Person.class;
+        System.out.println(cla1);
+        //方式二：通过运行时类的对象,调用getClass()
+        Person p1 = new Person("Jerry",3);
+        Class cla2 = p1.getClass();
+        System.out.println(cla2);
+
+        //方式三：调用Class的静态方法：forName(String classPath)
+        Class cla3 = Class.forName("com.filwsx.JavaStudyAdvanced.Annotation.Person");
+        System.out.println(cla3);
+
+        System.out.println(cla1 == cla2);
+        System.out.println(cla1 == cla3);
+
+        //方式四：使用类的加载器：ClassLoader  (了解)
+        ClassLoader classLoader = ReflectionTest.class.getClassLoader();
+        Class cla4 = classLoader.loadClass("com.filwsx.JavaStudyAdvanced.Annotation.Person");
+        System.out.println(cla4);
+
+        System.out.println(cla1 == cla4);
+        //一个类对应一个Class实例，有且仅有一个
+    }
+
     //使用反射创建对象，并操作属性
     @Test
     public void UsingReflection() throws Exception{
