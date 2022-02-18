@@ -7,6 +7,7 @@ import java.util.Objects;
  * @author filwsx
  * @date 2022-02-08 11:24
  */
+@MyAnnotation(value="hi")
 public class Person extends Creature<String> implements Comparable<Person>, Serializable,MyInterface{
 
     public static final long serialVersionUID = 1989060419890604L;

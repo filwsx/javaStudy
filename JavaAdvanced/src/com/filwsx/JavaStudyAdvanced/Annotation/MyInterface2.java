@@ -2,8 +2,8 @@ package com.filwsx.JavaStudyAdvanced.Annotation;
 
 /**
  * @author filwsx
- * @date 2022-02-18 20:12
+ * @date 2022-02-18 20:58
  */
-public interface MyInterface{
-    void info();
+public interface MyInterface2 {
+    void info2();
 }
