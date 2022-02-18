@@ -17,7 +17,7 @@ public class OtherTest {
 
     //获取运行时类声明的注解
     @Test
-    public void test7(){
+    public void test6(){
         Class clazz = Person.class;
 
         Annotation[] annotations = clazz.getAnnotations();
