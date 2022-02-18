@@ -19,6 +19,12 @@ public class Person implements Comparable, Serializable {
         this.name = name;
         this.age = age;
     }
+
+    private Person(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
     @MyAnnotation
     public void walk(){
         System.out.println("人走路");
@@ -75,5 +81,16 @@ public class Person implements Comparable, Serializable {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    private void shopping(){
+        System.out.println("去购物！");
+    }
+
+    private boolean eating(double foodWeight){
+        if (foodWeight>1.0){
+            return true;
+        }else
+            return false;
     }
 }
