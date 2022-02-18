@@ -13,6 +13,7 @@ public class Person implements Comparable, Serializable {
 
     private String name;
     private int age ;
+    public int id = 0;
 
     @MyAnnotation
     public Person(String name,int age) {
