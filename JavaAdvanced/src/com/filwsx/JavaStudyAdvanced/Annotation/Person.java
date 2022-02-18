@@ -26,6 +26,11 @@ public class Person implements Comparable, Serializable {
         this.age = 0;
     }
 
+    public Person() {
+        this.name = "name";
+        this.age = 0;
+    }
+
     @MyAnnotation
     public void walk(){
         System.out.println("人走路");
