@@ -19,7 +19,7 @@ public class MethodRefTest {
     @Test
     public void test3() {
         Comparator<String> con1 = String :: compareTo;
-        Function<Person,String> con2 = Person ::getName;
+        Function<Person,String> con2 = Person :: getName;
         System.out.println(con2.apply(new Person("Tom", 13)));
         System.out.println(con1.compare("abc", "abd"));
     }
@@ -38,7 +38,6 @@ public class MethodRefTest {
         System.out.println(con3.apply(1.4));
         Function<Double,Long> con4 = Math::round;
         System.out.println(con4.apply(2.9));
-
     }
 
     // 情况1：对象 :: 实例方法

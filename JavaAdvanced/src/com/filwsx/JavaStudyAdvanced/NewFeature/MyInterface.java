@@ -5,6 +5,6 @@ package com.filwsx.JavaStudyAdvanced.NewFeature;
  * @date 2022-02-20 21:56
  */
 @FunctionalInterface
-public interface MyInterface {
-    void Cry();
+public interface MyInterface<X,Y,Z>{
+    public Z method(X x,Y y);
 }
