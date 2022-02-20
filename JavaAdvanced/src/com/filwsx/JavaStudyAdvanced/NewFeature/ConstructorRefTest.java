@@ -25,7 +25,7 @@ public class ConstructorRefTest {
         fuc1 = Person::new;
         Function<String,Person> fuc2 = name -> new Person(name);
         fuc2 = Person::new;
-        MyInterface<String,Integer,Person> fuc3 = (String name,Integer age) -> new Person(name,age);
+        MyInterface<String,Integer,Person> fuc3 = (name,age) -> new Person(name,age);
         fuc3 = Person::new;
         //经过此测试，我理解了lambda了!!! 还用上了自定义函数式接口和泛型 20220220 2329
 
