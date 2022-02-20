@@ -2,6 +2,7 @@ package com.filwsx.JavaStudyAdvanced.NewFeature;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -14,18 +15,19 @@ import java.util.function.Predicate;
  */
 public class LambdaTest {
 
-    //Consumer函数式
-    //看完代码后，根据理解自己的写的！ 20220220 2115
+    //Predicate函数式
+    //看完代码后，根据理解自己的写的！ 20220220 2137
     @Test
     public void test4(){
-        List<String> list = Arrays.asList("北京","南京","天津","东京","西京","普京");
+        List<String> list = Arrays.asList("北京","南京","天津","东京","西京","普京","京东","京东方");
         //List<String> res = filterString(list,(s,c) -> s.contains((String)c)); //这样写不行
         List<String> res = filterString(list,s -> s.contains("京"));
         System.out.println(res);
     }
 
     public List<String> filterString(List<String> list , Predicate<String> pre){
-        List<String> res = Arrays.asList();
+        //List<String> res = Arrays.asList(); //这样写不行，为什么
+        ArrayList<String> res = new ArrayList<>();
         for(String s:list){
             if(pre.test(s)){
                 res.add(s);
