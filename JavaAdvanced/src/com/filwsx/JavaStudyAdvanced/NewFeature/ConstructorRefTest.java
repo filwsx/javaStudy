@@ -31,7 +31,7 @@ public class ConstructorRefTest {
 
         System.out.println(fuc1.apply(13));
         System.out.println(fuc2.apply("Tom"));
-        System.out.println(fuc3.apply("Jerry",12));
+        System.out.println(fuc3.method("Jerry",12));
     }
     //Supplier中的T get() 与 Person的空参构造器：Person()
     @Test
