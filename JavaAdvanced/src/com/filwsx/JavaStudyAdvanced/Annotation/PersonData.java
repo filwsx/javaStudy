@@ -12,7 +12,7 @@ public class PersonData {
         List<Person> personList = new ArrayList<>();
         personList.add(new Person("马化腾", 34));
         personList.add(new Person("马云", 12));
-        personList.add(new Person("刘强东"));
+        personList.add(new Person("刘强东",2));
         personList.add(new Person("雷军", 26));
         personList.add(new Person("李彦宏", 65));
         personList.add(new Person("比尔盖茨", 42));

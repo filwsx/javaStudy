@@ -4,9 +4,8 @@ import com.filwsx.JavaStudyAdvanced.Annotation.Person;
 import com.filwsx.JavaStudyAdvanced.Annotation.PersonData;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -15,6 +14,66 @@ import java.util.stream.Stream;
  * @date 2022-02-21 16:03
  */
 public class StreamAPItset {
+
+    //测试Stream终止操作：收集
+    @Test
+    public void test7(){
+        // collect(Collector c)——将流转换为其他形式。接收一个 Collector接口的实现，用于给Stream中元素做汇总的方法
+        // 练习1：查找年龄大于35的人，结果返回为一个List或Set
+
+        List<Person> personList = PersonData.getPersonList();
+
+        List<Person> personAgeList = personList.stream().filter(e -> e.getAge() > 35).collect(Collectors.toList());
+        personAgeList.forEach(System.out::println);
+        System.out.println();
+
+        Set<Person> personAgeSet = personList.stream().filter(e -> e.getAge() > 30).collect(Collectors.toSet());
+        personAgeSet.forEach(System.out::println);
+    }
+
+    //测试Stream终止操作：规约
+    @Test
+    public void test6(){
+        // reduce(T identity, BinaryOperator)——可以将流中元素反复结合起来，得到一个值。返回 T
+        // 练习1：计算1-10的自然数的和
+        List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        Integer sum = list.stream().reduce(0, Integer::sum);
+        System.out.println(sum);
+
+        // reduce(BinaryOperator) ——可以将流中元素反复结合起来，得到一个值。返回 Optional<T>
+        // 练习2：计算所有人的年龄总和
+        List<Person> personList = PersonData.getPersonList();
+        Stream<Integer> salaryStream = personList.stream().map(Person::getAge);
+        Optional<Integer> sumMoney = salaryStream.reduce((d1,d2) -> d1 + d2);
+        System.out.println(sumMoney.get());
+    }
+
+    //测试Stream终止操作：匹配与查找
+    @Test
+    public void test5(){
+        List<Person> personList = PersonData.getPersonList();
+
+        //allMatch(Predicate p)——检查所有元素是否都匹配。
+        boolean allMatch = personList.stream().allMatch(p -> p.getAge() > 0);
+        System.out.println(allMatch);
+
+        //anyMatch(Predicate p)——检查是否至少匹配一个元素。
+        boolean anyMatch = personList.stream().anyMatch(p -> p.getAge() > 60);
+        System.out.println(anyMatch);
+
+        //noneMatch(Predicate p)——检查是否没有匹配的元素。
+        boolean noneMatch = personList.stream().noneMatch(p -> p.getName().startsWith("刘"));
+        System.out.println(noneMatch);
+
+        //findFirst——返回第一个元素
+        Optional<Person> person = personList.stream().findFirst();
+        System.out.println(person);
+
+        //findAny——返回当前流中的任意元素
+        Optional<Person> person2 = personList.parallelStream().findAny();
+        System.out.println(person2);
+
+    }
 
     //测试Stream的中间操作：排序
     @Test
