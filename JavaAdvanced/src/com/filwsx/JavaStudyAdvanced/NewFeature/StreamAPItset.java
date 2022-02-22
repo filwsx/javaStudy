@@ -16,7 +16,44 @@ import java.util.stream.Stream;
  */
 public class StreamAPItset {
 
-    //测试Stream的中间操作：筛选与切片、映射、排序
+    //测试Stream的中间操作：排序
+    @Test
+    public void test4(){
+        List<Integer> list = Arrays.asList(12, 43, 65, 34, 87, 0, -98, 7);
+        list.stream().sorted().forEach(System.out::println);
+
+        System.out.println("");
+
+        List<Person> personList = PersonData.getPersonList();
+        personList.stream().sorted((p1,p2) -> {
+            int age = Integer.compare(p1.getAge(),p2.getAge());
+            if(age == 0){
+                return p1.getName().compareTo(p2.getName());
+            }else{
+                return age;
+            }
+        }).forEach(System.out::println);
+    }
+    //测试Stream的中间操作：映射
+    @Test
+    public void test3(){
+
+        //map(Function f)——接收一个函数作为参数，将元素转换成其他形式或提取信息，该函数会被应用到每个元素上，并将其映射成一个新的元素。
+        List<String> list = Arrays.asList("aba", "bcb", "cec", "dad");
+        list.stream().map(str -> str.toUpperCase()).forEach(System.out::println);
+        //以下这两句看的我太费劲了，每一步传参，输入输出是啥不清楚！ 20220221 1752写
+        //昨晚看懂了，不难嘛！20220222 1601
+        Stream<Stream<Character>> streamStream = list.stream().map(StreamAPItset::fromStringToStream);
+        streamStream.forEach(ss -> ss.forEach(System.out::println));
+
+        System.out.println("");
+        //flatMap(Function f)——接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流。
+        Stream<Character> characterStream = list.stream().flatMap(StreamAPItset::fromStringToStream);
+        characterStream.forEach(System.out::println);
+
+    }
+
+    //测试Stream的中间操作：筛选与切片
     @Test
     public void test2(){
         List<Person> personList = PersonData.getPersonList();
@@ -49,13 +86,9 @@ public class StreamAPItset {
         System.out.println("去重之后：");
         personList.stream().distinct().forEach(System.out::println);
 
-        //-----------------映射------------------//
-        //map(Function f)——接收一个函数作为参数，将元素转换成其他形式或提取信息，该函数会被应用到每个元素上，并将其映射成一个新的元素。
-        List<String> list = Arrays.asList("aba", "bcb", "cec", "dad");
-        list.stream().map(str -> str.toUpperCase()).forEach(System.out::println);
-        //以下这两句看的我太费劲了，每一步传参，输入输出是啥不清楚！ 20220221 1752写
-        Stream<Stream<Character>> streamStream = list.stream().map(StreamAPItset::fromStringToStream);
-        streamStream.forEach(ss -> ss.forEach(System.out::println));
+        System.out.println("");
+        //练习：获取年龄大于35岁人的姓名
+        personList.stream().filter(p -> p.getAge()>35).forEach(System.out::println);
     }
 
     public static Stream<Character> fromStringToStream(String str){
@@ -65,6 +98,7 @@ public class StreamAPItset {
         }
         return list.stream();
     }
+
     //Stream的实例化
     @Test
     public void test1(){
@@ -84,5 +118,12 @@ public class StreamAPItset {
         //方式四：创建无限流(使用迭代器+lambda表达式产生无限个数)
         Stream.iterate(1,t -> t+2).limit(20).forEach(System.out::print);
 
+    }
+
+    //不可变集合
+    @Test
+    public void test0(){
+        List<String> list = Arrays.asList("aba", "bcb", "cec", "dad");
+        list.add("bdf");    //这里会报UnsupportedOperationException，因为这种方式声明的list为不可变，而不是list没有该操作 20220222 1144
     }
 }
