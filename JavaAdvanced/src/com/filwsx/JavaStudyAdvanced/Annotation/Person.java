@@ -105,4 +105,8 @@ public class Person extends Creature<String> implements Comparable<Person>, Seri
     public void info() {
         System.out.println("this is human");
     }
+
+    public Boy getBoy(){
+        return new Boy();
+    }
 }
