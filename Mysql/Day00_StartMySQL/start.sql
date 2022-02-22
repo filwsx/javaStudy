@@ -1,0 +1,15 @@
+show DATABASES;
+create DATABASE filwsx;
+show DATABASES;
+use filwsx;
+create table person(id int,name varchar(15));
+show tables;
+insert into person VALUES(1001,'filwsx');
+insert into person VALUES(1002,'Tom');
+insert into person VALUES(1003,'Jerry');
+select * from person;
+insert into person VALUES(1004,'钱德勒');
+show create table person;
+show variables like 'character_%';
+show variables like 'collation_%';
+exit;
