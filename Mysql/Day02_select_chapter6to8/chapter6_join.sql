@@ -27,6 +27,6 @@ WHERE d.`department_id` IS NULL
 UNION ALL  #没有去重操作，效率高
 SELECT employee_id,last_name,department_name
 FROM employees e RIGHT JOIN departments d
-ON e.`department_id` = d.`department_id`;
-#WHERE e.`department_id` IS null 	#右下图
+ON e.`department_id` = d.`department_id`
+#WHERE e.`department_id` IS null;	#取消注释后为右下图
 					#左中图 + 右中图  A ∪B- A∩B 或者 (A -  A∩B) ∪ （B - A∩B）
