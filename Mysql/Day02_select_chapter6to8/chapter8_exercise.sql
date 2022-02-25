@@ -24,22 +24,33 @@ FROM employees;
 #6.查询各个管理者手下员工的最低工资，其中最低工资不能低于6000，没有管理者的员工不计算在内
 SELECT last_name,MIN(salary)
 FROM employees
+WHERE manager_id IS NOT NULL
 GROUP BY manager_id
-HAVING MIN(salary) > 6000
-AND manager_id IS NOT NULL;
+HAVING MIN(salary) > 6000;
+#AND manager_id is not null;	#这么写，工资低两千！！！
 
 #7.查询所有部门的名字，location_id，员工数量和平均工资，并按平均工资降序
 SELECT d.`department_name`,d.`location_id`,COUNT(*),SUM(e.salary)/COUNT(*) "avg_salary"
-FROM employees e JOIN departments d 
+FROM employees e RIGHT JOIN departments d 	#为什么用右连接
 ON e.department_id = d.department_id
 GROUP BY e.department_id
 ORDER BY avg_salary DESC;
-
+#以下是答案，和答案结果不同！
+SELECT department_name, location_id, COUNT(employee_id), AVG(salary) avg_sal
+FROM employees e RIGHT JOIN departments d
+ON e.`department_id` = d.`department_id`
+GROUP BY department_name, location_id
+ORDER BY avg_sal DESC;
 
 #8.查询每个工种、每个部门的部门名、工种名和最低工资
 SELECT e.job_id,d.department_name,j.`job_title`,MIN(salary)
-FROM employees e JOIN departments d
+FROM employees e JOIN departments d	#为什么用左连接
 ON e.`department_id` = d.`department_id`
 JOIN jobs j
 ON e.`job_id` = j.`job_id`
 GROUP BY e.job_id,e.`department_id`;
+#以下是答案，和答案结果不同！
+SELECT department_name,job_id,MIN(salary)
+FROM departments d LEFT JOIN employees e
+ON e.`department_id` = d.`department_id`
+GROUP BY department_name,job_id
