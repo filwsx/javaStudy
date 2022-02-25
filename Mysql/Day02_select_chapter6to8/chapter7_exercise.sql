@@ -12,7 +12,7 @@ FROM employees;
 # 3.将员工的姓名按首字母排序，并写出姓名的长度（length）
 SELECT last_name , LENGTH(last_name) "length"
 FROM employees
-ORDER BY last_name;
+ORDER BY last_name DESC;
 
 # 4.查询员工id,last_name,salary，并作为一个列输出，别名为OUT_PUT
 SELECT CONCAT(employee_id,last_name,salary) OUT_PUT
@@ -26,7 +26,10 @@ ORDER BY hire_years DESC;
 # 6.查询员工姓名，hire_date , department_id，满足以下条件：雇用时间在1997年之后，department_id为80 或 90 或110, commission_pct不为空
 SELECT last_name,hire_date,department_id
 FROM employees
-WHERE DATEDIFF(STR_TO_DATE("1997-12-31", "%Y-%m-%d"),hire_date) > 0
+#WHERE DATEDIFF(STR_TO_DATE("1997-12-31", "%Y-%m-%d"),hire_date) > 0
+#WHERE hire_date >= '1997-01-01'
+#WHERE hire_date >= STR_TO_DATE('1997-01-01', '%Y-%m-%d')
+WHERE DATE_FORMAT(hire_date,'%Y') >= '1997'
 AND department_id IN (80,9,110)
 AND commission_pct IS NULL;
 
@@ -37,7 +40,8 @@ WHERE DATEDIFF(CURDATE(),hire_date) > 10000;
 
 # 8.做一个查询，产生下面的结果
 # <last_name> earns <salary> monthly but wants <salary*3>
-SELECT CONCAT(last_name," earns ",salary," monthly but wants ",salary*3) "Dream Salary"
+#SELECT CONCAT(last_name," earns ",salary," monthly but wants ",salary*3) "Dream Salary"
+SELECT CONCAT(last_name, ' earns ', TRUNCATE(salary, 0) , ' monthly but wants ', TRUNCATE(salary * 3, 0)) "Dream Salary"
 FROM employees;
 
 # 9.使用case-when，按照下面的条件：
