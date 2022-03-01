@@ -69,9 +69,9 @@
 
 ## 0X07  MyBatis 3
 
-课程链接：[MyBatis实战](https://www.bilibili.com/video/BV1mW411M737)
+课程链接：[MyBatis实战](https://www.bilibili.com/video/BV1VP4y1c7j7)
 
-课程时长：854min，预计3-4天
+课程时长：610min，预计2-4天
 
 
 
