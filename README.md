@@ -97,7 +97,7 @@
 
 
 
-## 0X10  Redis 6
+## 0X0A  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
@@ -107,9 +107,9 @@
 
 
 
-## 0X11  MyBatisPlus
+## 0X0B  MyBatisPlus
 
-课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV1Ds411E76Y)
+课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
 课程时长：442min，预计1-2天
 
@@ -117,7 +117,7 @@
 
 
 
-## 0X12  Spring注解驱动
+## 0X0C  Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
@@ -127,7 +127,7 @@
 
 
 
-## 0X13  SpringBoot 2
+## 0X0D  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
@@ -137,7 +137,7 @@
 
 
 
-## 0X14  SpringCloud
+## 0X0E  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
@@ -147,7 +147,7 @@
 
 
 
-## 0X15  尚筹网项目
+## 0X0F  尚筹网项目
 
 课程链接：[尚筹网Java项目实战开发(含SSM框架,微服务架构)](https://www.bilibili.com/video/BV1bE411T7oZ)
 
