@@ -29,27 +29,3 @@ WHERE 2 <= (
 	FROM job_history j
 	WHERE e.employee_id = j.employee_id);
 #20220302 1429 done by myself
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
