@@ -1,3 +1,5 @@
+USE filwsxdb;
+
 #1.查询和Zlotkey相同部门的员工姓名和工资
 SELECT last_name,salary
 FROM employees e
@@ -147,16 +149,80 @@ WHERE e.department_id = temp.department_id
 #20220302 1727done 目前为止，做的最慢的一个
 
 #15. 查询部门的部门号，其中不包括job_id是"ST_CLERK"的部门号
+SELECT department_id
+FROM departments d
+WHERE NOT EXISTS(
+	SELECT *
+	FROM employees e
+	WHERE e.`department_id` = d.`department_id`
+	AND e.`job_id` = 'ST_CLERK'
+	);
+#一开始没读懂题目都！2105done
 
 #16. 选择所有没有管理者的员工的last_name
+SELECT last_name
+FROM employees e
+WHERE e.manager_id IS NULL;
 
 #17．查询员工号、姓名、雇用时间、工资，其中员工的管理者为 'De Haan'
+SELECT employee_id,last_name,hire_date,salary
+FROM employees
+WHERE manager_id IN(
+	SELECT employee_id
+	FROM employees
+	WHERE last_name = 'De Haan'
+	);
+#20220302 2126done
 
 #18.查询各部门中工资比本部门平均工资高的员工的员工号, 姓名和工资（相关子查询）
+SELECT employee_id,last_name,salary
+FROM employees e , (
+	SELECT AVG(salary) avg_sal,department_id
+	FROM employees
+	GROUP BY department_id
+	) temp
+WHERE e.department_id = temp.department_id
+AND e.`salary` > temp.avg_sal;
+ORDER BY salary
+#答案这么写的，但是好像我的效率高
+SELECT employee_id,last_name,salary
+FROM employees e1
+WHERE salary > (
+		SELECT AVG(salary)
+		FROM employees e2
+		WHERE department_id = e1.`department_id`
+		)
+ORDER BY salary;
 
 #19.查询每个部门下的部门人数大于 5 的部门名称（相关子查询）
+SELECT department_name
+FROM departments d
+WHERE EXISTS(
+	SELECT COUNT(*) c
+	FROM employees e
+	GROUP BY department_id
+	HAVING e.`department_id` = d.`department_id`
+	AND c > 5
+	);	#2149done
+#提供的答案
+SELECT department_name
+FROM departments d
+WHERE 5 < (
+	   SELECT COUNT(*)
+	   FROM employees e
+	   WHERE d.department_id = e.`department_id`
+	  );
 
 #20.查询每个国家下的部门个数大于 2 的国家编号（相关子查询）
+SELECT country_id
+FROM locations l
+WHERE 2 < (
+	SELECT COUNT(*)
+	FROM departments d
+	WHERE l.`location_id` =  d.`location_id`
+	);
+#20220302 2153done
 
 #后记
-#20道题目，最难的几道有：8、8为9/10/13的母题，11，14
+#20道题目，最难的几道有：8、8为9/10/13的母题，11，14;
+#15、19有那么一点点难
