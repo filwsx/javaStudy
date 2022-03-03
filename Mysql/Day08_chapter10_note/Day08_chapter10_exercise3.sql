@@ -1,6 +1,12 @@
 # 1、创建数据库test03_company
 
 # 2、创建表offices
+/*officeCode int
+city varchar(30)
+address varchar(50)
+country varchar(50)
+postalCode varchar(25)
+*/
 
 # 3、创建表employees
 
