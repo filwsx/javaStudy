@@ -19,6 +19,10 @@
 
 2022.02.22  完成Java语言部分的学习。
 
+补充课程：[面向对象程序设计——Java语言](https://www.icourse163.org/course/0809ZJU012-1001542001)
+
+补充课程说明：主要关注内容在设计原则、反转控制与MVC模式
+
 ## 0x02  MySQL
 
 课程链接：[【宋红康】MySQL数据库](https://www.bilibili.com/video/BV1iq4y1u7vj)
