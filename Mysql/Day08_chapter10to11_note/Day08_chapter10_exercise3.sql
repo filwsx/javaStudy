@@ -21,3 +21,6 @@ postalCode varchar(25)
 # 8、增加字段名favoriate_activity，数据类型为varchar(100)
 
 # 9、将表employees的名称修改为 employees_info
+
+#该练习不写了，没意思。20220303 1625
+
