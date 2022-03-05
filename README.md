@@ -37,15 +37,15 @@
 
 2022.03.05 学完MySQL基础内容-增删改查（P1-73），时长约2000min，课程练习部分的视频跳过(但算入观看时长)
 
-- [ ] 2022.xx 开始高级篇学习
-
 ## 0X03  JDBC
 
 课程链接：[康师傅带你一站式搞定jdbc](https://www.bilibili.com/video/BV1eJ411c7rf)
 
 课程时长：746min，预计3-4天
 
-2022.03.  
+2022.03.05 初步开始
+
+2022.03.08 
 
 ## 0X04  JavaWeb
 
@@ -63,15 +63,11 @@
 
 
 
-
-
 ## 0X06  spring mvc
 
 课程链接：[一套快速上手spring mvc](https://www.bilibili.com/video/BV1Ry4y1574R)
 
 课程时长：985min，预计3-4天
-
-
 
 
 
@@ -83,15 +79,11 @@
 
 
 
-
-
 ## 0X08  maven
 
 课程链接：[一套轻松搞定maven工具](https://www.bilibili.com/video/BV1TW411g7hP)
 
 课程时长：336min，预计1-2天
-
-
 
 
 
@@ -103,15 +95,11 @@
 
 
 
-
-
 ## 0X0A  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
 课程时长：635min，预计3-4天
-
-
 
 
 
@@ -123,15 +111,11 @@
 
 
 
-
-
 ## 0X0C  Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
 课程时长：687min，预计3-4天
-
-
 
 
 
@@ -143,15 +127,11 @@
 
 
 
-
-
 ## 0X0E  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
 课程时长：1536min，预计5-7天
-
-
 
 
 
@@ -169,7 +149,7 @@
 
 ## 延后
 
-Git、IDEA、MySQL高级优化、Linux shell、JavaScript；Nginx、Tomcat
+Git、IDEA、MySQL高级篇、Linux shell、JavaScript；Nginx、Tomcat
 
 ZooKeeper、Dubbo、消息中间件ActiveMQ、RabbitMQ、RocketMQ、Docker、ElasticSearch
 
@@ -177,8 +157,6 @@ ZooKeeper、Dubbo、消息中间件ActiveMQ、RabbitMQ、RocketMQ、Docker、Ela
 
 ## 内功
 
-计算机网络、计算机组成原理、操作系统、数据结构与算法；
+计算机网络、计算机组成原理、操作系统、数据结构与算法；设计模式、JVM/GC；
 
-设计模式、JVM；
-
-MySQL高级篇；
+读源码（框架、Java库、JVM等）
