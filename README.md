@@ -145,18 +145,20 @@
 
 ## 其他
 
-简历、面试高频考题、项目经验
+简历、大厂面试、高频考题、项目经验
 
 ## 延后
 
-Git、IDEA、MySQL高级篇、Linux shell、JavaScript；Nginx、Tomcat
+效率：Git、IDEA、Linux shell、JavaScript；
 
-ZooKeeper、Dubbo、消息中间件ActiveMQ、RabbitMQ、RocketMQ、Docker、ElasticSearch
+工具：Nginx、Tomcat、Docker
 
-谷粒学苑、谷粒商城项目
+进阶：MySQL高级篇、JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、RocketMQ、ElasticSearch
+
+实战：谷粒学苑、谷粒商城、尚融宝、尚医通、
 
 ## 内功
 
 计算机网络、计算机组成原理、操作系统、数据结构与算法；设计模式、JVM/GC；
 
-读源码（框架、Java库、JVM等）
+读源码（框架、Java库、JVM等）、看英文文档自学新技术；
