@@ -15,14 +15,14 @@ import java.util.Properties;
  */
 public class ConnectionTest {
 
-    private String user = "root";
-    private String password = "183983";
+    private final String user = "root";
+    private final String password = "183983";
 
     // jdbc:mysql:协议
     // localhost:ip地址
     // 3306：默认mysql的端口号
     // test:test数据库
-    private String url = "jdbc:mysql://localhost:3306/test";
+    private final String url = "jdbc:mysql://localhost:3306/test";
 
     /* 方式五(final版)：将数据库连接需要的4个基本信息声明在配置文件中，通过读取配置文件的方式，获取连接
      * 好处
