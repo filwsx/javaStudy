@@ -1,5 +1,6 @@
 package com.filwsx.preparedstatement;
 
+import com.filwsx.utils.JDBCutils;
 import org.junit.Test;
 
 //import java.io.FileInputStream;
@@ -16,7 +17,35 @@ import java.util.Properties;
 public class PreparedStatementTest {
 
     @Test
-    public void upateTest() throws Exception {
+    public void testUpdate2() {
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = JDBCutils.getConnection();
+            String sql = "update customers set name = ? where id = ?";
+            ps = con.prepareStatement(sql);
+            ps.setString(1,"马斯克");
+            ps.setInt(2,18);
+            ps.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            JDBCutils.closeResoures(con,ps);
+        }
+    }
+
+    @Test
+    public void testUpdate() throws  Exception{
+        Connection con = JDBCutils.getConnection();
+        String sql = "update customers set name = ? where id = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setString(1,"马斯克");
+        ps.setInt(2,18);
+        ps.execute();
+        JDBCutils.closeResoures(con,ps);
+    }
+    @Test
+    public void toInsert() throws Exception {
         Connection con = null;
         PreparedStatement ps = null;
         //无法使用Java8新特性，try()
