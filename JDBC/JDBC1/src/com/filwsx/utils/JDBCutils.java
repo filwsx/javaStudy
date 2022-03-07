@@ -42,4 +42,26 @@ public class JDBCutils {
             e.printStackTrace();
         }
     }
+
+    public static void closeResoures(Connection con,Statement ps,ResultSet rs){
+        try {
+            if(ps != null)
+                ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if(con != null)
+                con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (rs != null){
+                rs.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
