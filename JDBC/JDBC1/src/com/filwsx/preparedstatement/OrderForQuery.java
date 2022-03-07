@@ -1,6 +1,5 @@
 package com.filwsx.preparedstatement;
 
-import com.filwsx.bean.Customer;
 import com.filwsx.bean.Order;
 import com.filwsx.utils.JDBCutils;
 import org.junit.Test;
