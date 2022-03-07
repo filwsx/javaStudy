@@ -17,6 +17,29 @@ import java.util.Properties;
 public class PreparedStatementTest {
 
     @Test
+    public void tsetUpdate(){
+        String sql = "delete from customers where id = ?";
+        update(sql,10);
+    }
+
+    //通用增删改操作
+    public void update(String sql,Object ...args){
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = JDBCutils.getConnection();
+            ps = con.prepareStatement(sql);
+            for (int i = 0; i < args.length; i++) {
+                ps.setObject(i+1,args[i]);
+            }
+            ps.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            JDBCutils.closeResoures(con,ps);
+        }
+    }
+    @Test
     public void testUpdate2() {
         Connection con = null;
         PreparedStatement ps = null;
