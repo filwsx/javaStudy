@@ -3,8 +3,6 @@ package com.filwsx.preparedstatement;
 import com.filwsx.utils.JDBCutils;
 import org.junit.Test;
 
-//import java.io.FileInputStream;
-//import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.sql.*;
 import java.text.SimpleDateFormat;
@@ -14,7 +12,7 @@ import java.util.Properties;
  * @author filwsx
  * @date 2022-03-06 18:00;
  */
-public class PreparedStatementTest {
+public class PreparedStatementUpdate {
 
     @Test
     public void tsetUpdate(){
@@ -76,7 +74,7 @@ public class PreparedStatementTest {
             Properties pro = new Properties();
             // 这么写还得关掉Stream，麻烦！
             // FileInputStream  fis = new FileInputStream("jdbc.properties");
-            InputStream is = PreparedStatementTest.class.getClassLoader().getResourceAsStream("jdbc.properties");
+            InputStream is = PreparedStatementUpdate.class.getClassLoader().getResourceAsStream("jdbc.properties");
             // String类不行
             // InputStream is = String.class.getClassLoader().getResourceAsStream("jdbc.properties");
             pro.load(is);

@@ -1,10 +1,7 @@
 package com.filwsx.utils;
 
-import com.filwsx.preparedstatement.PreparedStatementTest;
-
 import java.io.InputStream;
 import java.sql.*;
-import java.text.SimpleDateFormat;
 import java.util.Properties;
 
 /**操作数据库的工具类
