@@ -1,13 +1,16 @@
 package com.filwsx.exercise;
 
+import com.filwsx.bean.Customer;
 import com.filwsx.bean.Student;
 import com.filwsx.utils.JDBCutils;
 import org.junit.Test;
 
+import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -16,7 +19,6 @@ import java.util.Scanner;
  */
 public class exercise2 {
 
-    @Test
     public static void main(String[] args){
         System.out.println("请输入学生的考号：");
         Scanner scanner = new Scanner(System.in);
@@ -30,7 +32,6 @@ public class exercise2 {
         }
     }
 
-    @Test
     public static void main2(String[] args){
         System.out.println("请选择您要输入的类型：");
         System.out.println("a.准考证号");
@@ -65,7 +66,6 @@ public class exercise2 {
         }
     }
 
-    @Test
     public static void main1(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("四级/六级：");
@@ -92,23 +92,37 @@ public class exercise2 {
 
     //构想：传入任意类对象组成的list，自动生成sql语句，批量插入
     //不会写，发现自己对集合、泛型、反射掌握很差！！！ 20220308 1208 放弃
-    //public boolean insertByObject(List<T> list){ //参数不能这么写！
-    public boolean insertByObject(List list){
-        Connection con = null;
-        PreparedStatement ps = null;
-        String sql = "insert into ";
+    //public boolean insertByObject(List<T> list){ //参数不能这么写！因为忘记声明为泛型方法了
+    //https://docs.oracle.com/javase/tutorial/extra/generics/methods.html
+    public <T> boolean insertByObject(Class<T> cla,List<T> list){
         try {
-            con = JDBCutils.getConnection();
-            ps = con.prepareStatement(sql);
-            for (int i = 0; i < 0; i++) {
-
+            String sql = "insert into ";
+            T t = cla.newInstance();
+            String tableName = t.getClass().getName().toLowerCase(Locale.ROOT);
+            System.out.println(tableName);
+            Field field[] = cla.getDeclaredFields();
+            for (int i = 0; i < field.length; i++) {
+                //放弃了，但是这么一搞我进一步理解了泛型、反射、集合的使用了！
+                //这种实现耦合是不是高了？
             }
-            return ps.execute();
+
+            for (int i = 0; i < list.size(); i++) {
+                //JDBCutils.insert(sql,)
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            JDBCutils.closeResoures(con,ps);
         }
         return false;
+    }
+
+    @Test
+    public void test(){
+        Field field[]  = Customer.class.getDeclaredFields();
+        List<Customer> list = new ArrayList<Customer>();
+        for(Field f : field){
+            System.out.println(f.getName().toLowerCase(Locale.ROOT));
+        }
+        insertByObject(Customer.class,list);
     }
 }
