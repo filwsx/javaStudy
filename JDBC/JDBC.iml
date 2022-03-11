@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/Utils" />
       <excludeFolder url="file://$MODULE_DIR$/src/filwsx/statement" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/filwsx/connection" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

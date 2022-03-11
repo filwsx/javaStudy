@@ -1,4 +1,4 @@
-package com.filwsx.connection;
+package com.filwsx.others;
 
 import org.junit.Test;
 
