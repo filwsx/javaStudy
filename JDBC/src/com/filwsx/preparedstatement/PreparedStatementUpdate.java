@@ -91,7 +91,7 @@ public class PreparedStatementUpdate {
             String sql = "insert into customers(name,email,birth)values(?,?,?)";
 
             ps = con.prepareStatement(sql);
-            ps.setString(1,"filwsx");
+            ps.setString(1, "com/filwsx");
             ps.setString(2,"filwsx@gmail.com");
             // 字符串不行
             // ps.setString(3,"1987-01-13");

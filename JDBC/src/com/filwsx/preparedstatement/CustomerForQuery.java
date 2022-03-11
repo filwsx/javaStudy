@@ -1,8 +1,7 @@
 package com.filwsx.preparedstatement;
 
-import com.filwsx.bean.Customer;
 import com.filwsx.utils.JDBCutils;
-import com.sun.xml.internal.ws.util.StringUtils;
+import com.filwsx.bean.Customer;
 import org.junit.Test;
 
 import java.lang.reflect.Field;

@@ -6,8 +6,6 @@ import com.filwsx.utils.JDBCutils;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

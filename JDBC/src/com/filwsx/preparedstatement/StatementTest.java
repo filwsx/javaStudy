@@ -1,4 +1,4 @@
-package com.filwsx.statement;
+package com.filwsx.preparedstatement;
 
 
 import java.io.InputStream;
@@ -12,6 +12,7 @@ import java.sql.Statement;
 import java.util.Properties;
 import java.util.Scanner;
 
+import filwsx.statement.User;
 import org.junit.Test;
 
 public class StatementTest {

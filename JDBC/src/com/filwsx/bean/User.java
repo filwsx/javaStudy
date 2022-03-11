@@ -1,4 +1,4 @@
-package com.filwsx.statement;
+package com.filwsx.bean;
 
 public class User {
 

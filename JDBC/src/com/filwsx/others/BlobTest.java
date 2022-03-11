@@ -73,7 +73,7 @@ public class BlobTest {
 
         PreparedStatement ps = con.prepareStatement(sql);
 
-        ps.setObject(1,"filwsx");
+        ps.setObject(1, "com/filwsx");
         ps.setObject(2, "filwsx@qq.com");
         ps.setObject(3,"1987-09-08");
         FileInputStream is = new FileInputStream(new File("38.jpg"));

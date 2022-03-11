@@ -1,4 +1,4 @@
-package com.filwsx.Utils;
+package com.filwsx.utils;
 
 /**
  * @author filwsx

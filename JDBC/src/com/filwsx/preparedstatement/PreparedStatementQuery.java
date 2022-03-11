@@ -1,8 +1,8 @@
 package com.filwsx.preparedstatement;
 
 import com.filwsx.bean.Customer;
-import com.filwsx.bean.Order;
 import com.filwsx.utils.JDBCutils;
+import com.filwsx.bean.Order;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
