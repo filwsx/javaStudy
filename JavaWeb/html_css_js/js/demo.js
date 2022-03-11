@@ -1,4 +1,8 @@
 window.onload=function(){
+	init();
+}
+
+function init(){
 	updateZJ();
 	//当页面加载完成，我们需要绑定各种事件
 	//根据id获取到表格
@@ -28,15 +32,39 @@ window.onload=function(){
 			img.onclick = delFruit ;
 		}
 	}
-	document.getElementById("add").onclick = addFruit;
 	document.getElementById("reset").onclick = resetTable;
+	document.getElementById("add").onclick = addFruit;
 }
 
 function addFruit(){
+	
 	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
-		var newTbl = document.createElement("tr");
-		var fruitTbl = document.getElementById("tbl_fruit");
-		fruitTbl.appendChild(newTbl)
+		var fname = document.getElementById("fname");
+		var price = document.getElementById("price");
+		var fcount = document.getElementById("fcount");
+		if(fname.value!="" && price.value!="" && fcount.value!=""){
+			//待改进1：添加条目去重校验
+			//待改进2：添加删除图标
+			var flag = 1;
+			if(flag){
+				var fruitTbl = document.getElementById("tbl_fruit");
+				var rowLength = fruitTbl.rows.length;
+				var newTbl = fruitTbl.insertRow(rowLength-1);
+				
+				var newFname = newTbl.insertCell(0);
+				var newPrice = newTbl.insertCell(1);
+				var newFcount = newTbl.insertCell(2);
+				var newCount = newTbl.insertCell(3);
+				var newDel = newTbl.insertCell(4);
+				newFname.innerHTML = fname.value;
+				newPrice.innerHTML = price.value;
+				newFcount.innerHTML = fcount.value;
+				updateXJ(newTbl);
+				init();
+			}
+		}else{
+			window.alert("不能为空")
+		}
 	}
 }
 
