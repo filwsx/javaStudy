@@ -11,6 +11,14 @@
 
 [2022年度全网最全Java学习路线](https://www.bilibili.com/read/cv5216534) 之 Java快速学习路线图
 
+## 科班自学
+
+https://github.com/ossu/computer-science
+
+https://github.com/PKUFlyingPig/cs-self-learning
+
+https://github.com/izackwu/TeachYourselfCS-CN
+
 ## 0x01  Java
 
 课程链接：[尚硅谷Java入门视频教程](https://www.bilibili.com/video/BV1Kb411W75N)
