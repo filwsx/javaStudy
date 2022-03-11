@@ -42,14 +42,12 @@ function addFruit(){
 
 function resetTable(){
 	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
-		var btnTbl = document.getElementById("inputdata");
-		var rows = btnTbl.rows ;
-		for(var i = 0 ; i<rows.length-1 ; i++){
-			var tr = rows[i];
-			var cells = tr.cells;
-			var inputConent = cells[1];
-			inputConent.value = "";
-		}	
+		var fname = document.getElementById("fname");
+		var price = document.getElementById("price");
+		var fcount = document.getElementById("fcount");
+		fname.value = "";
+		price.value = "";
+		fcount.value = "";
 	}
 }
 
