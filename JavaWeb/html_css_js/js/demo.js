@@ -29,8 +29,8 @@ window.onload=function(){
 			img.onclick = delFruit ;
 		}
 	}
-	document.getElementsById("add").onclick = addFruit;
-	document.getElementsById("reset").onclick = resetTable;
+	document.getElementById("add").onclick = addFruit;
+	document.getElementById("reset").onclick = resetTable;
 }
 
 function addFruit(){
@@ -38,7 +38,7 @@ function addFruit(){
 }
 
 function resetTable(){
-	window.alert("addFruit");
+	window.alert("resetTable");
 }
 
 function delFruit(){
