@@ -3,7 +3,6 @@ window.onload=function(){
 	//当页面加载完成，我们需要绑定各种事件
 	//根据id获取到表格
 	var fruitTbl =  document.getElementById("tbl_fruit");
-	var btnTbl =  document.getElementById("add_fruit_div");
 	//获取表格中的所有的行
 	var rows = fruitTbl.rows ;
 	for(var i = 1 ; i<rows.length-1 ; i++){
@@ -34,11 +33,24 @@ window.onload=function(){
 }
 
 function addFruit(){
-	window.alert("addFruit");
+	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
+		var newTbl = document.createElement("tr");
+		var fruitTbl = document.getElementById("tbl_fruit");
+		fruitTbl.appendChild(newTbl)
+	}
 }
 
 function resetTable(){
-	window.alert("resetTable");
+	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
+		var btnTbl = document.getElementById("inputdata");
+		var rows = btnTbl.rows ;
+		for(var i = 0 ; i<rows.length-1 ; i++){
+			var tr = rows[i];
+			var cells = tr.cells;
+			var inputConent = cells[1];
+			inputConent.value = "";
+		}	
+	}
 }
 
 function delFruit(){
@@ -50,7 +62,6 @@ function delFruit(){
 			var tr = img.parentElement.parentElement ;
 			var fruitTbl = document.getElementById("tbl_fruit");
 			fruitTbl.deleteRow(tr.rowIndex);
-
 			updateZJ();
 		}
 	}
