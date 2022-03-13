@@ -50,26 +50,14 @@
 				</table>
 				<hr/>
 				<div id="add_fruit_div">
-					<table id="inputdata">
-						<tr>
-							<td>名称：</td>
-							<td><input type='text' id='fname' value=""/></td>
-						</tr>
-						<tr>
-							<td>单价：</td>
-							<td><input type='text' id='price' value=""/></td>
-						</tr>
-						<tr>
-							<td>数量：</td>
-							<td><input type='text' id='fcount' value=""/></td>
-						</tr>
-						<tr>
-							<th colspan="2">
-								<input type='button' id='add' value="添加"/>
-								<input type='button' id='reset' value="重填"/>
-							</th>
-						</tr>
-					</table>
+					<form action="add" method="post">
+						名称：<input type="text" name="fname" id='fname' value=""/><br/>
+						价格：<input type="text" name="fprice" id='fprice' value=""/><br/>
+						库存：<input type="text" name="fcount" id='fcount' value=""/><br/>
+						备注：<input type="text" name="remark"  id='remark' value=""/><br/>
+						<input type="submit" id='add' value="添加" />
+						<input type='button' id='reset' value="重填"/>
+					</form>
 				</div>
 			</div>
 		</div>

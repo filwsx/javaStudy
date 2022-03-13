@@ -40,7 +40,7 @@ function addFruit(){
 	
 	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
 		var fname = document.getElementById("fname");
-		var price = document.getElementById("price");
+		var fprice = document.getElementById("fprice");
 		var fcount = document.getElementById("fcount");
 		if(fname.value!="" && price.value!="" && fcount.value!=""){
 			//待改进1：添加条目去重校验
@@ -57,7 +57,7 @@ function addFruit(){
 				var newCount = newTbl.insertCell(3);
 				var newDel = newTbl.insertCell(4);
 				newFname.innerHTML = fname.value;
-				newPrice.innerHTML = price.value;
+				newPrice.innerHTML = fprice.value;
 				newFcount.innerHTML = fcount.value;
 				updateXJ(newTbl);
 				init();
