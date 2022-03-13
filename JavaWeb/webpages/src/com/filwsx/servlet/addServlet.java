@@ -1,10 +1,16 @@
 package com.filwsx.servlet;
 
+import com.filwsx.DAO.fruitDAO;
+import com.filwsx.DAO.fruitDAOimpl;
+import com.filwsx.JDBCutils.JDBCutils;
+import com.filwsx.bean.Fruit;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
 
 /**
  * @author filwsx
@@ -24,9 +30,14 @@ public class addServlet extends HttpServlet {
         Integer price = Integer.parseInt(fprice);
         Integer count = Integer.parseInt(fcount);
 
-        System.out.println(fname);
-        System.out.println(price);
-        System.out.println(count);
-        System.out.println(remark);
+        fruitDAO fdi = new fruitDAOimpl();
+        Connection con = null;
+        try {
+            con = JDBCutils.getConnection();
+            Fruit fruit = new Fruit(0,fname,price,count,remark);
+            fdi.insert(con,fruit);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

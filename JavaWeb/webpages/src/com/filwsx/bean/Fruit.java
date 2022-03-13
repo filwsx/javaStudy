@@ -5,6 +5,7 @@ package com.filwsx.bean;
  * @date 2022-03-13 17:27
  */
 public class Fruit {
+    private  int id;
     private String fname;
     private double fprice;
     private int fcount;
@@ -14,11 +15,20 @@ public class Fruit {
 
     }
 
-    public Fruit(String fname, double fprice, int fcount, String remark) {
+    public Fruit(int id,String fname, double fprice, int fcount, String remark) {
+        this.id = id;
         this.fname = fname;
         this.fprice = fprice;
         this.fcount = fcount;
         this.remark = remark;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFname() {
@@ -55,8 +65,9 @@ public class Fruit {
 
     @Override
     public String toString() {
-        return "fruit{" +
-                "fname='" + fname + '\'' +
+        return "Fruit{" +
+                "id=" + id +
+                ", fname='" + fname + '\'' +
                 ", fprice=" + fprice +
                 ", fcount=" + fcount +
                 ", remark='" + remark + '\'' +

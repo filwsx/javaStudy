@@ -25,7 +25,7 @@ public class baseDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
-            JDBCutils.closeResoures(null,ps);
+            JDBCutils.closeResource(null,ps);
         }
         return 0;
     }
@@ -57,7 +57,7 @@ public class baseDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
-            JDBCutils.closeResoures(null,ps,rs);
+            JDBCutils.closeResource(null,ps,rs);
         }
         return list;
     }
@@ -78,7 +78,7 @@ public class baseDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally{
-            JDBCutils.closeResoures(null, ps, rs);
+            JDBCutils.closeResource(null, ps, rs);
         }
         return null;
     }

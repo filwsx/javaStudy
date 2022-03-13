@@ -12,7 +12,7 @@ import java.sql.Statement;
 import java.util.Properties;
 import java.util.Scanner;
 
-import filwsx.statement.User;
+import com.filwsx.bean.User;
 import org.junit.Test;
 
 public class StatementTest {

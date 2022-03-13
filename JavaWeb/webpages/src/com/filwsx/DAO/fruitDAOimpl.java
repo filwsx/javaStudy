@@ -11,10 +11,14 @@ import java.util.List;
  */
 public class fruitDAOimpl extends baseDAO implements fruitDAO {
 
+    public fruitDAOimpl() {
+
+    }
+
     @Override
     public void insert(Connection conn, Fruit fruit) {
-        String sql = "insert into fruit(fname,fprice,fcount,remark)values(?,?,?,?)";
-        update(conn, sql,fruit.getFname(),fruit.getFprice(),fruit.getFcount(),fruit.getRemark());
+        String sql = "insert into fruit(id,fname,fprice,fcount,remark)values(?,?,?,?,?)";
+        update(conn, sql,fruit.getId(),fruit.getFname(),fruit.getFprice(),fruit.getFcount(),fruit.getRemark());
     }
 
     @Override
