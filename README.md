@@ -61,7 +61,9 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：2535min，预计7-10天
 
-2022.03.  
+2022.03.11  开始学习（觉得html/css/js部分了解即可，之前也看了）
+
+
 
 ## 0X05  Spring5
 
