@@ -91,9 +91,9 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 ## 0X08  maven
 
-课程链接：[一套轻松搞定maven工具](https://www.bilibili.com/video/BV1TW411g7hP)
+课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
 
-课程时长：336min，预计1-2天
+课程时长：1206min，预计3-5天（根据需求选学）
 
 
 
@@ -117,7 +117,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
-课程时长：442min，预计1-2天
+课程时长：333min，预计1-2天
 
 
 

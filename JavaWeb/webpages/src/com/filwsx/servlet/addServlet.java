@@ -22,6 +22,7 @@ public class addServlet extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
 
+        req.setCharacterEncoding("UTF-8");
         String fname = req.getParameter("fname");
         String fprice = req.getParameter("fprice");
         String fcount = req.getParameter("fcount");
