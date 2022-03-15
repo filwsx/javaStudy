@@ -6,9 +6,35 @@
     <servlet>
         <servlet-name>addServlet</servlet-name>
         <servlet-class>com.filwsx.servlet.addServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>demo01</servlet-name>
+        <servlet-class>com.filwsx.servlet.demo01Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demo02</servlet-name>
+        <servlet-class>com.filwsx.servlet.demo02Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demo03</servlet-name>
+        <servlet-class>com.filwsx.servlet.demo03Servlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>addServlet</servlet-name>
         <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demo01</servlet-name>
+        <url-pattern>/demo01</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demo02</servlet-name>
+        <url-pattern>/demo02</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demo03</servlet-name>
+        <url-pattern>/demo03</url-pattern>
     </servlet-mapping>
 </web-app>
