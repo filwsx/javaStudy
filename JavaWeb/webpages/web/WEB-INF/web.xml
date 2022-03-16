@@ -20,6 +20,14 @@
         <servlet-name>demo03</servlet-name>
         <servlet-class>com.filwsx.servlet.demo03Servlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>demo04</servlet-name>
+        <servlet-class>com.filwsx.servlet.demo04Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demo05</servlet-name>
+        <servlet-class>com.filwsx.servlet.demo05Servlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>addServlet</servlet-name>
@@ -36,5 +44,13 @@
     <servlet-mapping>
         <servlet-name>demo03</servlet-name>
         <url-pattern>/demo03</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demo04</servlet-name>
+        <url-pattern>/demo04</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demo05</servlet-name>
+        <url-pattern>/demo05</url-pattern>
     </servlet-mapping>
 </web-app>
