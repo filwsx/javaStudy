@@ -35,5 +35,6 @@ public class indexServlet extends HttpServlet {
         }
         HttpSession session = req.getSession();
         session.setAttribute("fruitList",fruitList);
+        System.out.println(fruitList);
     }
 }

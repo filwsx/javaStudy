@@ -29,6 +29,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="attoparser-2.0.5.RELEASE" level="project" />
+    <orderEntry type="module" module-name="webpages" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
