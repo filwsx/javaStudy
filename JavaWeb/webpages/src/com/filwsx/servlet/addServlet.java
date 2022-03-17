@@ -1,7 +1,7 @@
 package com.filwsx.servlet;
 
-import com.filwsx.DAO.fruitDAO;
-import com.filwsx.DAO.fruitDAOimpl;
+import com.filwsx.DAO.FruitDAO;
+import com.filwsx.DAO.FruitDAOimpl;
 import com.filwsx.JDBCutils.JDBCutils;
 import com.filwsx.bean.Fruit;
 
@@ -31,7 +31,7 @@ public class addServlet extends HttpServlet {
         Integer price = Integer.parseInt(fprice);
         Integer count = Integer.parseInt(fcount);
 
-        fruitDAO fdi = new fruitDAOimpl();
+        FruitDAO fdi = new FruitDAOimpl();
         Connection con = null;
         try {
             con = JDBCutils.getConnection();

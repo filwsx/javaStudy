@@ -10,11 +10,11 @@ import java.sql.Connection;
  * @author filwsx
  * @date 2022-03-13 18:06
  */
-public class fruitDAOTest {
+public class FruitDAOTest {
 
     @Test
     public void insertTest(){
-        fruitDAOimpl fdi = new fruitDAOimpl();
+        FruitDAOimpl fdi = new FruitDAOimpl();
         Connection con = null;
         try {
             con = JDBCutils.getConnection();
@@ -27,7 +27,7 @@ public class fruitDAOTest {
 
     @Test
     public void deleteByIdTest(){
-        fruitDAOimpl fdi = new fruitDAOimpl();
+        FruitDAOimpl fdi = new FruitDAOimpl();
         Connection con = null;
         try {
             con = JDBCutils.getConnection();

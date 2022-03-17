@@ -9,7 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -20,17 +19,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="JUnit4">
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.1/junit-4.13.1.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="druid-1.2.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.75" level="application_server_libraries" />
     <orderEntry type="module-library">
       <library>
@@ -41,6 +29,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="attoparser-2.0.5.RELEASE" level="project" />
   </component>
 </module>

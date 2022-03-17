@@ -9,9 +9,9 @@ import java.util.List;
  * @author filwsx
  * @date 2022-03-13 17:27
  */
-public class fruitDAOimpl extends baseDAO implements fruitDAO {
+public class FruitDAOimpl extends baseDAO implements FruitDAO {
 
-    public fruitDAOimpl() {
+    public FruitDAOimpl() {
 
     }
 
@@ -43,7 +43,7 @@ public class fruitDAOimpl extends baseDAO implements fruitDAO {
 
     @Override
     public List<Fruit> getAll(Connection conn) {
-        String sql = "select fname,fprice,fcount,remark from fruit";
+        String sql = "select * from fruit";
         List<Fruit> fruitList = getList(conn,Fruit.class, sql);
         return fruitList;
     }
