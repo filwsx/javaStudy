@@ -159,7 +159,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 ## 延后
 
-效率：Git、IDEA、Linux shell、JavaScript；
+效率：Git、IDEA、Linux shell、JavaScript；正则表达式，LaTeX，vim
 
 工具：Nginx、Tomcat、Docker
 
