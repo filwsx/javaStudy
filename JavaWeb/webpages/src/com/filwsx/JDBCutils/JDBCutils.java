@@ -1,10 +1,6 @@
 package com.filwsx.JDBCutils;
 
-import java.io.InputStream;
 import java.sql.*;
-import java.util.Properties;
-import java.sql.Connection;
-import java.sql.SQLException;
 
 /**操作数据库的工具类
  * @author filwsx
@@ -25,12 +21,12 @@ public class JDBCutils {
         String user = "root";
         String pwd = "183983";
         String driverClass = "com.mysql.cj.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/test?rewriteBatchedStatements=true";
+        String url = "jdbc:mysql://localhost:3306/fruitdb";
 
         Class.forName(driverClass);
 
         Connection con = DriverManager.getConnection(url,user,pwd);
-        return con;
+   return con;
     }
 
     public static void closeResource(Connection con,Statement ps){
