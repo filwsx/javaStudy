@@ -7,12 +7,20 @@ import java.util.HashMap;
  * @create 2022-03-26 11:15
  */
 public class Room {
-    private Room west = null;
-    private Room north = null;
-    private Room east = null;
-    private Room south = null;
     private String roomName = null;
     private HashMap<String,Room> roomHashMap = new HashMap<>();
+
+    public Room(){
+        roomHashMap.put("west",null);
+        roomHashMap.put("north",null);
+        roomHashMap.put("east",null);
+        roomHashMap.put("south",null);
+    }
+
+    public Room(String roomName){
+        this();
+        this.roomName = roomName;
+    }
 
     public String getRoomName() {
         return roomName;
@@ -22,35 +30,55 @@ public class Room {
         this.roomName = roomName;
     }
 
-    public Room getWest() {
-        return west;
+    public Room getNextRoom(String direction){
+        return roomHashMap.get(direction);
     }
 
-    public void setWest(Room west) {
-        this.west = west;
+    public boolean setNextRoom(String direction,Room nextRoom){
+        if(roomHashMap.containsKey(direction)){
+            roomHashMap.put(direction,nextRoom);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public void setAllRoom(Room east,Room south,Room west,Room north){
+        setNextRoom("east",east);
+        setNextRoom("south",south);
+        setNextRoom("west",west);
+        setNextRoom("north",north);
+    }
+
+    public Room getWest() {
+        return getNextRoom("west");
+    }
+
+    public boolean setWest(Room west) {
+        return setNextRoom("west",west);
     }
 
     public Room getNorth() {
-        return north;
+        return getNextRoom("north");
     }
 
-    public void setNorth(Room north) {
-        this.north = north;
+    public boolean setNorth(Room north) {
+        return setNextRoom("north",north);
     }
 
     public Room getEast() {
-        return east;
+        return getNextRoom("east");
     }
 
-    public void setEast(Room east) {
-        this.east = east;
+    public boolean setEast(Room east) {
+        return setNextRoom("east",east);
     }
 
     public Room getSouth() {
-        return south;
+        return getNextRoom("south");
     }
 
-    public void setSouth(Room south) {
-        this.south = south;
+    public boolean setSouth(Room south) {
+        return setNextRoom("south",south);
     }
 }
