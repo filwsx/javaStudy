@@ -5,12 +5,16 @@ import javax.swing.*;
 public class CellMachine {
 
 	public static void main(String[] args) {
+
+		// 初始化细胞机，cell填充表
 		Field field = new Field(30,30);
 		for ( int row = 0; row<field.getHeight(); row++ ) {
 			for ( int col = 0; col<field.getWidth(); col++ ) {
 				field.place(row, col, new Cell());
 			}
 		}
+
+		// 随机复活约1/5的cell
 		for ( int row = 0; row<field.getHeight(); row++ ) {
 			for ( int col = 0; col<field.getWidth(); col++ ) {
 				Cell cell = field.get(row, col);
@@ -19,6 +23,8 @@ public class CellMachine {
 				}
 			}
 		}
+
+		//图形界面初始化
 		View view = new View(field);
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,8 +33,10 @@ public class CellMachine {
 		frame.add(view);
 		frame.pack();
 		frame.setVisible(true);
-		
+
+		// 细胞机更新1000次
 		for ( int i=0; i<1000; i++ ) {
+			// 遍历表格，查看邻近细胞存活情况来决定生死
 			for ( int row = 0; row<field.getHeight(); row++ ) {
 				for ( int col = 0; col<field.getWidth(); col++ ) {
 					Cell cell = field.get(row, col);
@@ -39,23 +47,17 @@ public class CellMachine {
 							numOfLive++;
 						}
 					}
-					System.out.print("["+row+"]["+col+"]:");
-					System.out.print(cell.isAlive()?"live":"dead");
-					System.out.print(":"+numOfLive+"-->");
 					if ( cell.isAlive() ) {
 						if ( numOfLive <2 || numOfLive >3 ) {
 							cell.die();
-							System.out.print("die");
 						}
 					} else if ( numOfLive == 3 ) {
 						cell.reborn();
-						System.out.print("reborn");
 					}
-					System.out.println();
 				}
 			}
-			System.out.println("UPDATE");
 			frame.repaint();
+			// 延迟，从而可以观察
 			try {
 				Thread.sleep(200);
 			} catch (InterruptedException e) {
