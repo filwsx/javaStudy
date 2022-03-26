@@ -11,6 +11,8 @@ public class Room {
     //Room里定义Room，不会递归循环了吗。不会吧，仅仅是一个地址
     private HashMap<String,Room> roomHashMap = new HashMap<>();
 
+    // 初始化房间方位
+    // null代表房间那个方向没有门
     public Room(){
         roomHashMap.put("west",null);
         roomHashMap.put("north",null);
@@ -31,10 +33,12 @@ public class Room {
         this.roomName = roomName;
     }
 
+    //根据方位，获取下一个房间对象
     public Room getNextRoom(String direction){
         return roomHashMap.get(direction);
     }
 
+    //设置某方位指向的房间
     public boolean setNextRoom(String direction,Room nextRoom){
         if(roomHashMap.containsKey(direction)){
             roomHashMap.put(direction,nextRoom);
@@ -44,6 +48,7 @@ public class Room {
         }
     }
 
+    //设置四个方位指向的房间
     public void setAllRoom(Room east,Room south,Room west,Room north){
         setNextRoom("east",east);
         setNextRoom("south",south);

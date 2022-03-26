@@ -40,6 +40,8 @@ public class Game {
         }
     }
 
+    // 这里采用了课件提供的代码，几乎无修改，也是巧合了
+    // 仅仅看了老师的游戏演示，主要精力花在如何构建地图描述对象上
     public static void play(){
         Scanner in = new Scanner(System.in);
         Game game = new Game();

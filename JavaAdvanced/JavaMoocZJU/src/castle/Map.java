@@ -60,7 +60,7 @@ public class Map {
         }
     }
 
-    // 创建所有房间之间的关联
+    // 创建所有房间之间的关联，形成地图
     private void creatConnection(){
         creatAConnection("入口",null,null,"酒吧","大厅");
         creatAConnection("卧室",null,"大厅","厕所",null);
@@ -80,6 +80,7 @@ public class Map {
         return map.get(roomName);
     }
 
+    //通过索引获取房间名
     private String getRoomNameByIndex(int index){
         Iterator iterator = roomNameList.iterator();
         String res = null;
@@ -94,9 +95,10 @@ public class Map {
         return res;
     }
 
+    //获取roomNameList长度内任意一个随机数
     private int getIndex() {
-        int min = 0; // 定义随机数的最小值
-        int max = roomNameList.size() - 1; // 定义随机数的最大值
+        int min = 1; // 定义随机数的最小值
+        int max = roomNameList.size(); // 定义随机数的最大值
         // 产生一个 min 到 max 之间的数
         int s = (int) min + (int) (Math.random() * (max - min));
         return s;
