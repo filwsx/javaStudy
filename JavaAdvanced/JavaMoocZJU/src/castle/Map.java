@@ -13,6 +13,7 @@ public class Map {
     private HashSet<String> roomNameList = new HashSet<>();
 
     public Map(){
+        addRoomName();
         creatRooms();
         creatConnection();
     }
@@ -35,29 +36,35 @@ public class Map {
         room.setAllRoom(eastRoom,southRoom,westRoom,northRoom);
     }
 
+    // 添加房间名
+    private void addRoomName(){
+        roomNameList.add("入口");
+        roomNameList.add("卧室");
+        roomNameList.add("大厅");
+        roomNameList.add("地下室");
+        roomNameList.add("厨房");
+        roomNameList.add("厕所");
+        roomNameList.add("恶龙");
+        roomNameList.add("虚无");
+        roomNameList.add("酒吧");
+    }
+    
     // 创建多个房间
     private void creatRooms(){
-        
-        creatRoom("入口");
-        creatRoom("卧室");
-        creatRoom("大厅");
-        creatRoom("地下室");
-        creatRoom("厨房");
-        creatRoom("厕所");
-        creatRoom("恶龙");
-        creatRoom("虚无");
-        creatRoom("酒吧");
+        for(String roomName:roomNameList ){
+            creatRoom(roomName);
+        }
     }
 
     //创建所有房间之间的关联
     private void creatConnection(){
         creatAConnection("入口",null,null,"酒吧","大厅");
-        creatAConnection("卧室","","","","");
+        creatAConnection("卧室",null,"大厅","厕所",null);
         creatAConnection("大厅","地下室","入口","厨房","卧室");
         creatAConnection("地下室","恶龙",null,"大厅","虚无");
-        creatAConnection("厨房","","","","");
-        creatAConnection("厕所","","","","");
-        creatAConnection("恶龙","","","地下室","");
+        creatAConnection("厨房","大厅",null,null,null);
+        creatAConnection("厕所","卧室",null,null,null);
+        creatAConnection("恶龙",null,null,"地下室",null);
         creatAConnection("虚无",null,null,null,null);
         creatAConnection("酒吧","入口",null,null,null);
     }
