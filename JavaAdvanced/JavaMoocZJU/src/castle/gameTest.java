@@ -7,6 +7,7 @@ package castle;
 public class gameTest {
 
     public static void main(String[] args) {
-        Game.play();
+        Game game = new Game();
+        game.play();
     }
 }

@@ -1,4 +1,4 @@
-package castle;
+package castle.bean;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,5 +1,10 @@
 package castle;
 
+import castle.bean.Map;
+import castle.bean.Room;
+import castle.handler.*;
+
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -8,29 +13,29 @@ import java.util.Scanner;
  */
 public class Game {
 
+    // 获取地图
     private Map map = new Map();
 
+    // 创建操作容器
+    private HashMap<String,Handler> handlerHashMap = new HashMap<>();
+
+    // 保存当前位置
     private Room currentRoom = null;
 
+    // 保存运动方向
+    private String direction = null;
+
+    // 初始化初始位置
     public Game(){
         currentRoom = map.initMap();
+        handlerHashMap.put("go",new goHandler(this));
+        handlerHashMap.put("help",new helpHandler());
+        handlerHashMap.put("bye",new byeHandler());
+        Handler welcome = new welcomeHandler(currentRoom);
+        welcome.handle();
     }
 
-    private void printHelp()
-    {
-        System.out.print("迷路了吗？你可以做的命令有：go、bye、help");
-        System.out.println("\n go的用法：\tgo east");
-    }
-
-    private void printWelcome() {
-        System.out.println("欢迎来到城堡！");
-        System.out.println("这是一个超级无聊的游戏。");
-        System.out.println("如果需要帮助，请输入 'help' 。");
-        System.out.println(currentRoom);
-        System.out.println();
-    }
-
-    private void goRoom(String direction){
+    public void goRoom(){
         Room nextRoom = currentRoom.getNextRoom(direction);
         if(nextRoom != null){
             currentRoom = nextRoom;
@@ -38,24 +43,29 @@ public class Game {
         }else{
             System.out.println("没门！");
         }
+        direction = null;
     }
 
     // 这里采用了课件提供的代码，几乎无修改，也是巧合了
     // 仅仅看了老师的游戏演示，主要精力花在如何构建地图描述对象上
-    public static void play(){
+    public void play(){
         Scanner in = new Scanner(System.in);
-        Game game = new Game();
-        game.printWelcome();
 
-        while ( true ) {
+        while (true) {
             String line = in.nextLine();
             String[] words = line.split(" ");
-            if (words[0].equals("help") ) {
-                game.printHelp();
-            } else if (words[0].equals("go") ) {
-                game.goRoom(words[1]);
-            } else if ( words[0].equals("bye") ) {
-                break;
+            Handler handler = handlerHashMap.get(words[0]);
+            if (words.length>1){
+                direction = words[1];
+            }
+            if(handler != null){
+                handler.handle();
+                // 这里很不优雅
+                if(handler.isBye()){
+                    break;
+                }
+            }else{
+                System.out.println("命令有误");
             }
         }
         System.out.println("感谢您的光临。再见！");
