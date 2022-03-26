@@ -8,6 +8,7 @@ import java.util.HashMap;
  */
 public class Room {
     private String roomName = null;
+    //Room里定义Room，不会递归循环了吗。不会吧，仅仅是一个地址
     private HashMap<String,Room> roomHashMap = new HashMap<>();
 
     public Room(){
@@ -48,6 +49,18 @@ public class Room {
         setNextRoom("south",south);
         setNextRoom("west",west);
         setNextRoom("north",north);
+    }
+
+    @Override
+    public String toString() {
+        String exit = "";
+        for(String s:roomHashMap.keySet()){
+            if(roomHashMap.get(s) != null){
+                exit = s + " ";
+            }
+        }
+        return "你现在在：" + roomName + "。\n" +
+                "出口有：" + exit + "";
     }
 
     public Room getWest() {

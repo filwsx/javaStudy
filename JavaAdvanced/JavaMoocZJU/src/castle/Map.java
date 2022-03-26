@@ -2,16 +2,20 @@ package castle;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * @author filwsx
  * @create 2022-03-26 11:15
  */
 public class Map {
+    // 存储Room对象，key为String类型的roomName
     private HashMap<String,Room> map = new HashMap<>();
 
+    // 使用set存储name，是为了防止key重复
     private HashSet<String> roomNameList = new HashSet<>();
 
+    // 地图初始化
     public Map(){
         addRoomName();
         creatRooms();
@@ -48,7 +52,7 @@ public class Map {
         roomNameList.add("虚无");
         roomNameList.add("酒吧");
     }
-    
+
     // 创建多个房间
     private void creatRooms(){
         for(String roomName:roomNameList ){
@@ -56,7 +60,7 @@ public class Map {
         }
     }
 
-    //创建所有房间之间的关联
+    // 创建所有房间之间的关联
     private void creatConnection(){
         creatAConnection("入口",null,null,"酒吧","大厅");
         creatAConnection("卧室",null,"大厅","厕所",null);
@@ -67,5 +71,34 @@ public class Map {
         creatAConnection("恶龙",null,null,"地下室",null);
         creatAConnection("虚无",null,null,null,null);
         creatAConnection("酒吧","入口",null,null,null);
+    }
+
+    // 获取地图初始位置，随机
+    public Room initMap(){
+        int index = getIndex();
+        String roomName = getRoomNameByIndex(index);
+        return map.get(roomName);
+    }
+
+    private String getRoomNameByIndex(int index){
+        Iterator iterator = roomNameList.iterator();
+        String res = null;
+        while (iterator.hasNext()){
+            index--;
+            Object obj = iterator.next();
+            if (index==0){
+                res = (String) obj;
+                break;
+            }
+        }
+        return res;
+    }
+
+    private int getIndex() {
+        int min = 0; // 定义随机数的最小值
+        int max = roomNameList.size() - 1; // 定义随机数的最大值
+        // 产生一个 min 到 max 之间的数
+        int s = (int) min + (int) (Math.random() * (max - min));
+        return s;
     }
 }
