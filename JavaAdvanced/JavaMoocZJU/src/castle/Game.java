@@ -19,11 +19,10 @@ public class Game {
     private void printHelp()
     {
         System.out.print("迷路了吗？你可以做的命令有：go、bye、help");
-        System.out.println("go的用法：\tgo east");
+        System.out.println("\n go的用法：\tgo east");
     }
 
     private void printWelcome() {
-        System.out.println();
         System.out.println("欢迎来到城堡！");
         System.out.println("这是一个超级无聊的游戏。");
         System.out.println("如果需要帮助，请输入 'help' 。");
@@ -37,7 +36,7 @@ public class Game {
             currentRoom = nextRoom;
             System.out.println(currentRoom);
         }else{
-            System.out.println("那里没有门！");
+            System.out.println("没门！");
         }
     }
 

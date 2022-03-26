@@ -56,10 +56,13 @@ public class Room {
         String exit = "";
         for(String s:roomHashMap.keySet()){
             if(roomHashMap.get(s) != null){
-                exit = s + " ";
+                exit = exit + s + " ";
             }
         }
-        return "你现在在：" + roomName + "。\n" +
+        if(exit.equals("")){
+            exit = "你进入了虚无，无路可走了！";
+        }
+        return "你在：" + roomName + "。\n" +
                 "出口有：" + exit + "";
     }
 
