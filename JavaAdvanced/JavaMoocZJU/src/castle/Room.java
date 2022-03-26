@@ -65,36 +65,4 @@ public class Room {
         return "你在：" + roomName + "。\n" +
                 "出口有：" + exit + "";
     }
-
-    public Room getWest() {
-        return getNextRoom("west");
-    }
-
-    public boolean setWest(Room west) {
-        return setNextRoom("west",west);
-    }
-
-    public Room getNorth() {
-        return getNextRoom("north");
-    }
-
-    public boolean setNorth(Room north) {
-        return setNextRoom("north",north);
-    }
-
-    public Room getEast() {
-        return getNextRoom("east");
-    }
-
-    public boolean setEast(Room east) {
-        return setNextRoom("east",east);
-    }
-
-    public Room getSouth() {
-        return getNextRoom("south");
-    }
-
-    public boolean setSouth(Room south) {
-        return setNextRoom("south",south);
-    }
 }
