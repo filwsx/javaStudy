@@ -1,4 +1,8 @@
-package cell;
+package cell.view;
+
+import cell.Field;
+import cell.bean.Cell;
+import cell.bean.CellImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +38,7 @@ public class View extends JPanel {
 		Field field = new Field(10,10);
 		for ( int row = 0; row<field.getHeight(); row++ ) {
 			for ( int col = 0; col<field.getWidth(); col++ ) {
-				field.place(row, col, new Cell());
+				field.place(row, col, new CellImpl());
 			}
 		}
 		View view = new View(field);

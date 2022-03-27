@@ -1,5 +1,9 @@
 package cell;
 
+import cell.bean.Cell;
+import cell.bean.CellImpl;
+import cell.view.View;
+
 import javax.swing.*;
 
 public class CellMachine {
@@ -10,7 +14,7 @@ public class CellMachine {
 		Field field = new Field(30,30);
 		for ( int row = 0; row<field.getHeight(); row++ ) {
 			for ( int col = 0; col<field.getWidth(); col++ ) {
-				field.place(row, col, new Cell());
+				field.place(row, col, new CellImpl());
 			}
 		}
 
