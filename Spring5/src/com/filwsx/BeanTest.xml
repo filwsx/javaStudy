@@ -2,7 +2,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="springBeginning" class="com.filwsx.bean.SpringBeginning"></bean>
     <bean id="book1" class="com.filwsx.bean.Book">
         <constructor-arg name="name" value="1984"></constructor-arg>
         <constructor-arg name="author" value="George Orwell"></constructor-arg>
@@ -16,5 +15,13 @@
     <bean id="book2" class="com.filwsx.bean.Book">
         <property name="name" value="Brave New World"></property>
         <property name="author" value="Aldous Huxley"></property>
+    </bean>
+    <bean id="null" class="com.filwsx.bean.Rectangle">
+        <property name="name">
+            <null/>
+        </property>
+    </bean>
+    <bean id="test5" class="com.filwsx.bean.Rectangle">
+        <property name="name"> <value><![CDATA[<<北京>>]]></value> </property>
     </bean>
 </beans>

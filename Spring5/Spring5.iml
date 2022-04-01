@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="BeanTest" removed="false">
           <file>file://$MODULE_DIR$/src/com/filwsx/BeanTest.xml</file>
+          <file>file://$MODULE_DIR$/src/com/filwsx/springBeginning.xml</file>
         </fileset>
       </configuration>
     </facet>

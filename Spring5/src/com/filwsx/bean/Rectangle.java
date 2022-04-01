@@ -11,4 +11,11 @@ public class Rectangle {
         this.name = name;
         System.out.println("Rectangle的set方法执行了");
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
