@@ -7,6 +7,12 @@
         <constructor-arg name="name" value="1984"></constructor-arg>
         <constructor-arg name="author" value="George Orwell"></constructor-arg>
     </bean>
+    <bean id="animal" class="com.filwsx.bean.Animal">
+        <constructor-arg name="name" value="cat"></constructor-arg>
+    </bean>
+    <bean id="rectangle" class="com.filwsx.bean.Rectangle">
+        <property name="name" value="长"></property>
+    </bean>
     <bean id="book2" class="com.filwsx.bean.Book">
         <property name="name" value="Brave New World"></property>
         <property name="author" value="Aldous Huxley"></property>
