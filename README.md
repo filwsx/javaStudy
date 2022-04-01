@@ -74,7 +74,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：746min，预计3-4天
 
-前置课程：MySQL基础部分，Java语言基础
+前置课程：MySQL基础部分，Java
 
 学习建议：在脑中构建出数据库使用的完整逻辑，以及为什么这么做。多练习。
 
