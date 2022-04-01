@@ -25,10 +25,6 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：8839min，跳过了每日复习
 
-2021.12.14  接触 Java 课程，后续断断续续学习。
-
-2022.02.22  完成Java语言部分的学习。
-
 前置课程：无（有C语言、计算机导论基础最好）（默认会使用Windows系统与打字）
 
 课程评价：讲的比较细致，有条理。代码演示也很好，课件文档齐全。适合零基础，推荐！
@@ -42,9 +38,15 @@ https://github.com/izackwu/TeachYourselfCS-CN
 - 所有的规定无非是为了如下几个目的：稳定，效率；代码可读性，易维护，去耦合，高复用；分工合作
 - 本课程是后续内容的一切基础，务必要理解。后续遇到忘记了可以看笔记想起，但前提是要理解。
 
+参考书籍：《Java A Beginners Guide》
+
 补充课程：[面向对象程序设计——Java语言](https://www.icourse163.org/course/0809ZJU012-1001542001)
 
 补充课程说明：主要关注内容在设计原则、反转控制与MVC模式
+
+2021.12.14  接触 Java 课程，后续断断续续学习。
+
+2022.02.22  完成Java语言部分的学习。
 
 ## 0x02  MySQL
 
@@ -59,6 +61,8 @@ https://github.com/izackwu/TeachYourselfCS-CN
 学习建议：多刷题
 
 课程评价：康师傅稳定发挥，尚硅谷的台柱子，推荐！
+
+参考书籍：《**MySQL**必知必会》
 
 2022.02.22  初步了解并开始学习
 
@@ -76,6 +80,8 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：康师傅，稳！
 
+参考书籍：暂无
+
 2022.03.05 初步开始
 
 2022.03.10 学完，该补MySQL基础和JDBC笔记/总结了 
@@ -91,8 +97,9 @@ https://github.com/izackwu/TeachYourselfCS-CN
 学习建议：
 
 - 使用IDEA和tomcat搭建一个web服务，完成一个小Demo
-- 掌握Java servlet常见类和函数，MVC设计模式，重点在理解IoC和注入（Spring核心）
-- JavaScript和html看看，知道是啥就行了，我跳过了，大可不必浪费时间在这部分。
+- 掌握Java **servlet**常见类、函数和**Tomcat**，MVC设计模式，重点在理解IoC和注入（这是Spring核心）
+- JavaScript、html、CSS看看，知道是啥就行了，我跳过了，大可不必浪费时间在这部分。
+- 这门课其实是一门综合课程，对所学内容的一个综合使用。
 
 课程评价：
 
@@ -100,6 +107,8 @@ https://github.com/izackwu/TeachYourselfCS-CN
 - 干货是有的，可以根据自己的节奏跳着看。
 - 大量时间花在画图和修bug（这部分有利有弊，画图易于理解，修bug也算是经验积累，但是太耗时了）。
 - 这部分我理解为先，项目练习放一边了，代码太乱了，很多天看不下去，想跳过了都。
+
+参考书籍：暂无
 
 2022.03.11  开始学习（觉得html/css/js部分了解即可，之前也看了）
 
@@ -111,13 +120,31 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：919min，预计3-4天
 
+前置课程：Java语言高级部分（反射），有设计模式基础更好
 
+学习建议：
+
+课程评价：
+
+学习建议：
+
+2022.04.01 开始学习。
+
+2022.04.
 
 ## 0X06  spring mvc
 
 课程链接：[一套快速上手spring mvc](https://www.bilibili.com/video/BV1Ry4y1574R)
 
 课程时长：985min，预计3-4天
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
 
 
 
@@ -127,6 +154,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：610min，预计2-4天
 
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
+
 
 
 ## 0X08  maven
@@ -134,6 +169,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
 
 课程时长：1206min，预计3-5天（根据需求选学）
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
 
 
 
@@ -143,6 +186,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：457min，预计2-3天
 
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
+
 
 
 ## 0X0A  Redis 6
@@ -150,6 +201,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
 课程时长：635min，预计3-4天
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
 
 
 
@@ -159,6 +218,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：333min，预计1-2天
 
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
+
 
 
 ## 0X0C  Spring注解驱动
@@ -166,6 +233,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
 课程时长：687min，预计3-4天
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
 
 
 
@@ -175,6 +250,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：1572min，预计5-7天
 
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
+
 
 
 ## 0X0E  SpringCloud
@@ -183,6 +266,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程时长：1536min，预计5-7天
 
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
+
 
 
 ## 0X0F  尚筹网项目
@@ -190,6 +281,14 @@ https://github.com/izackwu/TeachYourselfCS-CN
 课程链接：[尚筹网Java项目实战开发(含SSM框架,微服务架构)](https://www.bilibili.com/video/BV1bE411T7oZ)
 
 课程时长：4640min，预计12-15天
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+学习建议：
 
 
 
