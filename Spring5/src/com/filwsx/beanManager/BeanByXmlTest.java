@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class BeanByXmlTest {
 
-    ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanTest.xml");
+    ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXml1.xml");
 
     // 两种不同方式的注入 set 和 构造器
     @Test
