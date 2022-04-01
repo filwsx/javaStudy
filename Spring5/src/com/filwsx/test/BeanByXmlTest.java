@@ -1,4 +1,4 @@
-package com.filwsx.beanManager;
+package com.filwsx.test;
 
 import com.filwsx.bean.Book;
 import com.filwsx.bean.Rectangle;

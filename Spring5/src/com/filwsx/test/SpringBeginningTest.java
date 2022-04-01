@@ -1,8 +1,5 @@
-package com.filwsx.beanManager;
+package com.filwsx.test;
 
-import com.filwsx.bean.Animal;
-import com.filwsx.bean.Book;
-import com.filwsx.bean.Rectangle;
 import com.filwsx.bean.SpringBeginning;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
