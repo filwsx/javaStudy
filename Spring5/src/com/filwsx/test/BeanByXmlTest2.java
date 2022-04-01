@@ -19,7 +19,7 @@ public class BeanByXmlTest2 {
         userService.add();
     }
 
-    // 内部bean测试
+    // 内部bean测试，也包含了级联赋值
     @Test
     public void test2(){
         ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXml3.xml");

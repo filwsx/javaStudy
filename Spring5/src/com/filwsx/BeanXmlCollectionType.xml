@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="stu" class="com.filwsx.bean.Stu">
+        <!--数组类型属性注入-->
+        <property name="course">
+            <array>
+                <value>计算机导论</value>
+                <value>Java基础</value>
+                <value>计算机组成原理</value>
+            </array>
+        </property>
+        <!--list类型属性注入-->
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </list>
+        </property>
+        <!--map类型属性注入-->
+        <property name="maps">
+            <map>
+                <entry key="java" value="宋红康"></entry>
+                <entry key="mySQL" value="sun"></entry>
+            </map>
+        </property>
+        <!--set类型属性注入-->
+        <property name="sets">
+            <set>
+                <value>python</value>
+                <value>java</value>
+                <value>C</value>
+            </set>
+        </property>
+    </bean>
+</beans>
