@@ -1,6 +1,6 @@
 package com.filwsx.test;
 
-import com.filwsx.bean.Book;
+import com.filwsx.bean.collection.Book;
 import com.filwsx.bean.Rectangle;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

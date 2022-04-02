@@ -1,4 +1,4 @@
-package com.filwsx.bean;
+package com.filwsx.bean.enterprise;
 
 /**
  * @author filwsx

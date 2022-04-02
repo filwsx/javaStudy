@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="book1" class="com.filwsx.bean.Book">
+    <bean id="book1" class="com.filwsx.bean.collection.Book">
         <constructor-arg name="name" value="1984"></constructor-arg>
         <constructor-arg name="author" value="George Orwell"></constructor-arg>
     </bean>
@@ -12,7 +12,7 @@
     <bean id="rectangle" class="com.filwsx.bean.Rectangle">
         <property name="name" value="长"></property>
     </bean>
-    <bean id="book2" class="com.filwsx.bean.Book">
+    <bean id="book2" class="com.filwsx.bean.collection.Book">
         <property name="name" value="Brave New World"></property>
         <property name="author" value="Aldous Huxley"></property>
     </bean>

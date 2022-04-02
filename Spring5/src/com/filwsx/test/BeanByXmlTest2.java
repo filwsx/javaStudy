@@ -1,6 +1,6 @@
 package com.filwsx.test;
 
-import com.filwsx.bean.Emp;
+import com.filwsx.bean.enterprise.Emp;
 import com.filwsx.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

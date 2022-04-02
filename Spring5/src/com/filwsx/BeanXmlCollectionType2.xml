@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:p="http://www.springframework.org/schema/p"
        xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                             http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <util:list id="courseList">
+    <util:list id="studentNameList">
         <value>java基础</value>
         <value>Mysql</value>
         <value>JDBC</value>
         <value>JavaWeb</value>
     </util:list>
 
-    <bean id="course" class="com.filwsx.bean.Course" scope="prototype" autowire="byType">
-        <property name="studentNameList" ref="courseList"></property>
+    <bean id="course" class="com.filwsx.bean.collection.Cou" scope="prototype">
+        <property name="studentNameList" ref="studentNameList"></property>
         <property name="courseName" value="java"></property>
         <property name="teacher">
             <null/>

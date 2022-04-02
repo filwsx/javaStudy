@@ -1,7 +1,8 @@
 package com.filwsx.test;
 
-import com.filwsx.bean.Course;
-import com.filwsx.bean.Stu;
+import com.filwsx.bean.collection.Cou;
+import com.filwsx.bean.collection.Stu;
+import com.filwsx.bean.school.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -21,7 +22,15 @@ public class BeanCollectionTypeTest {
     @Test
     public void test2(){
         ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXmlCollectionType2.xml");
-        Course course = context.getBean("course",Course.class);
+        Cou course = context.getBean("course", Cou.class);
         System.out.println(course);
+    }
+
+    @Test
+    // 测试factoryBean
+    public void test3(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/factoryBean1.xml");
+        Student student = context.getBean("myBean", Student.class);
+        System.out.println(student);
     }
 }

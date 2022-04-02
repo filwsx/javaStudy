@@ -1,4 +1,4 @@
-package com.filwsx.bean;
+package com.filwsx.bean.collection;
 
 import java.util.Arrays;
 import java.util.List;

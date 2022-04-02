@@ -1,6 +1,6 @@
-package com.filwsx.bean;
+package com.filwsx.bean.collection;
 
-import org.springframework.beans.factory.config.ListFactoryBean;
+import com.filwsx.bean.school.Teacher;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import java.util.List;
  * @author filwsx
  * @create 2022-04-02 11:53
  */
-public class Course {
+public class Cou {
     private String courseName;
     private List<String> studentNameList;
     private Teacher teacher;
