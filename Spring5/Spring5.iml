@@ -3,12 +3,13 @@
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="BeanTest" removed="false">
-          <file>file://$MODULE_DIR$/src/com/filwsx/BeanTest.xml</file>
-          <file>file://$MODULE_DIR$/src/com/filwsx/springBeginning.xml</file>
-          <file>file://$MODULE_DIR$/src/com/filwsx/beanXml2.xml</file>
+        <fileset id="fileset2" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/com/filwsx/BeanXml1.xml</file>
+          <file>file://$MODULE_DIR$/src/com/filwsx/BeanXml2.xml</file>
           <file>file://$MODULE_DIR$/src/com/filwsx/BeanXml3.xml</file>
           <file>file://$MODULE_DIR$/src/com/filwsx/BeanXmlCollectionType.xml</file>
+          <file>file://$MODULE_DIR$/src/com/filwsx/springBeginning.xml</file>
+          <file>file://$MODULE_DIR$/src/com/filwsx/BeanXmlCollectionType2.xml</file>
         </fileset>
       </configuration>
     </facet>
