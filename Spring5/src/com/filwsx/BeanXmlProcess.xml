@@ -5,4 +5,9 @@
     <bean id="order" class="com.filwsx.bean.factoryBean.Order" init-method="initMethod" destroy-method="destroyBean">
         <property name="str" value="test"></property>
     </bean>
+
+    <!--配置后置处理器-->
+    <bean id="myPostBean" class="com.filwsx.bean.factoryBean.MyPostBean"></bean>
+    <!--这样会对该xml下所有声明的类增加后置处理器-->
+
 </beans>

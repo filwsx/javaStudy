@@ -51,7 +51,7 @@ public class BeanCollectionTypeTest {
     }
 
     @Test
-    // 测试Bean的生命周期
+    // 测试Bean的生命周期，含后置处理器
     public void test5(){
         ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXmlProcess.xml");
         Order order = context.getBean("order", Order.class);
