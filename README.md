@@ -122,11 +122,11 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 前置课程：Java语言高级部分（反射），有设计模式基础更好
 
-学习建议：
+学习建议：2倍速看完之后手动复现视频演示的效果即可。初期学习不要太过纠结框架源码，学习是一个渐进式的过程。
 
-课程评价：
+课程评价：该课程标题有误，不讲源码只讲怎么用，不要纠结应用场景，只管练习即可。还不错，比javaweb那个好多了。
 
-学习建议：
+参考书籍：暂无。
 
 2022.04.01 开始学习。
 
@@ -144,7 +144,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -160,7 +160,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -176,7 +176,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -192,7 +192,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -208,7 +208,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -224,7 +224,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -240,7 +240,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -256,7 +256,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -272,7 +272,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 
@@ -288,7 +288,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 课程评价：
 
-学习建议：
+参考书籍：暂无。
 
 
 

@@ -58,4 +58,17 @@ public class BeanCollectionTypeTest {
         System.out.println("已经获取对象:" + order);
         ((ClassPathXmlApplicationContext)context).close();
     }
+
+    @Test
+    // 自动装配
+    public void test6(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXmlAutowire.xml");
+
+    }
+
+    @Test
+    // d读取外部属性文件
+    public void test7(){
+
+    }
 }
