@@ -12,6 +12,7 @@
           <file>file://$MODULE_DIR$/src/com/filwsx/BeanXmlCollectionType2.xml</file>
           <file>file://$MODULE_DIR$/src/com/filwsx/factoryBean1.xml</file>
           <file>file://$MODULE_DIR$/src/com/filwsx/BeanXmlProcess.xml</file>
+          <file>file://$MODULE_DIR$/src/com/filwsx/BeanXmlAutowire.xml</file>
         </fileset>
       </configuration>
     </facet>
