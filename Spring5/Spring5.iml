@@ -34,8 +34,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="spring-aop-5.3.16 (3)" level="project" />
     <orderEntry type="library" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" name="druid-1.2.8" level="project" />
+    <orderEntry type="library" name="Spring5" level="project" />
   </component>
 </module>
