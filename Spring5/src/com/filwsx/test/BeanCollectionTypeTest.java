@@ -3,6 +3,7 @@ package com.filwsx.test;
 import com.filwsx.bean.collection.Cou;
 import com.filwsx.bean.collection.Stu;
 import com.filwsx.bean.factoryBean.Order;
+import com.filwsx.bean.school.Course;
 import com.filwsx.bean.school.Student;
 import com.filwsx.bean.school.Teacher;
 import org.junit.Test;
@@ -63,7 +64,8 @@ public class BeanCollectionTypeTest {
     // 自动装配
     public void test6(){
         ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/BeanXmlAutowire.xml");
-
+        Course course = context.getBean("course",Course.class);
+        System.out.println(course);
     }
 
     @Test
