@@ -27,5 +27,6 @@ public class ProxyTest {
 
         // hello.morning("chandler！");
         hello.night("chandler！");
+        // 相当于把方法动态的注入到了HelloProxy实现的invoke方法，调用method.invoke(obj,args)的位置。
     }
 }
