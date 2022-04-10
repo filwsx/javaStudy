@@ -14,6 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanAnnotationTest {
 
     // xml配置组件扫描
+    // CustomerDAO有AOP测试
     @Test
     public void test1(){
         ApplicationContext context = new ClassPathXmlApplicationContext("com/filwsx/beanAnnotation.xml");

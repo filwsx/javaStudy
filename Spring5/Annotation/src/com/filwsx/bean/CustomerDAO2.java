@@ -11,6 +11,6 @@ import org.springframework.stereotype.Service;
 public class CustomerDAO2 implements Customer{
     @Override
     public void add() {
-        System.out.println("Customer dao2 add.....");
+        System.out.println("CustomerDAO2 add.....");
     }
 }

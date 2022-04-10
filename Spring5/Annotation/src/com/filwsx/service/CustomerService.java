@@ -20,9 +20,9 @@ public class CustomerService {
     // @Autowired：根据类型进行注入
     @Autowired
     // @Qualifier：根据名称进行注入
-    @Qualifier(value = "customerDAO2")
+    // @Qualifier(value = "customerDAO2")
     // @Resource：可以根据类型注入，可以根据名称注入
-    // @Resource(name = "customerDAO1")
+    @Resource(name = "customerDAO1")
     private Customer customerDAO;
 
     public void add(){

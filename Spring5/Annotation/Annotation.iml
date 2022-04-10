@@ -28,5 +28,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Spring5" level="project" />
+    <orderEntry type="library" name="com.springsource.org.aspectj.weaver-1.6.8.RELEASE" level="project" />
   </component>
 </module>
