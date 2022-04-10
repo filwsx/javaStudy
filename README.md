@@ -122,15 +122,13 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 前置课程：Java语言
 
-学习建议：2倍速看完之后手动复现视频演示的效果即可。
+学习建议：理解IoC和AOP两个核心概念，最好知道java实现。
 
 ​					初期学习不应纠结框架源码，学习过程是渐进的。也不要纠结应用场景，只管练习。
 
-​					核心理解IoC和AOP两个概念。
+​					2倍速看完一个演示后手动复现即可。如果觉得视频繁琐，可以跟着[官网文档](https://docs.spring.io/spring-framework/docs/5.3.9-SNAPSHOT/reference/html/)、视频配套文档学习。
 
-​					如果觉得视频繁琐，可以跟着[官网文档](https://docs.spring.io/spring-framework/docs/5.3.9-SNAPSHOT/reference/html/)学习。
-
-课程评价：该课程不讲源码只讲怎么用。还可，比javaweb那个好多了，对基础好的或许有些繁琐，看书反而快。
+课程评价：该课程不讲源码只讲怎么用。相比文档和书，视频有些繁琐，较为花时间，但是对小白友好。
 
 参考书籍：暂无。
 

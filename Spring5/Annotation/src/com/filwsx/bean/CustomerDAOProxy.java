@@ -20,37 +20,37 @@ public class CustomerDAOProxy {
 
     //相同切入点抽取
     @Pointcut(value = "execution(* com.filwsx.bean.CustomerDAO.add(..))")
-    public void pointdemo() {
+    public void point() {
 
     }
 
     //前置通知
     //@Before注解表示作为前置通知
-    @Before(value = "pointdemo()")
+    @Before(value = "point()")
     public void before() {
         System.out.println("before.........");
     }
 
     //后置通知（返回通知）
-    @AfterReturning(value = "pointdemo()")
+    @AfterReturning(value = "point()")
     public void afterReturning() {
         System.out.println("afterReturning.........");
     }
 
     //最终通知
-    @After(value = "pointdemo()")
+    @After(value = "point()")
     public void after() {
         System.out.println("after.........");
     }
 
     //异常通知
-    @AfterThrowing(value = "pointdemo()")
+    @AfterThrowing(value = "point()")
     public void afterThrowing() {
         System.out.println("afterThrowing.........");
     }
 
     //环绕通知
-    @Around(value = "pointdemo()")
+    @Around(value = "point()")
     public void around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         System.out.println("环绕之前.........");
 
