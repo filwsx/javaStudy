@@ -137,9 +137,12 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 2022.04.
 
-参考文章：[Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
+参考文章：
 
-​					[依赖注入和控制反转的理解](https://blog.csdn.net/bestone0213/article/details/47424255)
+- [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
+- [依赖注入和控制反转的理解](https://blog.csdn.net/bestone0213/article/details/47424255)
+- [动态代理 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984)
+- [Chapter 6. Aspect Oriented Programming with Spring](https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html)
 
 ## 0X06  spring mvc
 
