@@ -13,9 +13,11 @@
 
 ## 科班自学
 
-https://github.com/ossu/computer-science
+https://github.com/spring2go/cs_study_plan	【推荐】
 
-https://github.com/PKUFlyingPig/cs-self-learning
+https://github.com/PKUFlyingPig/cs-self-learning	【推荐】
+
+https://github.com/ossu/computer-science
 
 https://github.com/izackwu/TeachYourselfCS-CN
 
