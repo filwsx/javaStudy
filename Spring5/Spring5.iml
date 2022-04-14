@@ -40,5 +40,6 @@
     <orderEntry type="library" name="com.springsource.org.aspectj.weaver-1.6.8.RELEASE" level="project" />
     <orderEntry type="library" name="com.springsource.net.sf.cglib-2.2.0" level="project" />
     <orderEntry type="library" name="com.springsource.org.aopalliance-1.0.0" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
   </component>
 </module>
