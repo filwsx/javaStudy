@@ -140,7 +140,7 @@ https://github.com/izackwu/TeachYourselfCS-CN
 
 2022.04.01 开始学习。
 
-2022.04.
+2022.04.15 结束，马马虎虎。
 
 参考文章：
 
