@@ -88,8 +88,9 @@
 - 干货是有的，可以根据自己的节奏跳着看。
 - 大量时间花在画图和修bug（这部分有利有弊，画图易于理解，修bug也算是经验积累，但是太耗时了）。
 - 这部分我理解为先，项目练习放一边了，代码太乱了，很多天看不下去，想跳过了都。
+- 补充课程：[【狂神说Java】JavaWeb入门到实战_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV12J411M7Sj)
 
-参考书籍：暂无
+参考书籍：[Java Servlets - A Tutorial](https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html)
 
 2022.03.11  开始学习（觉得html/css/js部分了解即可，之前也看了）
 
@@ -114,6 +115,7 @@
 
 - 该课程不讲源码只讲怎么用。相比文档和书有些繁琐。
 - 授课过程会临时起意，导致讲的有点乱，文档源码有些乱和不全（Demo5不存在）。
+- 补充课程：[【狂神说Java】Spring5最新完整教程IDEA版通俗易懂_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1WE411d7Dv)
 
 参考书籍：《Spring in Action》。
 
@@ -128,13 +130,31 @@
 - [动态代理 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984)
 - [Chapter 6. Aspect Oriented Programming with Spring](https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html)
 
-## 0X06  spring mvc
+## 0X06  maven
+
+课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
+
+课程时长：1206min，预计3-5天（根据需求选学）
+
+前置课程：IDEA使用
+
+学习建议：根据需求学习，先入门，会用、知道干嘛，根据工作需求再深入学习。
+
+课程评价：【可以】
+
+参考书籍：暂无。
+
+2022.04.16 开始学习
+
+2022.04.16 仅仅学习P1-p53，入门先
+
+## 0X07  spring mvc
 
 课程链接：[一套快速上手spring mvc](https://www.bilibili.com/video/BV1Ry4y1574R)
 
 课程时长：985min，预计3-4天
 
-前置课程：
+前置课程：spring5，javaweb，maven
 
 学习建议：
 
@@ -142,9 +162,7 @@
 
 参考书籍：暂无。
 
-
-
-## 0X07  MyBatis 3
+## 0X08  MyBatis 3
 
 课程链接：[MyBatis实战](https://www.bilibili.com/video/BV1VP4y1c7j7)
 
@@ -157,24 +175,6 @@
 课程评价：
 
 参考书籍：暂无。
-
-
-
-## 0X08  maven
-
-课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
-
-课程时长：1206min，预计3-5天（根据需求选学）
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-
 
 ## 0X09  ssm
 
@@ -190,8 +190,6 @@
 
 参考书籍：暂无。
 
-
-
 ## 0X0A  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
@@ -205,8 +203,6 @@
 课程评价：
 
 参考书籍：暂无。
-
-
 
 ## 0X0B  MyBatisPlus
 
