@@ -146,7 +146,7 @@
 
 2022.04.16 开始学习
 
-2022.04.16 仅仅学习P1-p53，入门先
+2022.04.16 仅仅学习P1-p53，入门先。
 
 ## 0X07  spring mvc
 
@@ -290,6 +290,8 @@
 
 工具：Nginx、Tomcat、Docker
 
-进阶：MySQL高级篇、JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、RocketMQ、ElasticSearch
+进阶：MySQL高级篇、Spring响应式编程、Maven高级部分、git原理、shell编程
+
+中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、RocketMQ、ElasticSearch
 
 实战：谷粒学苑、谷粒商城、尚融宝、尚医通、
