@@ -22,9 +22,38 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<modules>
+  <modules>
 	<module>pro04-maven-moudle</module>
     <module>pro05-maven-moudle</module>
     <module>pro06-maven-moudle</module>
   </modules>
+  <dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+	</dependencies>
+  </dependencyManagement>
 </project>
