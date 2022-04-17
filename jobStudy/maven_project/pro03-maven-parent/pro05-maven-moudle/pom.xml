@@ -22,5 +22,10 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+		<groupId>com.filwsx.maven</groupId>
+		<artifactId>pro06-maven-moudle</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 </project>
