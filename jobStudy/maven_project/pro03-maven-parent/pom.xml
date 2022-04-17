@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<filwsx.spring.version>4.2.0.RELEASE</filwsx.spring.version>
   </properties>
 
   <dependencies>
@@ -22,6 +23,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <modules>
 	<module>pro04-maven-moudle</module>
     <module>pro05-maven-moudle</module>
@@ -32,27 +34,27 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>${filwsx.spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>${filwsx.spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>${filwsx.spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>${filwsx.spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>${filwsx.spring.version}</version>
 		</dependency>
 	</dependencies>
   </dependencyManagement>
