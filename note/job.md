@@ -1,4 +1,4 @@
-# 培训班学习路线
+# 学习路线
 
 ## 0x01  Java
 
@@ -274,8 +274,6 @@
 进阶：MySQL高级篇、Spring响应式编程、Maven高级部分、git原理、shell编程
 
 中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、RocketMQ、ElasticSearch
-
-实战：
 
 # 项目实战
 
