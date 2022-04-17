@@ -21,5 +21,12 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>4.0.0.RELEASE</version>
+	</dependency>
+
   </dependencies>
 </project>

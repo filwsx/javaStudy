@@ -38,6 +38,13 @@
 		<artifactId>project</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<scope>compile</scope>
+		<exclusions>
+			<exclusion>
+				<!-- 指定要排除的依赖的坐标（不需要写version） -->
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+			</exclusion>
+		</exclusions>
 	</dependency>
   </dependencies>
 
