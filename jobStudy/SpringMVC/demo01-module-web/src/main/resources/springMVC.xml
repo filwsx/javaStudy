@@ -2,9 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.filwsx.springmvc"></context:component-scan>
+    <context:component-scan base-package="com.filwsx.springmvc.controller"></context:component-scan>
 
     <bean id="viewResolver" class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
         <property name="order" value="1"/>
@@ -16,10 +16,11 @@
                         <property name="prefix" value="/WEB-INF/webpages/"/>
                         <property name="suffix" value=".html"/>
                         <property name="templateMode" value="HTML5"/>
-                        <property name="characterEncoding" value="UTF-8"/>
+                        <property name="characterEncoding" value="UTF-8" />
                     </bean>
                 </property>
             </bean>
         </property>
     </bean>
+
 </beans>
