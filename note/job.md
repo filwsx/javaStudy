@@ -1,6 +1,6 @@
 # 学习路线
 
-## 0x01  Java
+## 0x01  JavaSE
 
 课程链接：[尚硅谷Java入门视频教程](https://www.bilibili.com/video/BV1Kb411W75N)
 
@@ -267,11 +267,25 @@
 
 参考书籍：暂无。
 
+## 0X0F linux+shell
+
+
+
+## 0X10 git&github
+
+
+
+## 0X11 Nginx
+
+
+
+## 0X12 Docker
+
+
+
 ## 延后
 
-工具：Nginx、Tomcat、Docker
-
-进阶：MySQL高级篇、Spring响应式编程、Maven高级部分、git原理、shell编程
+进阶：MySQL高级篇、Spring响应式编程、Maven高级部分
 
 中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、RocketMQ、ElasticSearch
 
@@ -293,7 +307,7 @@
 
 ## 0x02 谷粒学苑
 
-课程链接：
+课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
 
 课程时长：
 
@@ -307,7 +321,7 @@
 
 ## 0x03 谷粒商城
 
-课程链接：
+课程链接：[《谷粒商城》Java架构师 | 微服务 | 大型电商项目](https://www.bilibili.com/video/BV1np4y1C7Yf)
 
 课程时长：
 
@@ -321,7 +335,7 @@
 
 ## 0x04 尚融宝
 
-课程链接：
+课程链接：[尚硅谷《尚融宝》Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR)
 
 课程时长：
 
@@ -335,7 +349,7 @@
 
 ## 0x05 尚医通
 
-课程链接：
+课程链接：[微服务+分布式+全栈项目【尚医通】](https://www.bilibili.com/video/BV1V5411K7rT)
 
 课程时长：
 
@@ -347,6 +361,38 @@
 
 课程评价：
 
-# 其他
+## 0x06 电商数仓
 
-简历、大厂面试、高频考题、项目经验
+课程链接：[电商数仓V4.0丨大数据数据仓库项目实战](https://www.bilibili.com/video/BV1rL411E7uz)
+
+课程时长：
+
+技术栈：
+
+适用阶段：
+
+学习建议：
+
+课程评价：
+
+# 大厂面试
+
+## 简历
+
+
+
+## 算法
+
+[PAT 计算机程序设计能力测试](https://www.patest.cn/practice)
+
+[力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode-cn.com/)
+
+[牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网](https://www.nowcoder.com/exam/oj)
+
+## 试题
+
+[尚硅谷经典Java面试题第一季(java面试精讲)](https://www.bilibili.com/video/BV1Eb411P7bP)
+
+[尚硅谷Java大厂面试题第2季，面试必刷，跳槽大厂神器](https://www.bilibili.com/video/BV18b411M7xz)
+
+[尚硅谷Java大厂面试题第3季，跳槽必刷题目+必扫技术盲点（周阳主讲）](https://www.bilibili.com/video/BV1Hy4y1B78T)
