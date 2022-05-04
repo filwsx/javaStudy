@@ -6,6 +6,14 @@
 </head>
 <body>
 <a th:href="@{/testServletAPI(username='admin',password='23456')}">测试testServletAPI</a>
-<a th:href="@{/testParam(username='admin',password='23456')}">测试testParam</a>
+<a th:href="@{/testParam(username='admin',password='23456')}">测试testParam形参</a>
+<form th:action="@{/testParam2}" method="post">
+    用户名：<input type="text" name="username">
+    密码：<input type="password" name="password">
+    爱好：<input type="checkbox" name="hobby" value="a">
+    <input type="checkbox" name="hobby" value="b">
+    <input type="checkbox" name="hobby" value="c">
+    <input type="submit" value="测试testParam形参">
+</form>
 </body>
 </html>
