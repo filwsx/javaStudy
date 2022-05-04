@@ -1,10 +1,12 @@
 package com.filwsx.springmvc.controller;
 
+import com.filwsx.springmvc.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Arrays;
 
 /**
@@ -15,6 +17,7 @@ import java.util.Arrays;
 public class ParamController {
     @RequestMapping("/testServletAPI")
     public String testServletAPI(HttpServletRequest re){
+        HttpSession session = re.getSession();
         String username = re.getParameter("username");
         String password = re.getParameter("password");
         System.out.println("username:" + username);
@@ -38,6 +41,12 @@ public class ParamController {
         System.out.println("username:" + username);
         System.out.println("password:" + password);
         System.out.println("hobby:" + Arrays.toString(hobby));
+        return "success";
+    }
+
+    @RequestMapping("/testpojo")
+    public String testPOJO(User user){
+        System.out.println(user);
         return "success";
     }
 }
