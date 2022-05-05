@@ -15,8 +15,14 @@ public class demo01Controller {
         return "index";
     }
 
-    @RequestMapping("/test")
-    public String test(){
-        return "test";
+    @RequestMapping("/testRequestMapping")
+    public String testRequestMapping(){
+        return "testRequestMapping";
     }
+
+    @RequestMapping("/testScope")
+    public String testScope(){
+        return "testScope";
+    }
+
 }

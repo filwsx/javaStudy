@@ -29,7 +29,7 @@ public class ScopeController {
 
     @RequestMapping("/testModel")
     public String testModel(Model model){
-        model.addAttribute("testRequestScope","hello,Model");
+        model.addAttribute("testScope","hello,Model");
         return "success";
     }
 }

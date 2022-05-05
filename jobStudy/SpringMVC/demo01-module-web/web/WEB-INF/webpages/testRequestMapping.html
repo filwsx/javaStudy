@@ -5,8 +5,8 @@
     <title>TestRequestMapping</title>
 </head>
 <body>
-<a th:href="@{/testServletAPI(username='admin',password='23456')}">测试testServletAPI</a>
-<a th:href="@{/testParam(username='admin',password='23456')}">测试testParam形参</a>
+<a th:href="@{/testServletAPI(username='admin',password='23456')}">测试testServletAPI</a><br>
+<a th:href="@{/testParam(username='admin',password='23456')}">测试testParam形参</a><br>
 <form th:action="@{/testParam2}" method="post">
     用户名：<input type="text" name="username">
     密码：<input type="password" name="password">
@@ -15,13 +15,15 @@
     <input type="checkbox" name="hobby" value="c">
     <input type="submit" value="测试testParam形参">
 </form>
+<br>
 <form th:action="@{/testpojo}" method="post">
-    用户名：<input type="text" name="username"><br>
-    密码：<input type="password" name="password"><br>
-    性别：<input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女<br>
-    年龄：<input type="text" name="age"><br>
-    邮箱：<input type="text" name="email"><br>
+    用户名：<input type="text" name="username">
+    密码：<input type="password" name="password">
+    性别：<input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女
+    年龄：<input type="text" name="age">
+    邮箱：<input type="text" name="email">
     <input type="submit">
 </form>
+<br>
 </body>
 </html>
