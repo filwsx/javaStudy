@@ -2,6 +2,7 @@ package com.filwsx.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,4 +18,11 @@ public class ScopeController {
         return "success";
     }
 
+    @RequestMapping("/testModelAndView")
+    public ModelAndView testModeAndView(){
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("testScope","hello,ModelAndView");
+        mav.setViewName("success");
+        return mav;
+    }
 }
