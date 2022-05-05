@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>TestParam</title>
+    <title>TestRequestMapping</title>
 </head>
 <body>
-
-<!--以下为域对象相关测试-->
-<hr>
-<a th:href="@{/scopeControllerServletAPI}">测试ServletAPI域共享数据</a>
-<a th:href="@{/testModelAndView}">测试ModelAndViewI域共享数据</a>
-
-<!--以下为RequestMapping相关测试-->
-<hr>
 <a th:href="@{/testServletAPI(username='admin',password='23456')}">测试testServletAPI</a>
 <a th:href="@{/testParam(username='admin',password='23456')}">测试testParam形参</a>
 <form th:action="@{/testParam2}" method="post">
