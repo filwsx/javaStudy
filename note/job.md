@@ -272,19 +272,23 @@
 
 参考书籍：暂无。
 
-## 0X0F linux+shell
+## 0X0F IDEA+debug
 
 
 
-## 0X10 git&github
+## 0X10 linux+shell
 
 
 
-## 0X11 Nginx
+## 0X11 git&github
 
 
 
-## 0X12 Docker
+## 0X12 Nginx
+
+
+
+## 0X13 Docker
 
 
 
