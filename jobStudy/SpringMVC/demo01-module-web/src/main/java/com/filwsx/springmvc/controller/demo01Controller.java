@@ -25,4 +25,8 @@ public class demo01Controller {
         return "testScope";
     }
 
+    @RequestMapping("/testView")
+    public String testView(){
+        return "testView";
+    }
 }
