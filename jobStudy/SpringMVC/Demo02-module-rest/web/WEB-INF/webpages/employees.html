@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>employees</title>
 </head>
 <body>
-    <table>
+
+    <table id="dataTable">
         <tr>
-            <th>Employee Info</th>
+            <th colspan="5">Employee Info</th>
         </tr>
         <tr>
             <th>id</th>
@@ -16,16 +17,43 @@
             <th>gender</th>
             <th>options</th>
         </tr>
-        <tr th:each="employee:${employees}">
+        <tr th:each="employee : ${employees}">
             <td th:text="${employee.id}"></td>
             <td th:text="${employee.lastName}"></td>
             <td th:text="${employee.email}"></td>
             <td th:text="${employee.gender}"></td>
             <td>
-                <a href="">delete</a>
+                <a @click="deleteEmployee" th:href="@{'/employee/'+${employee.id}}">delete</a>
                 <a href="">update</a>
             </td>
         </tr>
     </table>
+
+    <form id="deleteForm" method="post">
+        <input type="hidden" name="_method" value="delete">
+    </form>
+
+    <script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+    <script type="text/javascript">
+        var vue = new Vue({
+            el:"#dataTable",
+            methods:{
+                deleteEmployee:function (event) {
+                    //证明该函数执行了
+                    alert("test")
+                    //根据id获取表单元素
+                    var deleteForm = document.getElementById("deleteForm");
+                    //将触发点击事件的超链接的href属性赋值给表单的action
+                    deleteForm.action = event.target.href;
+                    //提交表单
+                    deleteForm.submit();
+                    //取消超链接的默认行为
+                    event.preventDefault();
+                    // 一直测试不好，放弃了，这是js和vue不太懂导致的，不影响后边学习 20220517 1459
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
