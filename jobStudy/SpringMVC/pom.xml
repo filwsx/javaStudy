@@ -11,7 +11,7 @@
     <modules>
         <module>HelloWorld-module-web</module>
         <module>demo01-module-web</module>
-        <module>test</module>
+        <module>Demo02-module-rest</module>
     </modules>
 
     <properties>

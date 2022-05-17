@@ -6,11 +6,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
-       https://www.springframework.org/schema/context/spring-context.xsd
-       http://www.springframework.org/schema/mvc
-       https://www.springframework.org/schema/context/spring-mvc.xsd">
+       https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.filwsx.springmvc.controller"/>
+    <context:component-scan base-package="com.filwsx.springmvc.resetful"/>
 
     <bean id="viewResolver" class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
         <property name="order" value="1"/>
@@ -29,7 +27,4 @@
         </property>
     </bean>
 
-    <!--爆红，一堆错误，500status-->
-    <!--<mvc:view-controller path="/" view-name="index"/>
-    <mvc:annotation-driven/>-->
 </beans>
