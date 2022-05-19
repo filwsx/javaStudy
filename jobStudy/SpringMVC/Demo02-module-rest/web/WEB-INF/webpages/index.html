@@ -7,6 +7,39 @@
 <body>
 <h1>test Main</h1>
 <a th:href="@{/employee}">查看员工信息</a>
-<a th:href="@{/employee}">查看员工信息</a>
+<br>
+<br>
+<form th:action="@{/testRequestBody}" method="post">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="测试@RequestBody">
+</form>
+<br>
+<br>
+<form th:action="@{/testRequestEntity}" method="post">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="测试RequestEntity">
+</form>
+<br>
+<br>
+<a th:href="@{/testResponse}">通过servletAPI的response对象响应浏览器数据</a>
+<br>
+<br>
+<a th:href="@{/testResponseBody}">通过@ResponseBody响应浏览器数据</a>
+<br>
+<br>
+<a th:href="@{/testResponseUser}">通过@ResponseBody响应浏览器User对象</a>
+<br>
+<br>
+<a th:href="@{/testDown}">下载包子</a>
+<br>
+<br>
+<form th:action="@{/testUp}" method="post" enctype="multipart/form-data">
+    头像：<input type="file" name="photo"><br>
+    <input type="submit" value="上传">
+</form>
+<br>
+<br>
 </body>
 </html>
