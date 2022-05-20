@@ -42,4 +42,25 @@
     <!--配置文件上传解析器，将上传的文件封装为MultipartFile-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <!--<bean class="com.filwsx.rest.interceptor.InterceptorTest"></bean>-->
+        <mvc:interceptor>
+            <mvc:mapping path="/testInterceptor"/>
+            <ref bean="interceptorTest"></ref>
+            <!-- 此处tag  ref要放到 mvc之后-->
+        </mvc:interceptor>
+        <ref bean="interceptorTest2"></ref>
+    </mvc:interceptors>
+
+    <!--配置异常处理-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.ArithmeticException">error</prop>
+            </props>
+        </property>
+        <property name="exceptionAttribute" value="ex"></property>
+    </bean>
+
 </beans>
