@@ -12,6 +12,7 @@
         <module>HelloWorld-module-web</module>
         <module>demo01-module-web</module>
         <module>Demo02-module-rest</module>
+        <module>Demo03-module-annotation</module>
     </modules>
 
     <properties>

@@ -4,7 +4,7 @@ package com.filwsx.rest.bean;
  * @author filwsx
  * @create 2022-05-17 13:22
  */
-public class Employee {
+public class Employee{
 
     private Integer id;
     private String lastName;
