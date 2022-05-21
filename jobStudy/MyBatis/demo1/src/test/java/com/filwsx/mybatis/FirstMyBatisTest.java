@@ -25,13 +25,13 @@ public class FirstMyBatisTest {
 
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(inputStream);
 
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
         int res = mapper.insertUser();
 
-        sqlSession.commit();
+        // sqlSession.commit();
 
         System.out.println("res:"+ res);
     }
