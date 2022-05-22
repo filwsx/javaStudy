@@ -7,4 +7,24 @@
     <insert id="insertUser">
         insert into t_user values(6,'李四','123',23,'男','456@110.com');
     </insert>
+
+    <!--void updateUser();-->
+    <update id="updateUser">
+        update t_user set username = '张三' where id = 2
+    </update>
+
+    <!--void deleteUser();-->
+    <delete id="deleteUser">
+        delete from t_user where id = 5
+    </delete>
+
+    <select id="getUserById" resultType="com.filwsx.mybatis.pojo.User">
+        select * from t_user where id = 6
+    </select>
+
+    <!--List<User> getAllUser();-->
+    <select id="getAllUser" resultType="com.filwsx.mybatis.pojo.User">
+        select * from t_user
+    </select>
+
 </mapper>
