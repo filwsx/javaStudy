@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.filwsx.mybatis.mapper.UserMapper">
+<mapper namespace="com.filwsx.mybatis.mapper.ParameterMapper">
     <!--int insertUser();-->
     <insert id="insertUser">
         insert into t_user values(6,'李四','123',23,'男','456@110.com');
