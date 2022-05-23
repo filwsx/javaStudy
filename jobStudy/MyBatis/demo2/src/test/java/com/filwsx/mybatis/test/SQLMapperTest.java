@@ -18,7 +18,7 @@ public class SQLMapperTest {
     public void testGetUserByLike(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         SQLMapper mapper = sqlSession.getMapper(SQLMapper.class);
-        List<User> list = mapper.getUserByLike("a");
+        List<User> list = mapper.getUserByLike("张");
         System.out.println(list);
     }
 
