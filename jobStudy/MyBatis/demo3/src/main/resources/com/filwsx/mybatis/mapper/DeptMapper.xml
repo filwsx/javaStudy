@@ -9,4 +9,24 @@
         select * from t_dept where did = #{did}
     </select>
 
+    <resultMap id="deptAndEmpResultMap" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="dept_name"></result>
+        <!--
+            collection：处理一对多的映射关系
+            ofType：表示该属性所对应的集合中存储数据的类型
+        -->
+        <collection property="emps" ofType="Emp">
+            <id property="eid" column="eid"></id>
+            <result property="empName" column="emp_name"></result>
+            <result property="age" column="age"></result>
+            <result property="sex" column="sex"></result>
+            <result property="email" column="email"></result>
+        </collection>
+    </resultMap>
+    <!--Dept getDeptAndEmp(@Param("did") Integer did);-->
+    <select id="getDeptAndEmp" resultMap="deptAndEmpResultMap">
+        select * from t_dept left join t_emp on t_dept.did = t_emp.did where t_dept.did = #{did}
+    </select>
+
 </mapper>
