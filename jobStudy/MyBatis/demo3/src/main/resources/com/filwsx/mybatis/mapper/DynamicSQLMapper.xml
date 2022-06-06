@@ -50,9 +50,11 @@
         </where>
     </select>
 
+    <sql id="empColumns">eid,emp_name,age,sex,email</sql>
+
     <!--List<Emp> getEmpByIf(Emp emp);-->
     <select id="getEmpByIf" resultType="Emp">
-        select * from t_emp where 1=1
+        select <include refid="empColumns"></include> from t_emp where 1=1
         <if test="empName != null and empName != ''">
             and emp_name = #{empName}
         </if>
