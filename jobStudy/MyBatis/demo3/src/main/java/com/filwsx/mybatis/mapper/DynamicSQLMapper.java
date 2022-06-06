@@ -19,4 +19,9 @@ public interface DynamicSQLMapper {
 
     List<Emp> getEmpByTrim(Emp emp);
 
+    /**
+     * 测试choose、when、otherwise
+     */
+    List<Emp> getEmpByChoose(Emp emp);
+
 }

@@ -28,6 +28,15 @@ public class DynamicMapperTest {
     }
 
     @Test
+    public void testGetEmpByChoose(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
+        // List<Emp> list = mapper.getEmpByChoose(new Emp(null, "李四", 33, "", ""));
+        List<Emp> list = mapper.getEmpByChoose(new Emp(null, "", 33, "", ""));
+        System.out.println(list);
+    }
+
+    @Test
     public void testInsertMoreByList(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         DynamicSQLMapper dynamicSQLMapper = sqlSession.getMapper(DynamicSQLMapper.class);
