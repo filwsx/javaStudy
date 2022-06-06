@@ -64,8 +64,7 @@
         -->
         <association property="dept"
                      select="com.filwsx.mybatis.mapper.DeptMapper.getEmpAndDeptByStepTwo"
-                     column="did"
-                     fetchType="eager"></association>
+                     column="did"></association>
     </resultMap>
     <!--Emp getEmpAndDeptByStepOne(@Param("eid") Integer eid);-->
     <select id="getEmpAndDeptByStepOne" resultMap="empAndDeptByStepResultMap">
