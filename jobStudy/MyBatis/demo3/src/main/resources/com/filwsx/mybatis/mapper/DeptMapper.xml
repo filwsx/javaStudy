@@ -29,4 +29,17 @@
         select * from t_dept left join t_emp on t_dept.did = t_emp.did where t_dept.did = #{did}
     </select>
 
+    <resultMap id="deptAndEmpByStepResultMap" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="dept_name"></result>
+        <collection property="emps"
+                    select="com.filwsx.mybatis.mapper.EmpMapper.getDeptAndEmpByStepTwo"
+                    column="did">
+        </collection>
+    </resultMap>
+    <!--Dept getDeptAndEmpByStepOne(@Param("did") Integer did);-->
+    <select id="getDeptAndEmpByStepOne" resultMap="deptAndEmpByStepResultMap">
+        select * from t_dept where did = #{did}
+    </select>
+
 </mapper>
