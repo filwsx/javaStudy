@@ -3,8 +3,26 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.filwsx.mybatis.mapper.DynamicSQLMapper">
-    <!--List<Emp> getEmpByCondition(Emp emp);-->
-    <select id="getEmpByCondition" resultType="Emp">
+
+    <!--List<Emp> getEmpByIf(Emp emp);-->
+    <select id="getEmpByIf" resultType="Emp">
+        select * from t_emp where 1=1
+        <if test="empName != null and empName != ''">
+            and emp_name = #{empName}
+        </if>
+        <if test="age != null and age != ''">
+            and age = #{age}
+        </if>
+        <if test="sex != null and sex != ''">
+            and sex = #{sex}
+        </if>
+        <if test="email != null and email != ''">
+            and email = #{email}
+        </if>
+    </select>
+
+    <!--List<Emp> getEmpByWhere(Emp emp);-->
+    <select id="getEmpByWhere" resultType="Emp">
         select * from t_emp
         <where>
             <if test="empName != null and empName != ''">
@@ -22,4 +40,22 @@
         </where>
     </select>
 
+    <!--List<Emp> getEmpByTrim(Emp emp);-->
+    <select id="getEmpByTrim" resultType="Emp">
+        select * from t_emp
+        <trim prefix="where" suffixOverrides="and|or">
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName} and
+            </if>
+            <if test="age != null and age != ''">
+                age = #{age} or
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex} and
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email}
+            </if>
+        </trim>
+    </select>
 </mapper>

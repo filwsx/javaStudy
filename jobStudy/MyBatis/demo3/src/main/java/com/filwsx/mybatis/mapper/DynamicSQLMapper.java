@@ -9,9 +9,14 @@ import java.util.List;
  * @create 2022-06-06 19:35
  */
 public interface DynamicSQLMapper {
+
     /**
      * 多条件查询
      */
-    List<Emp> getEmpByCondition(Emp emp);
+    List<Emp> getEmpByIf(Emp emp);
+
+    List<Emp> getEmpByWhere(Emp emp);
+
+    List<Emp> getEmpByTrim(Emp emp);
 
 }

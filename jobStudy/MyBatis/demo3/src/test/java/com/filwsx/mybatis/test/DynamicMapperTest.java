@@ -19,8 +19,12 @@ public class DynamicMapperTest {
     public void testGetEmpByCondition(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
-        List<Emp> list = mapper.getEmpByCondition(new Emp(null, "张三", null, "", null));
-        System.out.println(list);
+        List<Emp> list1 = mapper.getEmpByIf(new Emp(null, "王五", null, "", null));
+        List<Emp> list2 = mapper.getEmpByWhere(new Emp(null, "张三", null, "", null));
+        List<Emp> list3 = mapper.getEmpByTrim(new Emp(null, "李四", null, "", null));
+        System.out.println(list1);
+        System.out.println(list2);
+        System.out.println(list3);
     }
 
     @Test
