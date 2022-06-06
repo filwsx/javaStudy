@@ -1,6 +1,7 @@
 package com.filwsx.mybatis.mapper;
 
 import com.filwsx.mybatis.pojo.Dept;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author filwsx
