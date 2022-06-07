@@ -1,10 +1,12 @@
 package com.filwsx.mybatis.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author filwsx
  * @create 2022-05-23 15:18
  */
-public class Emp {
+public class Emp implements Serializable {
 
     private Integer eid;
 
