@@ -1,4 +1,48 @@
-# 学习路线
+# 必备工具
+
+## 0X01 git&github
+
+课程链接：[Git入门到精通全套教程（涵盖GitHub\Gitee码云\GitLab）](https://www.bilibili.com/video/BV1vy4y1s7k6)
+
+课程时长：293min，预计2天
+
+前置课程：windows or Linux熟练使用
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0X02 Linux+shell
+
+课程链接：[3天搞定Linux，1天搞定Shell，清华学神带你通关（2022版）](https://www.bilibili.com/video/BV1WY4y1H7d3)
+
+课程时长：1234min，预计7-10天
+
+前置课程：有手，智商在线
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0X03 IDEA+debug
+
+课程链接：[IDEA教程(idea经典之作，idea安装，idea使用)_](https://www.bilibili.com/video/BV1PW411X75p)
+
+课程时长：237min，预计2天
+
+前置课程：windows or Linux熟练使用
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+# 基础阶段
 
 ## 0x01  JavaSE
 
@@ -200,7 +244,7 @@
 
 2022.06.07 学习完成。
 
-## 0X09  ssm整合
+## ~~0X09  ssm整合~~
 
 课程链接：[ssm整合快速开发CRUD](https://www.bilibili.com/video/BV17W411g7zP)
 
@@ -208,19 +252,17 @@
 
 前置课程：Spring、SpringMVC、MyBatis
 
-学习建议：学完此课程，建议完成"尚筹网项目"实战，对之前所学的所有知识进行消化巩固！
+学习建议：2018年的课程，有些过时。直接通过"尚筹网项目"实战，对之前所学的所有知识进行消化巩固！
 
-课程评价：
+课程评价：无。
 
 参考书籍：暂无。
-
-2022.06.08 开始学习。
 
 ## 0X0A 实战：尚筹网
 
 课程链接：[尚筹网Java项目实战开发(含SSM框架,微服务架构)](https://www.bilibili.com/video/BV1bE411T7oZ)
 
-课程时长：4640min，预计12-15天
+课程时长：4640min，预计1个月
 
 技术栈：SSM、Maven
 
@@ -228,15 +270,17 @@
 
 学习建议：
 
-- 做完这个项目，可以尝试找无经验要求的工作了
+- 做完这个项目，可以尝试找对经验要求不高的工作了
 
 课程评价：
 
-## 0X0B  Redis 6
+# 进阶阶段
+
+## 0X01  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
-课程时长：635min，预计3-4天
+课程时长：635min，预计4-6天
 
 前置课程：
 
@@ -246,11 +290,11 @@
 
 参考书籍：暂无。
 
-## 0X0C  Nginx核心
+## 0X02  Nginx核心
 
 课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
 
-课程时长：635min，预计3-4天
+课程时长：401min，预计2-3天
 
 前置课程：
 
@@ -260,11 +304,11 @@
 
 参考书籍：暂无。
 
-## 0X0D Spring注解驱动
+## 0X03 Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
-课程时长：687min，预计3-4天
+课程时长：687min，预计4-6天
 
 前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
 
@@ -274,11 +318,11 @@
 
 参考书籍：暂无。
 
-## 0X0E  SpringBoot 2
+## 0X04  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
-课程时长：1572min，预计5-7天
+课程时长：1572min，预计9-12天
 
 前置课程：
 
@@ -288,11 +332,11 @@
 
 参考书籍：暂无。
 
-## 0x0F 实战：谷粒学苑
+## 0x05 实战：谷粒学苑
 
 课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
 
-课程时长：4697min
+课程时长：4697min，预计1个月
 
 技术栈：
 
@@ -302,11 +346,11 @@
 
 课程评价：
 
-## 0X10  SpringCloud
+## 0X06  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
-课程时长：1536min，预计5-7天
+课程时长：1536min，预计9-12天
 
 前置课程：
 
@@ -316,11 +360,11 @@
 
 参考书籍：暂无。
 
-## 0X11  MyBatisPlus
+## 0X07  MyBatisPlus
 
 课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
-课程时长：333min，预计1-2天
+课程时长：333min，预计2-3天
 
 前置课程：Mybatis3，Spring Boot
 
@@ -330,7 +374,7 @@
 
 参考书籍：暂无。
 
-## 0X12 MQ
+## 0X08 MQ
 
 课程链接：[RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz)
 
@@ -344,11 +388,11 @@
 
 参考书籍：暂无。
 
-## 0x13 实战：尚医通
+## 0x09 实战：尚医通
 
 课程链接：[微服务+分布式+全栈项目【尚医通】](https://www.bilibili.com/video/BV1V5411K7rT)
 
-课程时长：2366min
+课程时长：2366min，预计15-18天
 
 技术栈：SSM、Spring Cloud、Spring Boot、MQ、Redis
 
@@ -358,11 +402,11 @@
 
 课程评价：
 
-## 0x14 实战：尚融宝
+## 0x0A 实战：尚融宝
 
 课程链接：[尚硅谷《尚融宝》Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR)
 
-课程时长：4205min
+课程时长：4205min，预计1个月
 
 技术栈：
 
@@ -372,11 +416,11 @@
 
 课程评价：
 
-## 0x15 Docker
+## 0x0B Docker
 
 课程链接：[2022版Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY)
 
-课程时长：805min，预计 天
+课程时长：805min，预计5-8天
 
 前置课程：
 
@@ -386,7 +430,7 @@
 
 参考书籍：暂无。
 
-## 0x16 Vue
+## 0x0C Vue
 
 课程链接：[Vue2.0+Vue3.0全套教程丨vuejs从入门到精通](https://www.bilibili.com/video/BV1Zy4y1K7SH)
 
@@ -400,11 +444,11 @@
 
 参考书籍：暂无。
 
-## 0x17 实战：谷粒商城
+## 0x0D 实战：谷粒商城
 
 课程链接：[《谷粒商城》Java架构师 | 微服务 | 大型电商项目](https://www.bilibili.com/video/BV1np4y1C7Yf)
 
-课程时长：6286min
+课程时长：6286min，预计1.5个月
 
 技术栈：
 
@@ -414,53 +458,25 @@
 
 课程评价：
 
-# 工具类
+# 内功锤炼
 
-## 0X01 git&github
+## 0x01 数据结构与算法
 
-课程链接：[Git入门到精通全套教程（涵盖GitHub\Gitee码云\GitLab）](https://www.bilibili.com/video/BV1vy4y1s7k6)
+## 0x02 操作系统
 
-课程时长：293min，预计2天
+## 0x03 设计模式
 
-前置课程：windows or Linux熟练使用
+## 0x04 JVM
 
-学习建议：
+## 0x05 计算机网络
 
-课程评价：
+# 架构师
 
-参考书籍：暂无。
 
-## 0X02 Linux+shell
 
-课程链接：[3天搞定Linux，1天搞定Shell，清华学神带你通关（2022版）](https://www.bilibili.com/video/BV1WY4y1H7d3)
+# 待定
 
-课程时长：1234min，预计7-10天
-
-前置课程：有手，智商在线
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X03 IDEA+debug
-
-课程链接：[IDEA教程(idea经典之作，idea安装，idea使用)_](https://www.bilibili.com/video/BV1PW411X75p)
-
-课程时长：237min，预计2天
-
-前置课程：windows or Linux熟练使用
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-# 延后学习
-
-进阶：MySQL高级篇、Spring响应式编程、Maven高级部分、Nginx高级部分
+进阶：MySQL高级篇、Maven高级部分、Nginx高级部分
 
 中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、ElasticSearch
 
