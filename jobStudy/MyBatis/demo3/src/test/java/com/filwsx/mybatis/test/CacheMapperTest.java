@@ -31,7 +31,6 @@ public class CacheMapperTest {
     public void testCacheLevel2() throws IOException {
         InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
-
         SqlSession sqlSession1 = sqlSessionFactory.openSession(true);
         SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
         CacheMapper cacheMapper1 = sqlSession1.getMapper(CacheMapper.class);

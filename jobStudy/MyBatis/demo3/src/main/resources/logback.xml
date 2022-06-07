@@ -5,8 +5,7 @@
               class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
     <!-- 日志输出的格式 -->
-    <!-- 按照顺序分别是：时间、日志级别、线程名称、打印日志的类、日志主体内容、换行 -
-->
+    <!-- 按照顺序分别是：时间、日志级别、线程名称、打印日志的类、日志主体内容、换行 -->
 <pattern>[%d{HH:mm:ss.SSS}] [%-5level] [%thread] [%logger]
 [%msg]%n</pattern>
 </encoder>
@@ -18,5 +17,5 @@
         <appender-ref ref="STDOUT" />
     </root>
     <!-- 根据特殊需求指定局部日志级别 -->
-    <logger name="com.atguigu.crowd.mapper" level="DEBUG"/>
+    <logger name="com.filwsx.mybatis.mapper" level="DEBUG"/>
 </configuration>
