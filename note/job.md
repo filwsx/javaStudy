@@ -186,15 +186,15 @@
 
 前置课程：JDBC，maven
 
-学习建议：
+学习建议：跟着做，联想MySQL学习的内容和实际开发者要解决的需求
 
-课程评价：
+课程评价：推荐！
 
 参考书籍：暂无。
 
 2022.05.21 开始学习。
 
-2022.05.2 学习完成。
+2022.06.07 学习完成。
 
 ## 0X09  ssm
 
@@ -224,21 +224,7 @@
 
 参考书籍：暂无。
 
-## 0X0B  MyBatisPlus
-
-课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
-
-课程时长：333min，预计1-2天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X0C  Spring注解驱动
+## 0X0B  Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
@@ -252,7 +238,7 @@
 
 参考书籍：暂无。
 
-## 0X0D  SpringBoot 2
+## 0X0C  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
@@ -266,13 +252,27 @@
 
 参考书籍：暂无。
 
-## 0X0E  SpringCloud
+## 0X0D  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
 课程时长：1536min，预计5-7天
 
 前置课程：
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0X0E  MyBatisPlus
+
+课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
+
+课程时长：333min，预计1-2天
+
+前置课程：Mybatis3，Spring Boot
 
 学习建议：
 
