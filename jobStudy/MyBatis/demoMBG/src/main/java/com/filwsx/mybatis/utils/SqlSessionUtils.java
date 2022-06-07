@@ -1,4 +1,4 @@
-package com.filwsx.mybatis.utils;
+package com.filwsx.mybatis.mapper.utils;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
