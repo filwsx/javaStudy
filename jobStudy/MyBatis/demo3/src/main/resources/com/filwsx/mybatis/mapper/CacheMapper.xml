@@ -10,5 +10,5 @@
     <select id="getEmpById" resultType="Emp">
         select * from t_emp where eid=#{eid}
     </select>
-    
+
 </mapper>
