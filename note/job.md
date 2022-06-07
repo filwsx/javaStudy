@@ -130,7 +130,7 @@
 - [动态代理 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984)
 - [Chapter 6. Aspect Oriented Programming with Spring](https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html)
 
-## 0X06  maven
+## 0X06  maven基本
 
 课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
 
@@ -194,9 +194,13 @@
 
 2022.05.21 开始学习。
 
+2022.05.24 暂停
+
+2022.06.06 继续
+
 2022.06.07 学习完成。
 
-## 0X09  ssm
+## 0X09  ssm整合
 
 课程链接：[ssm整合快速开发CRUD](https://www.bilibili.com/video/BV17W411g7zP)
 
@@ -218,7 +222,7 @@
 
 课程时长：4640min，预计12-15天
 
-技术栈：SSM
+技术栈：SSM、Maven
 
 适用阶段：
 
@@ -242,7 +246,7 @@
 
 参考书籍：暂无。
 
-## 0X0C  Nginx
+## 0X0C  Nginx核心
 
 课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
 
