@@ -224,9 +224,11 @@
 
 学习建议：
 
+- 做完这个项目，可以尝试找无经验要求的工作了
+
 课程评价：
 
-## 0X0E  Redis 6
+## 0X0B  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
@@ -240,7 +242,7 @@
 
 参考书籍：暂无。
 
-## 0X0F  Nginx
+## 0X0C  Nginx
 
 课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
 
@@ -254,7 +256,7 @@
 
 参考书籍：暂无。
 
-## 0X10  Spring注解驱动
+## 0X0D Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
@@ -268,7 +270,7 @@
 
 参考书籍：暂无。
 
-## 0X11  SpringBoot 2
+## 0X0E  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
@@ -282,7 +284,7 @@
 
 参考书籍：暂无。
 
-## 0x12 实战：谷粒学苑
+## 0x0F 实战：谷粒学苑
 
 课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
 
@@ -296,7 +298,7 @@
 
 课程评价：
 
-## 0X13  SpringCloud
+## 0X10  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
@@ -310,7 +312,7 @@
 
 参考书籍：暂无。
 
-## 0X14  MyBatisPlus
+## 0X11  MyBatisPlus
 
 课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
@@ -324,7 +326,7 @@
 
 参考书籍：暂无。
 
-## 0X15 MQ
+## 0X12 MQ
 
 课程链接：[RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz)
 
@@ -338,7 +340,7 @@
 
 参考书籍：暂无。
 
-## 0x16 实战：尚医通
+## 0x13 实战：尚医通
 
 课程链接：[微服务+分布式+全栈项目【尚医通】](https://www.bilibili.com/video/BV1V5411K7rT)
 
@@ -352,7 +354,7 @@
 
 课程评价：
 
-## 0x17 实战：尚融宝
+## 0x14 实战：尚融宝
 
 课程链接：[尚硅谷《尚融宝》Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR)
 
@@ -366,7 +368,7 @@
 
 课程评价：
 
-## 0x18 Docker
+## 0x15 Docker
 
 课程链接：[2022版Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY)
 
@@ -380,7 +382,7 @@
 
 参考书籍：暂无。
 
-## 0x19 Vue
+## 0x16 Vue
 
 课程链接：[Vue2.0+Vue3.0全套教程丨vuejs从入门到精通](https://www.bilibili.com/video/BV1Zy4y1K7SH)
 
@@ -394,7 +396,7 @@
 
 参考书籍：暂无。
 
-## 0x18 实战：谷粒商城
+## 0x17 实战：谷粒商城
 
 课程链接：[《谷粒商城》Java架构师 | 微服务 | 大型电商项目](https://www.bilibili.com/video/BV1np4y1C7Yf)
 
