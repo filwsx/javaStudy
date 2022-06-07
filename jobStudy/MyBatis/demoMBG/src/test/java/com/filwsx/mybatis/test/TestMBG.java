@@ -1,6 +1,7 @@
 package com.filwsx.mybatis.test;
 
 import com.filwsx.mybatis.bean.Emp;
+import com.filwsx.mybatis.bean.EmpExample;
 import com.filwsx.mybatis.mapper.EmpMapper;
 import com.filwsx.mybatis.mapper.utils.SqlSessionUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -17,7 +18,15 @@ public class TestMBG {
     public void testMBG(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
-        List<Emp> empList = empMapper.selectByExample(null);
-        empList.forEach(emp -> System.out.println(emp));
+
+        // 查询所有数据
+        List<Emp> empList1 = empMapper.selectByExample(null);
+        empList1.forEach(emp -> System.out.println(emp));
+
+        // 查询符合条件的数据
+        EmpExample empExample = new EmpExample();
+        empExample.createCriteria().andEmpNameEqualTo("张三");
+        List<Emp> empList2 = empMapper.selectByExample(empExample);
+        empList2.forEach(emp -> System.out.println(emp));
     }
 }
