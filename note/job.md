@@ -476,11 +476,15 @@
 
 # 待定
 
-进阶：MySQL高级篇、Maven高级部分、Nginx高级部分
+进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s
 
-中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、ElasticSearch
+中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、ElasticSearch、SpringSecurity、MyCat
+
+项目：微信支付&支付宝支付
 
 # 大厂面试
+
+[尚硅谷IT面试技巧\简历撰写\就业指导](https://www.bilibili.com/video/BV1o4411p7An)
 
 ## 简历
 
