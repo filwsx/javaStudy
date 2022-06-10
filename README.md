@@ -40,6 +40,37 @@
 
 每天5小时(该时间为所学课程的视频时长，不是实际学习时间)
 
+# 就业面试
+
+[点击这里](./note/interview.md)
+
+经验/文档
+
+- [尚硅谷IT面试技巧\简历撰写\就业指导](https://www.bilibili.com/video/BV1o4411p7An)
+
+- [Road 2 Coding](https://r2coding.com/#/README)
+- [Java 面试指南 | JavaGuide](https://javaguide.cn/)
+
+## 简历
+
+
+
+## 算法
+
+[PAT 计算机程序设计能力测试](https://www.patest.cn/practice)
+
+[力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode-cn.com/)
+
+[牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网](https://www.nowcoder.com/exam/oj)
+
+## 试题
+
+[尚硅谷经典Java面试题第一季(java面试精讲)](https://www.bilibili.com/video/BV1Eb411P7bP)
+
+[尚硅谷Java大厂面试题第2季，面试必刷，跳槽大厂神器](https://www.bilibili.com/video/BV18b411M7xz)
+
+[尚硅谷Java大厂面试题第3季，跳槽必刷题目+必扫技术盲点（周阳主讲）](https://www.bilibili.com/video/BV1Hy4y1B78T)
+
 # 科班自学
 
 这部分内容是为了夯实自身基础，让你在计算机行业走得更远。

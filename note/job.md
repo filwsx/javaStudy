@@ -73,7 +73,7 @@
 
 2022.02.22  完成Java语言部分的学习。
 
-## 0x02  MySQL
+## 0x02  MySQL基础部分
 
 课程链接：[【宋红康】MySQL数据库](https://www.bilibili.com/video/BV1iq4y1u7vj)
 
@@ -174,7 +174,7 @@
 - [动态代理 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984)
 - [Chapter 6. Aspect Oriented Programming with Spring](https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html)
 
-## 0X06  maven基本
+## 0X06  maven基础部分
 
 课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
 
@@ -274,7 +274,7 @@
 
 课程评价：
 
-# 进阶阶段
+# 实战阶段
 
 ## 0X01  Redis 6
 
@@ -290,7 +290,7 @@
 
 参考书籍：暂无。
 
-## 0X02  Nginx核心
+## 0X02  Nginx基础部分
 
 课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
 
@@ -482,26 +482,3 @@
 
 项目：微信支付&支付宝支付
 
-# 大厂面试
-
-[尚硅谷IT面试技巧\简历撰写\就业指导](https://www.bilibili.com/video/BV1o4411p7An)
-
-## 简历
-
-
-
-## 算法
-
-[PAT 计算机程序设计能力测试](https://www.patest.cn/practice)
-
-[力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode-cn.com/)
-
-[牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网](https://www.nowcoder.com/exam/oj)
-
-## 试题
-
-[尚硅谷经典Java面试题第一季(java面试精讲)](https://www.bilibili.com/video/BV1Eb411P7bP)
-
-[尚硅谷Java大厂面试题第2季，面试必刷，跳槽大厂神器](https://www.bilibili.com/video/BV18b411M7xz)
-
-[尚硅谷Java大厂面试题第3季，跳槽必刷题目+必扫技术盲点（周阳主讲）](https://www.bilibili.com/video/BV1Hy4y1B78T)
