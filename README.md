@@ -18,7 +18,7 @@
 
 # 零基础必读
 
-[点击这里](./note/zero.md)
+[点击这里](./zero.md)
 
 读完这部分，你可以知道为何选择Java开发。
 
@@ -28,7 +28,7 @@
 
 # Java就业路线
 
-[点击这里](./note/job.md)
+[点击这里](./job.md)
 
 极简参考：[Java学习路线图 - 知乎](https://zhuanlan.zhihu.com/p/84032726)
 
@@ -42,7 +42,7 @@
 
 # 就业面试
 
-[点击这里](./note/interview.md)
+[点击这里](./interview/readme.md)
 
 经验/文档
 
