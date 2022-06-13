@@ -233,7 +233,7 @@
 
 学习建议：跟着做，联想MySQL学习的内容和实际开发者要解决的需求
 
-课程评价：推荐！
+课程评价：【推荐】
 
 参考书籍：暂无。
 
@@ -245,23 +245,7 @@
 
 2022.06.07 学习完成。
 
-## 0X09 实战：尚筹网
-
-课程链接：[尚筹网Java项目实战开发(含SSM框架,微服务架构)](https://www.bilibili.com/video/BV1bE411T7oZ)
-
-课程时长：4640min，预计1个月
-
-技术栈：SSM、Maven
-
-适用阶段：
-
-学习建议：
-
-- 做完这个项目，可以尝试找对经验要求不高的工作了
-
-课程评价：
-
-## 0X0A  SpringBoot 2
+## 0X09  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
@@ -275,7 +259,7 @@
 
 参考书籍：暂无。
 
-## 0X0B Spring注解驱动
+## 0X0A Spring注解驱动
 
 课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
 
@@ -291,49 +275,7 @@
 
 # 实战阶段
 
-## 0X01  Redis 6
-
-课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
-
-课程时长：635min，预计4-6天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X02  Nginx基础部分
-
-课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
-
-课程时长：401min，预计2-3天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x03 实战：谷粒学苑
-
-课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
-
-课程时长：4697min，预计1个月
-
-技术栈：
-
-适用阶段：
-
-学习建议：
-
-课程评价：
-
-## 0X04  SpringCloud
+## 0X01  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
@@ -347,13 +289,55 @@
 
 参考书籍：暂无。
 
-## 0X05  MyBatisPlus
+## 0X02  MyBatisPlus
 
 课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
 课程时长：333min，预计2-3天
 
 前置课程：Mybatis3，Spring Boot
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0x03 Spring Security
+
+课程链接：[SpringSecurity框架教程（源码剖析从入门到精通）](https://www.bilibili.com/video/BV15a411A7kP)
+
+课程时长：333min，预计2-3天
+
+前置课程：Spring Boot，Spring MVC
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0x04 实战：谷粒学苑
+
+课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
+
+课程时长：4697min，预计1个月
+
+技术栈：
+
+适用阶段：
+
+学习建议：
+
+课程评价：
+
+## 0X05  Redis 6
+
+课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
+
+课程时长：635min，预计4-6天
+
+前置课程：
 
 学习建议：
 
@@ -377,19 +361,19 @@
 
 参考书籍：暂无。
 
-## 0x07 实战：尚医通
+## 0X07  Nginx基础部分
 
-课程链接：[微服务+分布式+全栈项目【尚医通】](https://www.bilibili.com/video/BV1V5411K7rT)
+课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
 
-课程时长：2366min，预计15-18天
+课程时长：401min，预计2-3天
 
-技术栈：SSM、Spring Cloud、Spring Boot、MQ、Redis
-
-适用阶段：
+前置课程：
 
 学习建议：
 
 课程评价：
+
+参考书籍：暂无。
 
 ## 0x08 实战：尚融宝
 
@@ -435,10 +419,10 @@
 
 # 待定
 
-前端：HTML+CSS+JavaScript、Vue
+其他：微信支付&支付宝支付
+
+前端：HTML+CSS+JavaScript、Vue、Node js、
 
 内功：数据结构与算法、操作系统、设计模式、JVM、计算机网络、框架源码
 
-中间件：JUC、ZooKeeper、Dubbo、ElasticSearch、SpringSecurity、MyCat
-
-进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s、微信支付&支付宝支付
+进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s、JUC、ZooKeeper、Dubbo、ElasticSearch
