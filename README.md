@@ -30,9 +30,9 @@
 
 [点击这里](./note/job.md)
 
-极简参考：[Java学习路线图 - 知乎](https://zhuanlan.zhihu.com/p/84032726)
-
 本路线是对[尚硅谷2022年度Java学习路线](https://www.bilibili.com/read/cv5216534) 的学进一步化简
+
+极简参考：[Java学习路线图 - 知乎](https://zhuanlan.zhihu.com/p/84032726)
 
 说在前边：
 
@@ -43,42 +43,25 @@
 
 对于刚开始转行的人来说，为了**找一份一般的工作**确实没必要一下子学那么多，工作中再学习。
 
-精简思路：根据各大平台的Java招聘要求，结合课程衔接与基础铺垫来安排内容与先后顺序。
+精简思路：根据众多Java招聘要求找出共性，结合课程衔接与基础铺垫来安排内容与先后顺序。
 
 # 就业面试
 
-[点击这里](./interview/readme.md)
+[点击这里，查看知识点总结](./interview/readme.md)
 
-经验/文档
+多刷leetcode，通过编码巩固知识、概念
 
-- 多刷leetcode，通过编码巩固知识、概念
-- 多做项目，动手实践应该占大头，视频只是辅助！
-- 多看面经，刷面试题和背八股。
+- [力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode-cn.com/)
+- [牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网](https://www.nowcoder.com/exam/oj)
+
+多做项目，动手实践应该占大头，视频只是辅助！
+
+多看面经，刷面试题和背八股。
 
 - [尚硅谷IT面试技巧\简历撰写\就业指导](https://www.bilibili.com/video/BV1o4411p7An)
 
 - [Road 2 Coding](https://r2coding.com/#/README)
 - [Java 面试指南 | JavaGuide](https://javaguide.cn/)
-
-## 简历
-
-
-
-## 算法
-
-[PAT 计算机程序设计能力测试](https://www.patest.cn/practice)
-
-[力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode-cn.com/)
-
-[牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网](https://www.nowcoder.com/exam/oj)
-
-## 试题
-
-[尚硅谷经典Java面试题第一季(java面试精讲)](https://www.bilibili.com/video/BV1Eb411P7bP)
-
-[尚硅谷Java大厂面试题第2季，面试必刷，跳槽大厂神器](https://www.bilibili.com/video/BV18b411M7xz)
-
-[尚硅谷Java大厂面试题第3季，跳槽必刷题目+必扫技术盲点（周阳主讲）](https://www.bilibili.com/video/BV1Hy4y1B78T)
 
 # 科班自学
 
