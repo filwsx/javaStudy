@@ -244,21 +244,7 @@
 
 2022.06.07 学习完成。
 
-## ~~0X09  ssm整合~~
-
-课程链接：[ssm整合快速开发CRUD](https://www.bilibili.com/video/BV17W411g7zP)
-
-课程时长：457min，预计2-3天
-
-前置课程：Spring、SpringMVC、MyBatis
-
-学习建议：2018年的课程，有些过时。直接通过"尚筹网项目"实战，对之前所学的所有知识进行消化巩固！
-
-课程评价：无。
-
-参考书籍：暂无。
-
-## 0X0A 实战：尚筹网
+## 0X09 实战：尚筹网
 
 课程链接：[尚筹网Java项目实战开发(含SSM框架,微服务架构)](https://www.bilibili.com/video/BV1bE411T7oZ)
 
@@ -273,6 +259,34 @@
 - 做完这个项目，可以尝试找对经验要求不高的工作了
 
 课程评价：
+
+## 0X0A  SpringBoot 2
+
+课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
+
+课程时长：1572min，预计9-12天
+
+前置课程：
+
+学习建议：
+
+课程评价：
+
+参考书籍：暂无。
+
+## 0X0B Spring注解驱动
+
+课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
+
+课程时长：687min，预计4-6天
+
+前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
+
+学习建议：根据需求选看。该课程主要深入原理、源码。
+
+课程评价：
+
+参考书籍：暂无。
 
 # 实战阶段
 
@@ -304,35 +318,7 @@
 
 参考书籍：暂无。
 
-## 0X03 Spring注解驱动
-
-课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
-
-课程时长：687min，预计4-6天
-
-前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X04  SpringBoot 2
-
-课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
-
-课程时长：1572min，预计9-12天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x05 实战：谷粒学苑
+## 0x03 实战：谷粒学苑
 
 课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
 
@@ -346,7 +332,7 @@
 
 课程评价：
 
-## 0X06  SpringCloud
+## 0X04  SpringCloud
 
 课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
 
@@ -360,7 +346,7 @@
 
 参考书籍：暂无。
 
-## 0X07  MyBatisPlus
+## 0X05  MyBatisPlus
 
 课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
 
@@ -374,7 +360,9 @@
 
 参考书籍：暂无。
 
-## 0X08 MQ
+## 0X06 消息中间件
+
+可选：RocketMQ/RabbitMQ/Kafka
 
 课程链接：[RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz)
 
@@ -388,7 +376,7 @@
 
 参考书籍：暂无。
 
-## 0x09 实战：尚医通
+## 0x07 实战：尚医通
 
 课程链接：[微服务+分布式+全栈项目【尚医通】](https://www.bilibili.com/video/BV1V5411K7rT)
 
@@ -402,7 +390,7 @@
 
 课程评价：
 
-## 0x0A 实战：尚融宝
+## 0x08 实战：尚融宝
 
 课程链接：[尚硅谷《尚融宝》Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR)
 
@@ -416,7 +404,7 @@
 
 课程评价：
 
-## 0x0B Docker
+## 0x09 Docker
 
 课程链接：[2022版Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY)
 
@@ -430,21 +418,7 @@
 
 参考书籍：暂无。
 
-## 0x0C Vue
-
-课程链接：[Vue2.0+Vue3.0全套教程丨vuejs从入门到精通](https://www.bilibili.com/video/BV1Zy4y1K7SH)
-
-课程时长：2783min，预计 天
-
-前置课程：html、css、JavaScript
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x0D 实战：谷粒商城
+## 0x0A 实战：谷粒商城
 
 课程链接：[《谷粒商城》Java架构师 | 微服务 | 大型电商项目](https://www.bilibili.com/video/BV1np4y1C7Yf)
 
@@ -476,9 +450,8 @@
 
 # 待定
 
-进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s
+进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s、微信支付&支付宝支付
 
-中间件：JUC、ZooKeeper、Dubbo、ActiveMQ、RabbitMQ、ElasticSearch、SpringSecurity、MyCat
+中间件：JUC、ZooKeeper、Dubbo、ElasticSearch、SpringSecurity、MyCat
 
-项目：微信支付&支付宝支付
-
+前端：HTML+CSS+JavaScript、Vue
