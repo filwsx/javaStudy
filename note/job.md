@@ -249,6 +249,8 @@
 
 课程链接：[【尚硅谷】SSM整合一套通关](https://www.bilibili.com/video/BV1Ya411S7aT)
 
+课程时长：
+
 ## 0X07  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
@@ -309,15 +311,13 @@
 
 # 待定
 
-其他：微信支付&支付宝支付
+前端：HTML+CSS+JavaScript、Vue、Node js、Rect
 
-前端：HTML+CSS+JavaScript、Vue、Node js、
-
-内功：数据结构与算法、操作系统、设计模式、JVM、计算机网络、框架源码
+内功：JVM、框架源码；数据结构与算法、操作系统、设计模式、计算机网络
 
 进阶：MySQL高级、Maven高级、Nginx、k8s、JUC、ZooKeeper、Dubbo、ElasticSearch
 
-消息中间件：RocketMQ/RabbitMQ/Kafka
+消息中间件：RocketMQ、RabbitMQ、Kafka
 
 ## SpringCloud
 
@@ -332,14 +332,6 @@
 课程时长：333min，预计2-3天
 
 前置课程：Mybatis3，Spring Boot
-
-## Spring Security
-
-课程链接：[SpringSecurity框架教程（源码剖析从入门到精通）](https://www.bilibili.com/video/BV15a411A7kP)
-
-课程时长：333min，预计2-3天
-
-前置课程：Spring Boot，Spring MVC
 
 ## Nginx
 
@@ -362,3 +354,7 @@
 前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
 
 学习建议：根据需求选看。该课程主要深入原理、源码。
+
+## 在线支付
+
+[【尚硅谷】微信支付&支付宝支付，一套搞定Java在线支付开发](https://www.bilibili.com/video/BV1US4y1D77m)
