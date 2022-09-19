@@ -141,7 +141,28 @@
 
 2022.04.01 各种原因课程才看到P52，痛苦。一部分课程还没练习，后边课程看了眼应该不是特别关键，果断放弃。
 
-## 0X05  Spring5
+## 0X05  maven基础部分
+
+课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
+
+课程时长：1206min，预计3-5天（根据需求选学）
+
+前置课程：IDEA使用
+
+学习建议：2倍速看，部分1.5；根据需求学习（先入门，会用、知道干嘛，工作后再深入）。
+
+课程评价：【推荐】
+
+- 课程内容分割合理，根据需求分阶段学习
+- 老师逻辑和演示清晰，[文档完善](https://heavy_code_industry.gitee.io/code_heavy_industry/)，举例恰当
+
+参考书籍：[官网](https://maven.apache.org/archetypes/index.html)。
+
+2022.04.16 开始学习
+
+2022.04.17 仅仅学习P1-p53，入门先。
+
+## ~~0X05  Spring5~~
 
 课程链接：[spring5源码级讲解](https://www.bilibili.com/video/BV1Vf4y127N5)
 
@@ -175,28 +196,7 @@
 - [动态代理 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984)
 - [Chapter 6. Aspect Oriented Programming with Spring](https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html)
 
-## 0X06  maven基础部分
-
-课程链接：[尚硅谷2022版Maven教程](https://www.bilibili.com/video/BV12q4y147e4)
-
-课程时长：1206min，预计3-5天（根据需求选学）
-
-前置课程：IDEA使用
-
-学习建议：2倍速看，部分1.5；根据需求学习（先入门，会用、知道干嘛，工作后再深入）。
-
-课程评价：【推荐】
-
-- 课程内容分割合理，根据需求分阶段学习
-- 老师逻辑和演示清晰，[文档完善](https://heavy_code_industry.gitee.io/code_heavy_industry/)，举例恰当
-
-参考书籍：[官网](https://maven.apache.org/archetypes/index.html)。
-
-2022.04.16 开始学习
-
-2022.04.17 仅仅学习P1-p53，入门先。
-
-## 0X07  spring mvc
+## ~~0X07  spring mvc~~
 
 课程链接：[一套快速上手spring mvc](https://www.bilibili.com/video/BV1Ry4y1574R)
 
@@ -223,7 +223,7 @@
 
 2022.05.21 完成
 
-## 0X08  MyBatis 3
+## ~~0X08  MyBatis 3~~
 
 课程链接：[MyBatis实战](https://www.bilibili.com/video/BV1VP4y1c7j7)
 
@@ -245,7 +245,11 @@
 
 2022.06.07 学习完成。
 
-## 0X09  SpringBoot 2
+## 0X06 SSM整合
+
+课程链接：[【尚硅谷】SSM整合一套通关](https://www.bilibili.com/video/BV1Ya411S7aT)
+
+## 0X07  SpringBoot 2
 
 课程链接：[雷神SpringBoot2零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
 
@@ -259,79 +263,7 @@
 
 参考书籍：暂无。
 
-## 0X0A Spring注解驱动
-
-课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
-
-课程时长：687min，预计4-6天
-
-前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
-
-学习建议：根据需求选看。该课程主要深入原理、源码。
-
-课程评价：
-
-参考书籍：暂无。
-
-# 实战阶段
-
-## 0X01  SpringCloud
-
-课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
-
-课程时长：1536min，预计9-12天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X02  MyBatisPlus
-
-课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
-
-课程时长：333min，预计2-3天
-
-前置课程：Mybatis3，Spring Boot
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x03 Spring Security
-
-课程链接：[SpringSecurity框架教程（源码剖析从入门到精通）](https://www.bilibili.com/video/BV15a411A7kP)
-
-课程时长：333min，预计2-3天
-
-前置课程：Spring Boot，Spring MVC
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x04 实战：谷粒学苑
-
-课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
-
-课程时长：4697min，预计1个月
-
-技术栈：
-
-适用阶段：
-
-学习建议：
-
-课程评价：
-
-## 0X05  Redis 6
+## 0X08  Redis 6
 
 课程链接：[Redis 6 入门到精通](https://www.bilibili.com/video/BV1Rv41177Af)
 
@@ -345,41 +277,13 @@
 
 参考书籍：暂无。
 
-## 0X06 消息中间件
+# 实战阶段
 
-可选：RocketMQ/RabbitMQ/Kafka
+## 谷粒学苑
 
-课程链接：[RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz)
+课程链接：[谷粒学苑-微服务+全栈在线教育实战项目](https://www.bilibili.com/video/BV1dQ4y1A75e)
 
-课程时长：1160min，预计7-10天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0X07  Nginx基础部分
-
-课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
-
-课程时长：401min，预计2-3天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x08 实战：尚融宝
-
-课程链接：[尚硅谷《尚融宝》Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR)
-
-课程时长：4205min，预计1个月
+课程时长：4697min，预计1个月
 
 技术栈：
 
@@ -389,21 +293,7 @@
 
 课程评价：
 
-## 0x09 Docker
-
-课程链接：[2022版Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY)
-
-课程时长：805min，预计5-8天
-
-前置课程：
-
-学习建议：
-
-课程评价：
-
-参考书籍：暂无。
-
-## 0x0A 实战：谷粒商城
+## 谷粒商城
 
 课程链接：[《谷粒商城》Java架构师 | 微服务 | 大型电商项目](https://www.bilibili.com/video/BV1np4y1C7Yf)
 
@@ -425,4 +315,50 @@
 
 内功：数据结构与算法、操作系统、设计模式、JVM、计算机网络、框架源码
 
-进阶：MySQL高级篇、Maven高级部分、Nginx高级部分、k8s、JUC、ZooKeeper、Dubbo、ElasticSearch
+进阶：MySQL高级、Maven高级、Nginx、k8s、JUC、ZooKeeper、Dubbo、ElasticSearch
+
+消息中间件：RocketMQ/RabbitMQ/Kafka
+
+## SpringCloud
+
+课程链接：[SpringCloud框架开发](https://www.bilibili.com/video/BV18E411x7eT)
+
+课程时长：1536min，预计9-12天
+
+## MyBatisPlus
+
+课程链接：[mybatis-plus框架精讲](https://www.bilibili.com/video/BV12R4y157Be)
+
+课程时长：333min，预计2-3天
+
+前置课程：Mybatis3，Spring Boot
+
+## Spring Security
+
+课程链接：[SpringSecurity框架教程（源码剖析从入门到精通）](https://www.bilibili.com/video/BV15a411A7kP)
+
+课程时长：333min，预计2-3天
+
+前置课程：Spring Boot，Spring MVC
+
+## Nginx
+
+课程链接：[2022版Nginx教程（从入门到亿级流量）](https://www.bilibili.com/video/BV1yS4y1N76R)
+
+课程时长：401min，预计2-3天
+
+## Docker
+
+课程链接：[2022版Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY)
+
+课程时长：805min，预计5-8天
+
+## Spring注解驱动
+
+课程链接：[Spring注解驱动开发](https://www.bilibili.com/video/BV1gW411W7wy)
+
+课程时长：687min，预计4-6天
+
+前置课程：Spring5，Java语言高级部分（反射），有设计模式基础更好
+
+学习建议：根据需求选看。该课程主要深入原理、源码。
